@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/animated-section";
+import { SubTitle } from "@/components/sub-title";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -24,16 +25,10 @@ export default function Biography() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <motion.h2
-              variants={fadeIn}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="text-3xl font-bold text-gray-800 mb-8"
-            >
-              Biografía y Carrera Profesional
-            </motion.h2>
-
+            <SubTitle
+              title="Biografía y Carrera Profesional"
+              underlineColor="beige"
+            />
             <motion.div
               variants={staggerContainer}
               initial="hidden"

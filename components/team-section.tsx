@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function TeamSection() {
   const teamMembers = [
@@ -30,7 +30,7 @@ export default function TeamSection() {
       role: "Odontóloga general",
       image: "/images/4Azul.png",
     },
-  ]
+  ];
 
   const container = {
     hidden: { opacity: 0 },
@@ -40,7 +40,7 @@ export default function TeamSection() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -53,13 +53,19 @@ export default function TeamSection() {
         damping: 20,
       },
     },
-  }
+  };
 
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full pb-20 bg-white">
       <div className="container mx-auto px-4">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Nuestro Equipo</h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
+            Nuestro Equipo
+          </h2>
           <div className="w-20 h-1 bg-co-primary-blue mx-auto mb-12"></div>
         </motion.div>
 
@@ -94,6 +100,5 @@ export default function TeamSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

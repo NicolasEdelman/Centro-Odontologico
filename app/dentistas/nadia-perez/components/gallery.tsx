@@ -1,39 +1,31 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import AnimatedSection from "@/components/animated-section"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import AnimatedSection from "@/components/animated-section";
+import { SubTitle } from "@/components/sub-title";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-}
+};
 
 const staggerContainer = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
-}
+};
 
 const staggerItem = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-}
+};
 
 export default function Gallery() {
   return (
     <AnimatedSection variant="scale" fullWidth>
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <motion.h2
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-center text-gray-800 mb-12"
-          >
-            Galería de Imágenes
-          </motion.h2>
-
+          <SubTitle title="Galería de Imágenes" underlineColor="beige" />
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -64,5 +56,5 @@ export default function Gallery() {
         </div>
       </section>
     </AnimatedSection>
-  )
+  );
 }

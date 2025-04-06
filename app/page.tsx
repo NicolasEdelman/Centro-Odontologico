@@ -1,22 +1,25 @@
-import { Button } from "@/components/ui/button"
-import HeroSection from "@/components/hero-section"
-import DentistProfiles from "@/components/dentist-profiles"
-import ServicesSection from "@/components/services-section"
-import TeamSection from "@/components/team-section"
-import CompanyAgreements from "@/components/company-agreements"
-import MissionVision from "@/components/mission-vision"
-import VideosSection from "@/components/videos-section"
-import InstagramFeed from "@/components/instagram-feed"
-import ContactSection from "@/components/contact-section"
-import DentalTips from "@/components/dental-tips"
-import SpecialistsSection from "@/components/specialists-section"
-import AnimatedSection from "@/components/animated-section"
+import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/hero-section";
+import DentistProfiles from "@/components/dentist-profiles";
+import ServicesSection from "@/components/services-section";
+import TeamSection from "@/components/team-section";
+import CompanyAgreements from "@/components/company-agreements";
+import MissionVision from "@/components/mission-vision";
+import VideosSection from "@/components/videos-section";
+import InstagramFeed from "@/components/instagram-feed";
+import ContactSection from "@/components/contact-section";
+import DentalTips from "@/components/dental-tips";
+import SpecialistsSection from "@/components/specialists-section";
+import AnimatedSection from "@/components/animated-section";
+import { CTA } from "@/components/call-to-action";
+import DentistProfiles2 from "@/components/dentist-profiles2";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <HeroSection />
-      <DentistProfiles />
+      <DentistProfiles2 />
+      {/* <DentistProfiles /> */}
 
       <AnimatedSection variant="slideUp" fullWidth>
         <SpecialistsSection />
@@ -30,45 +33,51 @@ export default function Home() {
         <ServicesSection />
       </AnimatedSection>
 
-      <AnimatedSection variant="rotate" fullWidth>
-        <CompanyAgreements />
-      </AnimatedSection>
-
       <AnimatedSection variant="scale" fullWidth>
         <MissionVision />
+      </AnimatedSection>
+
+      <AnimatedSection variant="rotate" fullWidth>
+        <CompanyAgreements />
       </AnimatedSection>
 
       <AnimatedSection variant="slideRight" fullWidth>
         <VideosSection />
       </AnimatedSection>
 
-      <AnimatedSection variant="bounce" fullWidth>
-        <DentalTips />
-      </AnimatedSection>
+      <div className="relative w-full bg-cover bg-center py-16">
+        {/* Lado izquierdo */}
+        <img
+          src="/images/MAgua.png"
+          alt=""
+          className="hidden md:block absolute left-0 bottom-10 h-[50%] object-contain z-0 opacity-20 transform rotate-180"
+        />
 
-      <AnimatedSection variant="slideUp" fullWidth>
-        <InstagramFeed />
-      </AnimatedSection>
+        {/* Lado derecho */}
+        <img
+          src="/images/MAgua.png"
+          alt=""
+          className="hidden md:block absolute right-0 top-10  h-[50%] object-contain z-0 opacity-20"
+        />
 
-      {/* Call to Action */}
+        <div className="relative z-10">
+          <AnimatedSection variant="bounce" fullWidth>
+            <DentalTips />
+          </AnimatedSection>
+
+          <AnimatedSection variant="slideUp" fullWidth>
+            <InstagramFeed />
+          </AnimatedSection>
+        </div>
+      </div>
+
       <AnimatedSection variant="scale" delay={0.2} fullWidth>
-        <section className="w-full py-16 bg-gradient-to-r from-brand-blue-light to-brand-blue">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para una sonrisa perfecta?</h2>
-            <p className="text-white text-lg mb-8 max-w-2xl mx-auto">
-              Agenda tu consulta hoy y comienza tu camino hacia una salud bucal óptima
-            </p>
-            <Button size="lg" className="bg-white text-brand-blue hover:bg-gray-100">
-              Agendar Consulta
-            </Button>
-          </div>
-        </section>
+        <CTA />
       </AnimatedSection>
 
       <AnimatedSection variant="fadeIn" delay={0.3} fullWidth>
         <ContactSection />
       </AnimatedSection>
     </main>
-  )
+  );
 }
-

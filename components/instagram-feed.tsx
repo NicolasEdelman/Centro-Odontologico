@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Instagram } from "lucide-react"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import Link from "next/link";
+import { Instagram } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function InstagramFeed() {
   // Simulated Instagram posts
@@ -14,7 +14,7 @@ export default function InstagramFeed() {
     { id: 4, image: "/placeholder.svg?height=400&width=400" },
     { id: 5, image: "/placeholder.svg?height=400&width=400" },
     { id: 6, image: "/placeholder.svg?height=400&width=400" },
-  ]
+  ];
 
   const container = {
     hidden: { opacity: 0 },
@@ -24,7 +24,7 @@ export default function InstagramFeed() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -35,20 +35,27 @@ export default function InstagramFeed() {
         duration: 0.5,
       },
     },
-  }
+  };
 
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full pb-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex items-center justify-center gap-3 mb-8"
+          className="text-center mb-12"
         >
-          <Instagram size={32} className="text-pink-600" />
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800">Síguenos en Instagram</h2>
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex items-center gap-2">
+              <Instagram size={28} className="text-pink-600" />
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                Seguínos en Instagram
+              </h2>
+            </div>
+            <div className="w-16 h-1 bg-pink-600 mt-2"></div>
+          </div>
         </motion.div>
 
         <motion.p
@@ -58,7 +65,8 @@ export default function InstagramFeed() {
           viewport={{ once: true }}
           className="text-center text-gray-600 mb-12 max-w-2xl mx-auto"
         >
-          Mantente al día con nuestros últimos casos, consejos de salud bucal y promociones especiales
+          Mantente al día con nuestros últimos casos, consejos de salud bucal y
+          promociones especiales
         </motion.p>
 
         <motion.div
@@ -119,6 +127,5 @@ export default function InstagramFeed() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

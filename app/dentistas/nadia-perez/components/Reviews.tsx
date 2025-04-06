@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import AnimatedSection from "@/components/animated-section";
+import { SubTitle } from "@/components/sub-title";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -35,16 +36,7 @@ export default function Reviews() {
     <AnimatedSection variant="slideRight" fullWidth>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <motion.h2
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-center text-gray-800 mb-12"
-          >
-            Lo que dicen mis pacientes
-          </motion.h2>
-
+          <SubTitle title="Lo que dicen mis pacientes" underlineColor="beige" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
               <motion.div
@@ -60,7 +52,7 @@ export default function Reviews() {
                   {[...Array(review.rating)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                      className="h-5 w-5 fill-co-secondary-beige text-co-secondary-beige"
                     />
                   ))}
                 </div>

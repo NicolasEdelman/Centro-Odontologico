@@ -79,14 +79,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6">Servicios</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/servicios/cirugia-terceros-molares"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Cirugía de Terceros Molares
-                </Link>
-              </li>
+
               <li>
                 <Link href="/servicios/estetica-facial" className="text-gray-300 hover:text-white transition-colors">
                   Estética Facial
@@ -94,17 +87,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/servicios/implantologia" className="text-gray-300 hover:text-white transition-colors">
-                  Implantología
+                  Implantes
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/ortodoncia" className="text-gray-300 hover:text-white transition-colors">
                   Ortodoncia
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicios/ortopedia" className="text-gray-300 hover:text-white transition-colors">
-                  Ortopedia
                 </Link>
               </li>
               <li>

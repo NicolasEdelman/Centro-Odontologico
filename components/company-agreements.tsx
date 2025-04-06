@@ -1,65 +1,77 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function CompanyAgreements() {
-  const carouselRef = useRef<HTMLDivElement>(null)
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   // Empresas afiliadas (ejemplos)
   const companies = [
-    { name: "Empresa 1", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 2", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 3", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 4", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 5", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 6", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 7", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 8", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 9", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Empresa 10", logo: "/placeholder.svg?height=80&width=160" },
-  ]
+    { name: "CDM Logistica", logo: "/convenios/CDM.png?height=80&width=160" },
+    {
+      name: "Costa Oriental",
+      logo: "/convenios/CostaOriental.png?height=80&width=160",
+    },
+    {
+      name: "Electro sistemas",
+      logo: "/convenios/Electrosistemas.png?height=80&width=160",
+    },
+    { name: "Elese", logo: "/convenios/Elese.png?height=80&width=160" },
+    { name: "FSC", logo: "/convenios/FSC.png?height=80&width=160" },
+    { name: "Infoland", logo: "/convenios/Infoland.png?height=80&width=160" },
+    { name: "Juan 23", logo: "/convenios/Juan23.png?height=80&width=160" },
+    { name: "Red Pagos", logo: "/convenios/RedPagos.png?height=80&width=160" },
+    { name: "Sinapsis", logo: "/convenios/Sinapsis.gif?height=80&width=160" },
+    { name: "Viva fit", logo: "/convenios/VivaFit.png?height=80&width=160" },
+  ];
 
   // Duplicamos las empresas para crear un efecto de carrusel infinito
-  const allCompanies = [...companies, ...companies]
+  const allCompanies = [...companies, ...companies, ...companies];
 
   useEffect(() => {
-    const carousel = carouselRef.current
-    if (!carousel) return
+    const carousel = carouselRef.current;
+    if (!carousel) return;
 
-    let animationId: number
-    let position = 0
+    let animationId: number;
+    let position = 0;
 
     const animate = () => {
-      position -= 0.5
+      position -= 0.5;
 
       // Reiniciar posición cuando se haya desplazado la mitad de las empresas
       if (position <= -(companies.length * 180)) {
-        position = 0
+        position = 0;
       }
 
       if (carousel) {
-        carousel.style.transform = `translateX(${position}px)`
+        carousel.style.transform = `translateX(${position}px)`;
       }
 
-      animationId = requestAnimationFrame(animate)
-    }
+      animationId = requestAnimationFrame(animate);
+    };
 
-    animationId = requestAnimationFrame(animate)
+    animationId = requestAnimationFrame(animate);
 
     return () => {
-      cancelAnimationFrame(animationId)
-    }
-  }, [companies.length])
+      cancelAnimationFrame(animationId);
+    };
+  }, [companies.length]);
 
   return (
-    <section id="convenios" className="w-full py-20 bg-[#f0f7ff]">
-      <div className="container mx-auto px-4">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Convenios</h2>
+    <section id="convenios" className="w-full py-20 ">
+      <div className="container mx-auto ">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
+            Convenios
+          </h2>
           <div className="w-20 h-1 bg-[#a5c5e5] mx-auto mb-6"></div>
         </motion.div>
 
@@ -69,14 +81,15 @@ export default function CompanyAgreements() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-center text-gray-600 max-w-3xl mx-auto mb-12"
         >
-          Estas son las empresas que han decidido trabajar con nosotros para brindar a sus colaboradores acceso a
-          servicios odontológicos de calidad con beneficios exclusivos.
+          Estas son las empresas que han decidido trabajar con nosotros para
+          brindar a sus colaboradores acceso a servicios odontológicos de
+          calidad con beneficios exclusivos.
         </motion.p>
 
         <div className="relative w-full overflow-hidden mb-12">
           <div
             ref={carouselRef}
-            className="flex items-center gap-8 py-4"
+            className="flex items-center gap-20 py-4"
             style={{ width: `${allCompanies.length * 180}px` }}
           >
             {allCompanies.map((company, index) => (
@@ -100,18 +113,24 @@ export default function CompanyAgreements() {
           className="flex flex-col sm:flex-row gap-6 justify-center"
         >
           <Link href="/planes#empresas">
-            <Button size="lg" className="bg-[#7a9cbf] hover:bg-[#5d7a99] text-white">
+            <Button
+              size="lg"
+              className="bg-[#7a9cbf] hover:bg-[#5d7a99] text-white"
+            >
               Planes para Empresas
             </Button>
           </Link>
           <Link href="/planes#individuales">
-            <Button size="lg" variant="outline" className="border-[#7a9cbf] text-[#7a9cbf] hover:bg-[#a5c5e5]/10">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-[#7a9cbf] text-[#7a9cbf] hover:bg-[#a5c5e5]/10"
+            >
               Planes Individuales y Familiares
             </Button>
           </Link>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

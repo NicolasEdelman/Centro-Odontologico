@@ -48,7 +48,11 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/images/logo.png" alt="Centro Odontológico" width={180} height={60} className="h-12 w-auto" />
+            {isScrolled ? (
+              <Image src="/images/logo.png" alt="Centro Odontológico" width={180} height={60} className="h-12 w-auto" />
+            ) : (
+              <span className="text-white text-xl font-semibold">Centro Odontológico</span>
+            )}
           </Link>
 
           {/* Desktop Navigation */}
@@ -109,4 +113,3 @@ export default function Navbar() {
     </header>
   )
 }
-
