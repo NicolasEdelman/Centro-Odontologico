@@ -1,0 +1,76 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+import AnimatedSection from "@/components/animated-section";
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+const reviews = [
+  {
+    name: "Ana Silva",
+    rating: 5,
+    comment:
+      "Mi hijo ha estado en tratamiento con la Dra. Nadia durante un año y los resultados son increíbles. Su paciencia y profesionalismo hacen que las visitas sean muy agradables.",
+  },
+  {
+    name: "Pedro Fernández",
+    rating: 5,
+    comment:
+      "Después de años postergando mi tratamiento de ortodoncia, la Dra. Pérez me ofreció una solución discreta y efectiva. Estoy muy satisfecho con los resultados.",
+  },
+  {
+    name: "Valentina Méndez",
+    rating: 5,
+    comment:
+      "La Dra. Nadia es excelente. Su atención es muy personalizada y siempre está dispuesta a explicar cada paso del tratamiento. Recomiendo totalmente sus servicios.",
+  },
+];
+
+export default function Reviews() {
+  return (
+    <AnimatedSection variant="slideRight" fullWidth>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <motion.h2
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-3xl font-bold text-center text-gray-800 mb-12"
+          >
+            Lo que dicen mis pacientes
+          </motion.h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {reviews.map((review, index) => (
+              <motion.div
+                key={index}
+                whileHover={{
+                  y: -10,
+                  boxShadow: "0 20px 25px -5px rgba(0,0,0,0.1)",
+                  transition: { duration: 0.3 },
+                }}
+                className="bg-white p-6 rounded-xl shadow-md"
+              >
+                <div className="flex items-center mb-4">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                    />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4">"{review.comment}"</p>
+                <p className="font-semibold">{review.name}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </AnimatedSection>
+  );
+}
