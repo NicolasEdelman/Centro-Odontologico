@@ -60,12 +60,13 @@ const config = {
         // Nueva paleta de colores personalizada
         "co-primary": {
           white: "#FFFFFF",
-          gray: "#CCCDCF",
+          gray: "#bfbfbf",
           blue: "#A2B6C8",
         },
         "co-secondary": {
           lightblue: "#CAD9E3",
           beige: "#D1B682",
+          brown: "#ab956a",
         },
       },
       borderRadius: {

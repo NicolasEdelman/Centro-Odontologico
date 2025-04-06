@@ -7,7 +7,7 @@ import AnimatedSection from "@/components/animated-section"
 export default function CallToAction() {
   return (
     <AnimatedSection variant="bounce" fullWidth>
-      <section className="py-16 bg-[#7a9cbf] text-white">
+      <section className="py-16 bg-co-secondary-beige text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -35,7 +35,7 @@ export default function CallToAction() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button size="lg" className="bg-white text-[#7a9cbf] hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-co-secondary-beige hover:bg-gray-100">
               Agendar Consulta
             </Button>
           </motion.div>

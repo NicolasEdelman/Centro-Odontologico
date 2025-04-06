@@ -63,7 +63,7 @@ export default function CompanyAgreements() {
 
   return (
     <section id="convenios" className="w-full py-20 ">
-      <div className="container mx-auto ">
+      <div className=" mx-auto ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function CompanyAgreements() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-center text-gray-600 max-w-3xl mx-auto mb-12"
+          className="text-center text-gray-600 max-w-3xl mx-auto mb-8"
         >
           Estas son las empresas que han decidido trabajar con nosotros para
           brindar a sus colaboradores acceso a servicios odontológicos de
