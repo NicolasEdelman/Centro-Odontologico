@@ -1,35 +1,29 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Menu, X, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+      setIsScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { name: "Inicio", href: "#" },
@@ -37,7 +31,10 @@ export default function Navbar() {
     { name: "Servicios", href: "#servicios" },
     { name: "Convenios", href: "#convenios" },
     { name: "Contacto", href: "#contacto" },
-  ]
+  ];
+
+  const whatsappNumber = "59891234567"; // Reemplazá por tu número
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
     <header
@@ -49,33 +46,65 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             {isScrolled ? (
-              <Image src="/images/logo.png" alt="Centro Odontológico" width={180} height={60} className="h-12 w-auto" />
+              <Image
+                src="/images/LogoColor.png"
+                alt="Centro Odontológico"
+                width={280}
+                height={160}
+                className="h-12 w-auto"
+              />
             ) : (
-              <span className="text-white text-xl font-semibold">Centro Odontológico</span>
+              <Image
+                src="/images/LogoBlanco.png"
+                alt="Centro Odontológico"
+                width={280}
+                height={160}
+                className="h-12 w-auto"
+              />
             )}
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
-                  pathname === link.href ? "text-co-primary-blue" : isScrolled ? "text-gray-800" : "text-white"
+                  pathname === link.href
+                    ? "text-co-primary-blue"
+                    : isScrolled
+                    ? "text-gray-800"
+                    : "text-white"
                 }`}
               >
                 {link.name}
               </a>
             ))}
+
+            {/* WhatsApp icon */}
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-co-primary-blue hover:text-co-primary-gray transition-colors"
+            >
+              <MessageCircle size={20} className="mr-2" />
+            </a>
+
+            {/* Botón de consulta */}
             <a href="#contacto">
-              <Button className="bg-co-primary-blue hover:bg-co-primary-gray text-white">Agendar Consulta</Button>
+              <Button className="bg-co-primary-blue hover:bg-co-primary-gray text-white">
+                Agendar Consulta
+              </Button>
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden ${isScrolled ? "text-gray-800" : "text-white"}`}
+            className={`md:hidden ${
+              isScrolled ? "text-gray-800" : "text-white"
+            }`}
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
@@ -94,15 +123,29 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
-                    pathname === link.href ? "text-co-primary-blue" : "text-gray-800"
+                    pathname === link.href
+                      ? "text-co-primary-blue"
+                      : "text-gray-800"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
+
+              {/* WhatsApp link in mobile */}
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-co-primary-blue hover:text-co-primary-gray transition-colors"
+              >
+                <MessageCircle size={20} className="mr-2" />
+                <span className="text-sm">Enviar mensaje por WhatsApp</span>
+              </a>
+
               <a href="#contacto" onClick={() => setIsOpen(false)}>
-                <Button className="bg-co-primary-blue hover:bg-co-primary-gray text-white w-full">
+                <Button className="bg-co-primary-blue hover:bg-co-primary-gray text-white w-full mt-2">
                   Agendar Consulta
                 </Button>
               </a>
@@ -111,5 +154,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }

@@ -1,15 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import AutoCarousel from "./auto-carrousel";
 
 export default function CompanyAgreements() {
-  const carouselRef = useRef<HTMLDivElement>(null);
-
-  // Empresas afiliadas (ejemplos)
   const companies = [
     { name: "CDM Logistica", logo: "/convenios/CDM.png?height=80&width=160" },
     {
@@ -29,41 +27,12 @@ export default function CompanyAgreements() {
     { name: "Viva fit", logo: "/convenios/VivaFit.png?height=80&width=160" },
   ];
 
-  // Duplicamos las empresas para crear un efecto de carrusel infinito
-  const allCompanies = [...companies, ...companies, ...companies];
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (!carousel) return;
-
-    let animationId: number;
-    let position = 0;
-
-    const animate = () => {
-      position -= 0.5;
-
-      // Reiniciar posición cuando se haya desplazado la mitad de las empresas
-      if (position <= -(companies.length * 180)) {
-        position = 0;
-      }
-
-      if (carousel) {
-        carousel.style.transform = `translateX(${position}px)`;
-      }
-
-      animationId = requestAnimationFrame(animate);
-    };
-
-    animationId = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-    };
-  }, [companies.length]);
+  // Repetimos el array para efecto infinito
+  const allCompanies = useMemo(() => [...companies, ...companies, ...companies], [companies]);
 
   return (
-    <section id="convenios" className="w-full py-20 ">
-      <div className=" mx-auto ">
+    <section id="convenios" className="w-full py-20">
+      <div className="mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -72,7 +41,7 @@ export default function CompanyAgreements() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             Convenios
           </h2>
-          <div className="w-20 h-1 bg-[#a5c5e5] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#a5c5e5] mx-auto mb-6" />
         </motion.div>
 
         <motion.p
@@ -86,31 +55,26 @@ export default function CompanyAgreements() {
           calidad con beneficios exclusivos.
         </motion.p>
 
-        <div className="relative w-full overflow-hidden mb-12">
-          <div
-            ref={carouselRef}
-            className="flex items-center gap-20 py-4"
-            style={{ width: `${allCompanies.length * 180}px` }}
-          >
-            {allCompanies.map((company, index) => (
-              <div key={index} className="flex-shrink-0 w-[160px]">
-                <Image
-                  src={company.logo || "/placeholder.svg"}
-                  alt={company.name}
-                  width={160}
-                  height={80}
-                  className="object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* AutoCarousel aquí */}
+        <AutoCarousel>
+          {allCompanies.map((company, index) => (
+            <div key={index} className="flex-shrink-0 w-[160px]">
+              <Image
+                src={company.logo || "/placeholder.svg"}
+                alt={company.name}
+                width={160}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </AutoCarousel>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center"
+          className="flex flex-col sm:flex-row gap-6 justify-center mt-12"
         >
           <Link href="/planes#empresas">
             <Button

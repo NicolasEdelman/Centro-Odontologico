@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
+import AutoCarousel from "./auto-carrousel"
 
 export default function SpecialistsSection() {
   const specialists = [
@@ -30,6 +31,7 @@ export default function SpecialistsSection() {
       role: "Especialista en Periodoncia",
       image: "/images/2Marron.png",
     },
+    // Si agregás más, entra al modo carrusel
   ]
 
   const container = {
@@ -53,37 +55,50 @@ export default function SpecialistsSection() {
     },
   }
 
+  const SpecialistCard = ({ name, role, image }: { name: string; role: string; image: string }) => (
+    <motion.div variants={item} className="group text-center flex-shrink-0 w-[200px]">
+      <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
+        <Image
+          src={image || "/placeholder.svg"}
+          alt={name}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <h3 className="text-lg font-bold text-gray-800">{name}</h3>
+      <p className="text-co-secondary-beige">{role}</p>
+    </motion.div>
+  )
+
+  const useCarousel = specialists.length > 5
+
   return (
     <section className="w-full py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Nuestros Especialistas</h2>
-          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-12"></div>
+          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-12" />
         </motion.div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
-        >
-          {specialists.map((specialist, index) => (
-            <motion.div key={index} variants={item} className="group text-center">
-              <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
-                <Image
-                  src={specialist.image || "/placeholder.svg"}
-                  alt={specialist.name}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800">{specialist.name}</h3>
-              <p className="text-co-secondary-beige">{specialist.role}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+        {useCarousel ? (
+          <AutoCarousel>
+            {[...specialists].map((spec, i) => (
+              <SpecialistCard key={i} {...spec} />
+            ))}
+          </AutoCarousel>
+        ) : (
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+          >
+            {specialists.map((spec, i) => (
+              <SpecialistCard key={i} {...spec} />
+            ))}
+          </motion.div>
+        )}
       </div>
     </section>
   )
 }
-

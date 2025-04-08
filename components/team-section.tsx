@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import AutoCarousel from "./auto-carrousel";
 
 export default function TeamSection() {
   const teamMembers = [
@@ -55,6 +56,30 @@ export default function TeamSection() {
     },
   };
 
+  const useCarousel = teamMembers.length > 5;
+
+  const TeamCard = ({ name, role, image }: { name: string; role: string; image: string }) => (
+    <motion.div
+      variants={item}
+      whileHover={{
+        y: -10,
+        transition: { duration: 0.3 },
+      }}
+      className="group text-center flex-shrink-0 w-[200px]"
+    >
+      <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
+        <Image
+          src={image || "/placeholder.svg"}
+          alt={name}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <h3 className="text-lg font-bold text-gray-800">{name}</h3>
+      <p className="text-co-primary-blue">{role}</p>
+    </motion.div>
+  );
+
   return (
     <section className="w-full pb-20 bg-white">
       <div className="container mx-auto px-4">
@@ -69,35 +94,24 @@ export default function TeamSection() {
           <div className="w-20 h-1 bg-co-primary-blue mx-auto mb-12"></div>
         </motion.div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
-        >
-          {teamMembers.map((member, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              whileHover={{
-                y: -10,
-                transition: { duration: 0.3 },
-              }}
-              className="group text-center"
-            >
-              <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
-                <Image
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800">{member.name}</h3>
-              <p className="text-co-primary-blue">{member.role}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+        {useCarousel ? (
+          <AutoCarousel>
+            {[...teamMembers].map((member, index) => (
+              <TeamCard key={index} {...member} />
+            ))}
+          </AutoCarousel>
+        ) : (
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+          >
+            {teamMembers.map((member, index) => (
+              <TeamCard key={index} {...member} />
+            ))}
+          </motion.div>
+        )}
       </div>
     </section>
   );

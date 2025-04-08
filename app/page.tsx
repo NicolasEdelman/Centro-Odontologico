@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+
 import HeroSection from "@/components/hero-section";
 import DentistProfiles from "@/components/dentist-profiles";
 import ServicesSection from "@/components/services-section";
@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <HeroSection />
-      <DentistProfiles2 />
-      {/* <DentistProfiles /> */}
+      {/* <DentistProfiles2 /> */}
+      <DentistProfiles />
 
       <AnimatedSection variant="slideUp" fullWidth>
         <SpecialistsSection />
@@ -32,6 +32,7 @@ export default function Home() {
       <AnimatedSection variant="slideLeft" fullWidth>
         <ServicesSection />
       </AnimatedSection>
+
 
       <AnimatedSection variant="scale" fullWidth>
         <MissionVision />
@@ -46,14 +47,11 @@ export default function Home() {
       </AnimatedSection>
 
       <div className="relative w-full bg-cover bg-center py-16">
-        {/* Lado izquierdo */}
         <img
           src="/images/MAgua.png"
           alt=""
           className="hidden md:block absolute left-0 bottom-10 h-[50%] object-contain z-0 opacity-20 transform rotate-180"
         />
-
-        {/* Lado derecho */}
         <img
           src="/images/MAgua.png"
           alt=""
