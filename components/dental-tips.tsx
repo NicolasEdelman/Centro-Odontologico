@@ -11,28 +11,28 @@ export default function DentalTips() {
       title: "Cepillado correcto",
       description:
         "Aprende la técnica adecuada para un cepillado efectivo que elimine la placa bacteriana.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/dental-treatment-1.jpeg",
     },
     {
       id: 2,
       title: "Uso del hilo dental",
       description:
         "El hilo dental es esencial para limpiar las áreas donde el cepillo no llega.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/dental-treatment-2.jpeg",
     },
     {
       id: 3,
       title: "Alimentación saludable",
       description:
         "Conoce qué alimentos son beneficiosos para mantener tus dientes fuertes y sanos.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/dental-treatment-3.jpeg",
     },
     {
       id: 4,
       title: "Alimentación saludable",
       description:
         "Conoce qué alimentos son beneficiosos para mantener tus dientes fuertes y sanos.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/dental-treatment-4.jpeg",
     },
   ];
 

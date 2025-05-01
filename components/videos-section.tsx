@@ -10,17 +10,18 @@ export default function VideosSection() {
     {
       id: "video1",
       title: "Conoce nuestras instalaciones",
-      embedUrl: "https://www.youtube.com/embed/D9Sp35mFqHo",
+      embedUrl: "https://www.youtube.com/embed/2vw0yCI52PI",
     },
     {
       id: "video2",
       title: "Testimonios de pacientes",
-      embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      embedUrl: "https://www.youtube.com/embed/5V3ECyHWnWA",
+  
     },
     {
       id: "video3",
       title: "Nuestro equipo en acción",
-      embedUrl: "https://www.youtube.com/embed/l2dA6Yn62kE",
+      embedUrl: "https://www.youtube.com/embed/CziyhA7_iPw",
     },
   ];
 

@@ -5,8 +5,12 @@ import { Calendar, Clock, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ModalAgenda from "@/components/modal-agenda";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section
       id="contacto"
@@ -138,15 +142,12 @@ export default function ContactSection() {
                 Recibirás una confirmación inmediata por email.
               </p>
 
-              <Link
-                href="https://calendly.com/centroodontologico"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Button
+                onClick={() => setIsModalOpen(true)}
+                className="w-full bg-co-primary-blue text-white hover:bg-co-primary-blue/90 py-3 h-auto text-base"
               >
-                <Button className="w-full bg-co-primary-blue text-white hover:bg-co-primary-blue/90 py-3 h-auto text-base">
-                  Ver horarios disponibles
-                </Button>
-              </Link>
+                Ver horarios disponibles
+              </Button>
             </motion.div>
 
             {/* Mapa */}
@@ -170,6 +171,7 @@ export default function ContactSection() {
           </motion.div>
         </div>
       </div>
+      <ModalAgenda open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function MissionVision() {
   return (
-    <section className="w-full py-24 bg-[#fefcf8]">
+    <section className="w-full py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Misión */}

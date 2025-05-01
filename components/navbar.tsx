@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -34,7 +34,7 @@ export default function Navbar() {
     { name: "Contacto", href: "#contacto" },
   ];
 
-  const whatsappNumber = "59891234567"; // Reemplazá por tu número
+  const whatsappNumber = "59891234567";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -83,12 +83,14 @@ export default function Navbar() {
               </a>
             ))}
 
-            {/* WhatsApp icon */}
+
             <a
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-white hover:text-co-primary-gray transition-colors"
+              className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
+                isScrolled ? "text-gray-800" : "text-white"
+              }`}
             >
               <WhatsAppIcon />
             </a>

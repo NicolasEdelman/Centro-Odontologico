@@ -140,7 +140,7 @@ export default function InstagramFeed() {
           >
             <div className="w-[80%] flex justify-center">
               <Image
-                src="/images/celu2.png"
+                src="/images/Celu2.png"
                 alt="Celu Imagen"
                 width={400}
                 height={800}
