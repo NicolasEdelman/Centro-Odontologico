@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function ContactSection() {
   return (
     <section
       id="contacto"
-      className="w-full py-20 relative bg-co-primary-blue/10"
+      className="w-full py-20 relative bg-co-primary-blue/10 bg-fixed"
       style={{
         backgroundImage: "url(/images/torreprofesionales.jpg)",
         backgroundSize: "cover",
@@ -97,9 +98,19 @@ export default function ContactSection() {
                 </div>
               </li>
             </ul>
+            <div className="mt-8 flex justify-center">
+              <Link
+                href="https://wa.me/59891234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-co-primary-blue hover:bg-co-primary-blue/90 text-white  py-3 px-6 rounded-lg text-base shadow-lg transition-all"
+              >
+                <WhatsAppIcon className="w-6 h-6" />
+                Hablános por WhatsApp
+              </Link>
+            </div>
           </motion.div>
 
-          {/* Agendamiento - 6 columnas */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

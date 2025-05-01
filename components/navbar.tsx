@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,9 +88,9 @@ export default function Navbar() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-co-primary-blue hover:text-co-primary-gray transition-colors"
+              className="flex items-center text-white hover:text-co-primary-gray transition-colors"
             >
-              <MessageCircle size={20} className="mr-2" />
+              <WhatsAppIcon />
             </a>
 
             {/* Botón de consulta */}
@@ -138,9 +139,9 @@ export default function Navbar() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-co-primary-blue hover:text-co-primary-gray transition-colors"
+                className="flex items-center text-white hover:text-co-primary-gray transition-colors"
               >
-                <MessageCircle size={20} className="mr-2" />
+                <WhatsAppIcon className="mr-2" />
                 <span className="text-sm">Enviar mensaje por WhatsApp</span>
               </a>
 

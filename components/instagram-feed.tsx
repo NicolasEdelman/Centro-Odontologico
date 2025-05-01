@@ -6,7 +6,6 @@ import { Instagram } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function InstagramFeed() {
-  // Simulated Instagram posts
   const instagramPosts = [
     { id: 1, image: "/placeholder.svg?height=400&width=400" },
     { id: 2, image: "/placeholder.svg?height=400&width=400" },
@@ -15,6 +14,7 @@ export default function InstagramFeed() {
     { id: 5, image: "/placeholder.svg?height=400&width=400" },
     { id: 6, image: "/placeholder.svg?height=400&width=400" },
   ];
+  
 
   const container = {
     hidden: { opacity: 0 },
@@ -58,73 +58,97 @@ export default function InstagramFeed() {
           </div>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center text-gray-600 mb-12 max-w-2xl mx-auto"
-        >
-          Mantente al día con nuestros últimos casos, consejos de salud bucal y
-          promociones especiales
-        </motion.p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          {/* Primeros 2 tercios */}
+          <div className="md:col-span-2 flex flex-col items-center md:items-end text-center md:text-right space-y-6 pl-20">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-gray-600 max-w-xl"
+            >
+              Mantente al día con nuestros últimos casos, consejos de salud
+              bucal y promociones especiales
+            </motion.p>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
-        >
-          {instagramPosts.map((post) => (
             <motion.div
-              key={post.id}
-              variants={item}
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.3 },
-              }}
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="md:grid grid-cols-2 md:grid-cols-3 gap-4 hidden"
+            >
+              {instagramPosts.map((post) => (
+                <motion.div
+                  key={post.id}
+                  variants={item}
+                  whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                  className="relative w-full max-w-[150px] aspect-square rounded-lg bg-gray-200 overflow-hidden"
+                >
+                  <Link
+                    href="https://instagram.com/centroodontologico.uy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block w-full h-full"
+                  >
+                    <Image
+                      src={post.image || "/placeholder.svg"}
+                      alt="Instagram post"
+                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                      fill={false} // Esto es clave: no uses fill
+                      width={400}
+                      height={400}
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+                      <Instagram
+                        size={32}
+                        className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="mt-4"
             >
               <Link
                 href="https://instagram.com/centroodontologico.uy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden rounded-lg block"
+                className="inline-flex items-center gap-2 text-pink-600 font-medium hover:underline"
               >
-                <Image
-                  src={post.image || "/placeholder.svg"}
-                  alt="Instagram post"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                  <Instagram
-                    size={32}
-                    className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </div>
+                <span>@centroodontologico.uy</span>
+                <Instagram size={20} />
               </Link>
             </motion.div>
-          ))}
-        </motion.div>
+          </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mt-8"
-        >
-          <Link
-            href="https://instagram.com/centroodontologico.uy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-pink-600 font-medium hover:underline"
+          {/* Ultimo tercio */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="flex justify-center lg:justify-start"
           >
-            <span>@centroodontologico.uy</span>
-            <Instagram size={20} />
-          </Link>
-        </motion.div>
+            <div className="w-[80%] flex justify-center">
+              <Image
+                src="/images/celu2.png"
+                alt="Celu Imagen"
+                width={400}
+                height={800}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

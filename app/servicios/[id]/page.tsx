@@ -205,13 +205,13 @@ export default function ServicioPage() {
   }
 
   return (
-    <main className="pt-16">
+    <main >
       {/* Hero Section */}
       <AnimatedSection variant="fadeIn" fullWidth>
-        <section className="bg-[#f0f7ff] py-16 md:py-24">
+        <section className="bg-co-primary-blue py-16 md:py-24">
           <div className="container mx-auto px-4">
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-              <Link href="/#servicios" className="inline-flex items-center text-[#7a9cbf] hover:text-[#5d7a99] mb-8">
+              <Link href="/#servicios" className="inline-flex items-center text-white hover:text-[#5d7a99] mb-8">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Volver a Servicios
               </Link>
@@ -223,8 +223,8 @@ export default function ServicioPage() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">{servicio.title}</h1>
-                <p className="text-xl text-gray-600 mb-8">{servicio.description}</p>
+                <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6">{servicio.title}</h1>
+                <p className="text-xl text-white mb-8">{servicio.description}</p>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button className="bg-[#7a9cbf] hover:bg-[#5d7a99] text-white">Agendar Consulta</Button>
                 </motion.div>
