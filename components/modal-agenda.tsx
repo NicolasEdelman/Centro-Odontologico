@@ -43,7 +43,7 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
             className="flex flex-col items-center gap-3 hover:scale-105 transition"
           >
             <Image
-              src="/images/4azul.png"
+              src="/images/4Azul.png"
               alt="Fabiana"
               width={128}
               height={128}
@@ -58,7 +58,7 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
             className="flex flex-col items-center gap-3 hover:scale-105 transition"
           >
             <Image
-              src="/images/3azul.png"
+              src="/images/3Azul.png"
               alt="Nadia"
               width={128}
               height={128}
