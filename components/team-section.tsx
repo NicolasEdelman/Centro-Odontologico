@@ -9,27 +9,32 @@ export default function TeamSection() {
     {
       name: "Dra. Florencia Fernandez",
       role: "Odontóloga general",
-      image: "/images/Staff/FlorenciaFernandez.png",
+      image: "/images/Staff/EquipoMarron/FlorenciaFernandez.png",
     },
     {
       name: "Belén Borba",
       role: "Higienista dental",
-      image: "/images/Staff/BelenBorba.png",
+      image: "/images/Staff/EquipoMarron/BelenBorba.png",
     },
     {
       name: "Yeni Maciel",
       role: "Asistente dental",
-      image: "/images/Staff/YeniMaciel.png",
+      image: "/images/Staff/EquipoMarron/YeniMaciel.png",
     },
     {
       name: "Sebastián Gonzalvez",
       role: "Asistente dental",
-      image: "/images/Staff/SebastianGonzalvez.png",
+      image: "/images/Staff/EquipoMarron/SebastianGonzalvez.png",
     },
     {
       name: "Silvia Acosta",
       role: "Asistente de limpieza",
-      image: "/images/Staff/SilviaAcosta.png",
+      image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
+    },
+    {
+      name: "Victoria Rodriguez",
+      role: "Cosmetóloga médica",
+      image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
     },
 
   ];
@@ -85,7 +90,7 @@ export default function TeamSection() {
         />
       </div>
       <h3 className="text-lg font-bold text-gray-800">{name}</h3>
-      <p className="text-co-primary-blue">{role}</p>
+      <p className="text-co-secondary-beige">{role}</p>
     </motion.div>
   );
 
@@ -100,7 +105,7 @@ export default function TeamSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             Nuestro Equipo
           </h2>
-          <div className="w-20 h-1 bg-co-primary-blue mx-auto mb-12"></div>
+          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-12"></div>
         </motion.div>
 
         {useCarousel ? (

@@ -28,7 +28,7 @@ export default function ServicesSection() {
     },
     {
       id: "estetica-facial",
-      title: "Estética",
+      title: "Estética facial",
       description: "Tratamientos no invasivos para realzar la belleza natural de tu rostro y complementar tu sonrisa.",
       image: "/images/dental-treatment-4.jpeg",
     },

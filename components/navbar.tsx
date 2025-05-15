@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +28,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Inicio", href: "#" },
-    { name: "Staff", href: "#equipo" },
-    { name: "Servicios", href: "#servicios" },
-    { name: "Convenios", href: "#convenios" },
-    { name: "Contacto", href: "#contacto" },
+    { name: "Inicio", href: "/#" },
+    { name: "Staff", href: "/#equipo" },
+    { name: "Servicios", href: "/#servicios" },
+    { name: "Convenios", href: "/#convenios" },
+    { name: "Contacto", href: "/#contacto" },
   ];
 
   const whatsappNumber = "59891234567";
@@ -60,7 +61,7 @@ export default function Navbar() {
                 alt="Centro Odontológico"
                 width={280}
                 height={160}
-                className="h-12 w-auto"
+                className="h-12 md:h-20 w-auto"
               />
             )}
           </Link>
@@ -83,7 +84,6 @@ export default function Navbar() {
               </a>
             ))}
 
-
             <a
               href={whatsappLink}
               target="_blank"
@@ -93,6 +93,16 @@ export default function Navbar() {
               }`}
             >
               <WhatsAppIcon />
+            </a>
+            <a
+              href="https://www.instagram.com/centroodontologico.uy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
+                isScrolled ? "text-gray-800" : "text-white"
+              }`}
+            >
+              <InstagramIcon />
             </a>
 
             {/* Botón de consulta */}
@@ -145,6 +155,16 @@ export default function Navbar() {
               >
                 <WhatsAppIcon className="mr-2" />
                 <span className="text-sm">Enviar mensaje por WhatsApp</span>
+              </a>
+
+              <a
+                href="https://www.instagram.com/centroodontologico.uy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-white hover:text-co-primary-gray transition-colors"
+              >
+                <InstagramIcon className="mr-2" />
+                <span className="text-sm">Instagram</span>
               </a>
 
               <a href="#contacto" onClick={() => setIsOpen(false)}>

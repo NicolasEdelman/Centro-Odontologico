@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Calendar, Clock, Mail, MapPin, Phone, Star } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -97,20 +97,28 @@ export default function ContactSection() {
                 />
                 <div>
                   <h4 className="font-bold mb-1">Horario de Atención</h4>
-                  <p>Lunes a Viernes: 9:00 - 19:00</p>
-                  <p>Sábados: 9:00 - 13:00</p>
+                  <p>Lunes a Viernes: 8:00 - 20:00</p>
                 </div>
               </li>
             </ul>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex  gap-4">
               <Link
                 href="https://wa.me/59891234567"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-co-primary-blue hover:bg-co-primary-blue/90 text-white  py-3 px-6 rounded-lg text-base shadow-lg transition-all"
+                className="inline-flex items-center gap-2 bg-co-primary-blue hover:bg-co-primary-blue/90 text-white py-3 px-6 rounded-lg text-base shadow-lg transition-all"
               >
                 <WhatsAppIcon className="w-6 h-6" />
                 Hablános por WhatsApp
+              </Link>
+              <Link
+                href="https://g.page/r/CentroOdontologicoUY/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-co-primary-blue border border-co-primary-blue py-3 px-6 rounded-lg text-base shadow-lg transition-all"
+              >
+                <Star className="w-6 h-6" />
+                Dejanos una reseña!
               </Link>
             </div>
           </motion.div>

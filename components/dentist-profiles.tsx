@@ -44,13 +44,13 @@ export default function DentistProfiles() {
       id="nosotras"
       className="w-full bg-co-secondary-beige text-white overflow-hidden relative"
     >
-      {/* Imagen de fondo del consultorio */}
+      <div className="bg-black opacity-50 absolute inset-0 z-0"></div>
       <div className="absolute inset-0 z-0 opacity-40">
         <Image
           src="/images/Consultorio.jpg"
           alt="Consultorio odontológico"
           fill
-          className="object-cover"
+          className="object-cover scale-125 translate-x-[-200px]"
         />
       </div>
 
@@ -92,7 +92,7 @@ export default function DentistProfiles() {
                   Dra. Fabiana Zelpo
                 </h3>
                 <p className="text-white/90 text-sm md:text-base mb-4">
-                  Especialista en Armonización Orofacial (c). Ortodoncia y
+                  Especialista en Armonización Orofacial (c) Ortodoncia y
                   Ortopedia
                 </p>
                 {/* <Link href="/dentistas/fabiana-zelpo"> */}
@@ -133,7 +133,7 @@ export default function DentistProfiles() {
                   Dra. Nadia Pérez
                 </h3>
                 <p className="text-white/90 text-sm md:text-base mb-4">
-                  Especialista en Rehabilitación. Implantología y Cirugía Menor
+                  Especialista en Rehabilitación<br/> Implantología y Cirugía
                 </p>
                 <Link href="/dentistas/nadia-perez">
                   <Button
