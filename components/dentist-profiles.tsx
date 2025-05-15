@@ -41,13 +41,13 @@ export default function DentistProfiles() {
 
   return (
     <section
-      id="especialistas"
+      id="nosotras"
       className="w-full bg-co-secondary-beige text-white overflow-hidden relative"
     >
       {/* Imagen de fondo del consultorio */}
       <div className="absolute inset-0 z-0 opacity-40">
         <Image
-          src="/images/consultorio.jpg"
+          src="/images/Consultorio.jpg"
           alt="Consultorio odontológico"
           fill
           className="object-cover"
@@ -92,8 +92,8 @@ export default function DentistProfiles() {
                   Dra. Fabiana Zelpo
                 </h3>
                 <p className="text-white/90 text-sm md:text-base mb-4">
-                  Especialista en Implantología y Estética Facial con más de 15
-                  años de experiencia.
+                  Especialista en Armonización Orofacial (c). Ortodoncia y
+                  Ortopedia
                 </p>
                 {/* <Link href="/dentistas/fabiana-zelpo"> */}
                 <Link href="#">
@@ -133,8 +133,7 @@ export default function DentistProfiles() {
                   Dra. Nadia Pérez
                 </h3>
                 <p className="text-white/90 text-sm md:text-base mb-4">
-                  Especialista en Ortodoncia y Ortopedia con enfoque en
-                  tratamientos mínimamente invasivos.
+                  Especialista en Rehabilitación. Implantología y Cirugía Menor
                 </p>
                 <Link href="/dentistas/nadia-perez">
                   <Button

@@ -72,10 +72,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#especialistas"
+                  href="#equipo"
                   className="text-co-primary-gray hover:text-co-primary-blue transition-colors"
                 >
-                  Especialistas
+                  Equipo
                 </a>
               </li>
               <li>
@@ -152,7 +152,8 @@ export default function Footer() {
                   className="text-brand-blue-light mr-3 flex-shrink-0 mt-1"
                 />
                 <span className="text-co-primary-gray">
-                  Av. Principal 1234, Montevideo, Uruguay
+                  Yaguarón 1407 of 803, Torre de los Profesionales, Montevideo,
+                  Uruguay
                 </span>
               </li>
               <li className="flex items-start">
@@ -160,7 +161,7 @@ export default function Footer() {
                   size={20}
                   className="text-brand-blue-light mr-3 flex-shrink-0 mt-1"
                 />
-                <span className="text-co-primary-gray">+598 2345 6789</span>
+                <span className="text-co-primary-gray">(+598) 2904 5880</span>
               </li>
               <li className="flex items-start">
                 <Mail
@@ -168,7 +169,7 @@ export default function Footer() {
                   className="text-brand-blue-light mr-3 flex-shrink-0 mt-1"
                 />
                 <span className="text-co-primary-gray">
-                  info@centroodontologico.uy
+                  centroodontologicouy@gmail.com
                 </span>
               </li>
             </ul>

@@ -15,7 +15,7 @@ export default function AutoCarousel({ children }: AutoCarouselProps) {
 
     let animationId: number;
     let position = 0;
-    const speed = 0.5;
+    const speed = 1.5;
 
     const animate = () => {
       position -= speed;

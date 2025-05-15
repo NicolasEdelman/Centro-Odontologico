@@ -7,30 +7,31 @@ import AutoCarousel from "./auto-carrousel";
 export default function TeamSection() {
   const teamMembers = [
     {
-      name: "Yeni Maciel",
-      role: "Asistente dental",
-      image: "/images/4Azul.png",
-    },
-    {
-      name: "Sebastian Gonzales",
-      role: "Asistente dental",
-      image: "/images/3Azul.png",
-    },
-    {
-      name: "Silvia Acosta",
-      role: "Asistente de limpieza",
-      image: "/images/4Azul.png",
+      name: "Dra. Florencia Fernandez",
+      role: "Odontóloga general",
+      image: "/images/Staff/FlorenciaFernandez.png",
     },
     {
       name: "Belén Borba",
       role: "Higienista dental",
-      image: "/images/3Azul.png",
+      image: "/images/Staff/BelenBorba.png",
     },
     {
-      name: "Dra. Florencia Fernandez",
-      role: "Odontóloga general",
-      image: "/images/4Azul.png",
+      name: "Yeni Maciel",
+      role: "Asistente dental",
+      image: "/images/Staff/YeniMaciel.png",
     },
+    {
+      name: "Sebastián Gonzalvez",
+      role: "Asistente dental",
+      image: "/images/Staff/SebastianGonzalvez.png",
+    },
+    {
+      name: "Silvia Acosta",
+      role: "Asistente de limpieza",
+      image: "/images/Staff/SilviaAcosta.png",
+    },
+
   ];
 
   const container = {
@@ -58,7 +59,15 @@ export default function TeamSection() {
 
   const useCarousel = teamMembers.length > 5;
 
-  const TeamCard = ({ name, role, image }: { name: string; role: string; image: string }) => (
+  const TeamCard = ({
+    name,
+    role,
+    image,
+  }: {
+    name: string;
+    role: string;
+    image: string;
+  }) => (
     <motion.div
       variants={item}
       whileHover={{

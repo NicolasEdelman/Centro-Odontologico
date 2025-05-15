@@ -18,14 +18,14 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl">
           <h1 className="text-6xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-avenir">
-            CENTRALIZA TU ODONTOLOGÍA
+            CENTRALIZA <br /> TU ODONTOLOGÍA
           </h1>
           <p className="text-xl md:text-2xl text-white mb-10 max-w-xl font-now">
             Profesionalismo y dedicación en cada tratamiento
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#servicios"
+              href="#nosotras"
               className="inline-flex h-12 items-center justify-center rounded-md bg-co-primary-blue px-8 text-base font-medium text-white hover:bg-co-primary-gray/80 transition-colors font-montserrat"
             >
               Conocer Especialidades
