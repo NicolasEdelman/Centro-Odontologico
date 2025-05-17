@@ -19,10 +19,10 @@ export default function Hero() {
           >
             <Link
               href="/#especialistas"
-              className="inline-flex items-center text-white hover:text-white/80 mb-8"
+              className="inline-flex items-center text-white hover:text-white/80 mb-8 mt-4"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Volver
+              Volver al inicio
             </Link>
           </motion.div>
 

@@ -133,7 +133,8 @@ export default function DentistProfiles() {
                   Dra. Nadia Pérez
                 </h3>
                 <p className="text-white/90 text-sm md:text-base mb-4">
-                  Especialista en Rehabilitación<br/> Implantología y Cirugía
+                  Especialista en Rehabilitación
+                  <br /> Implantología y Cirugía
                 </p>
                 <Link href="/dentistas/nadia-perez">
                   <Button
@@ -148,6 +149,18 @@ export default function DentistProfiles() {
           </div>
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 0.6 }}
+        className="absolute bottom-8 w-full flex justify-center z-50"
+      >
+        <Link href="historia">
+          <Button className="bg-white hover:bg-white/90 text-co-secondary-beige px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 hover:scale-105">
+            Conocé nuestra historia
+          </Button>
+        </Link>
+      </motion.div>
     </section>
   );
 }

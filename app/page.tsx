@@ -12,13 +12,11 @@ import DentalTips from "@/components/dental-tips";
 import SpecialistsSection from "@/components/specialists-section";
 import AnimatedSection from "@/components/animated-section";
 import { CTA } from "@/components/call-to-action";
-import DentistProfiles2 from "@/components/dentist-profiles2";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <HeroSection />
-      {/* <DentistProfiles2 /> */}
       <DentistProfiles />
 
       <AnimatedSection variant="slideUp" fullWidth>

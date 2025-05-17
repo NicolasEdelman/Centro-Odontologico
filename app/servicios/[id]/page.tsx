@@ -211,7 +211,7 @@ export default function ServicioPage() {
         <section className="bg-co-primary-blue py-16 md:py-24">
           <div className="container mx-auto px-4">
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-              <Link href="/#servicios" className="inline-flex items-center text-white hover:text-[#5d7a99] mb-8">
+              <Link href="/#servicios" className="inline-flex items-center text-white hover:text-[#5d7a99] mb-8 mt-4">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Volver a Servicios
               </Link>
@@ -325,9 +325,11 @@ export default function ServicioPage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" className="bg-white text-[#7a9cbf] hover:bg-gray-100">
-                Agendar Consulta
-              </Button>
+              <Link href="/#contacto">
+                <Button size="lg" className="bg-white text-[#7a9cbf] hover:bg-gray-100">
+                  Agendar Consulta
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </section>

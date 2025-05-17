@@ -275,9 +275,11 @@ export default function FabianaZelpoPage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" className="bg-white text-[#7a9cbf] hover:bg-gray-100">
-                Agendar Consulta
-              </Button>
+              <Link href="/#contacto">
+                <Button size="lg" className="bg-white text-[#7a9cbf] hover:bg-gray-100">
+                  Agendar Consulta
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </section>
