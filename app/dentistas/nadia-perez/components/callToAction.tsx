@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import AnimatedSection from "@/components/animated-section"
+import Link from "next/link"
 
 export default function CallToAction() {
   return (
@@ -35,9 +36,11 @@ export default function CallToAction() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <Link href="/#contacto">
             <Button size="lg" className="bg-white text-co-secondary-beige hover:bg-gray-100">
               Agendar Consulta
-            </Button>
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

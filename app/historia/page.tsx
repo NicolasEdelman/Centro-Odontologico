@@ -83,7 +83,8 @@ export default function HistoriaPage() {
                   Nuestra Historia
                 </h1>
                 <p className="text-xl text-white mb-8">
-                  Conocé nuestra historia y cómo surgió nuestro consultorio.
+                  Conocé nuestra historia y cómo surgió nuestro consultorio de
+                  más de 15 años.
                 </p>
               </motion.div>
             </div>
