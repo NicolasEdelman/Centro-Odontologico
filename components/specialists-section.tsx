@@ -3,8 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AutoCarousel from "./auto-carrousel";
+import { useState, useEffect } from "react";
 
 export default function SpecialistsSection() {
+  const [useCarousel, setUseCarousel] = useState(false);
+
+  useEffect(() => {
+    setUseCarousel(specialists.length > 6 || window.innerWidth < 768);
+  }, []);
+
   const specialists = [
     {
       name: "Dra. Gisella Rodriguez",
@@ -31,7 +38,6 @@ export default function SpecialistsSection() {
       role: "Especialista en Trastornos Temporo Mandibulares y Sueño",
       image: "/images/Staff/VirginiaMachado.png",
     },
-
   ];
 
   const container = {
@@ -66,7 +72,7 @@ export default function SpecialistsSection() {
   }) => (
     <motion.div
       variants={item}
-      className="group text-center flex-shrink-0 w-[200px]"
+      className="group text-center flex-shrink-0 w-[200px] max-w-[200px] "
     >
       <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
         <Image
@@ -76,16 +82,21 @@ export default function SpecialistsSection() {
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <h3 className="text-lg font-bold text-gray-800">{name}</h3>
-      <p className="text-co-secondary-beige">{role}</p>
+
+      <div className=" mx-auto overflow-hidden">
+        <h3 className="text-md md:text-lg font-bold text-gray-800  whitespace-normal">
+          {name}
+        </h3>
+        <p className="text-co-secondary-beige md:text-base text-sm  whitespace-normal">
+          {role}
+        </p>
+      </div>
     </motion.div>
   );
 
-  const useCarousel = specialists.length > 5;
-
   return (
-    <section id="equipo" className="w-full py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="equipo" className="w-full pt-20 md:py-20 bg-white">
+      <div className="md:container md:mx-auto md:px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -94,7 +105,7 @@ export default function SpecialistsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             Nuestras Especialistas
           </h2>
-          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-12" />
+          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-4 md:mb-12" />
         </motion.div>
 
         {useCarousel ? (

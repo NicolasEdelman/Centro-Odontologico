@@ -65,7 +65,7 @@ export default function HistoriaPage() {
                 transition={{ duration: 0.5 }}
               >
                 <Link
-                  href="/#nosotras"
+                  href="/#mision-vision"
                   className="inline-flex items-center text-white hover:text-[#5d7a99] mb-8 mt-4"
                 >
                   <ArrowLeft className="mr-2 h-4 w-4" />

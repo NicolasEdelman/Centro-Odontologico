@@ -9,23 +9,22 @@ export default function VideosSection() {
   const videos = [
     {
       id: "video1",
-      title: "Conoce nuestras instalaciones",
-      embedUrl: "https://www.youtube.com/embed/2vw0yCI52PI",
+      title: "Mirá nuestro reel",
+      embedUrl: "https://www.youtube.com/embed/rgQTTW9o1sk",
     },
     {
       id: "video2",
-      title: "Testimonios de pacientes",
-      embedUrl: "https://www.youtube.com/embed/5V3ECyHWnWA",
-  
+      title: "Mirá nuestro reel",
+      embedUrl: "https://www.youtube.com/embed/rgQTTW9o1sk",
     },
     {
       id: "video3",
-      title: "Nuestro equipo en acción",
-      embedUrl: "https://www.youtube.com/embed/CziyhA7_iPw",
+      title: "Mirá nuestro reel",
+      embedUrl: "https://www.youtube.com/embed/rgQTTW9o1sk",
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1);
   const maxIndex = videos.length - 1;
 
   const nextSlide = () => {
@@ -37,15 +36,18 @@ export default function VideosSection() {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 10000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
+    const script = document.createElement("script");
+    script.src = "https://www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
-    <section className="w-full py-20 bg-co-primary-blue text-white">
-      <div className="container mx-auto px-4">
+    <section id="videos" className="w-full py-20 bg-co-primary-blue text-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,16 +56,16 @@ export default function VideosSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Videos institucionales
           </h2>
-          <div className="w-20 h-1 bg-white mx-auto mb-20"></div>
+          <div className="w-20 h-1 bg-white mx-auto mb-8"></div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="relative max-w-5xl mx-auto"
+          className="relative md:max-w-xl mx-auto"
         >
-          <div className="relative flex items-center justify-center h-[280px] md:h-[360px]">
+          <div className="relative flex items-center justify-center h-[280px] md:h-[560px] overflow-hidden">
             {videos.map((video, index) => {
               const isActive = index === currentIndex;
               const isPrev =
@@ -71,25 +73,28 @@ export default function VideosSection() {
               const isNext = index === (currentIndex + 1) % videos.length;
 
               let positionStyles =
-                "absolute transition-all duration-700 ease-in-out aspect-video rounded-3xl overflow-hidden";
+                "absolute transition-all duration-700 ease-in-out aspect-[9/16] rounded-xl overflow-hidden";
+
               let motionProps = {};
 
               if (isActive) {
-                positionStyles += " w-4/5 z-20";
+                positionStyles += " w-[220px] md:w-[320px] z-20";
                 motionProps = {
                   initial: { scale: 0.8, opacity: 0 },
                   animate: { scale: 1, opacity: 1 },
                   exit: { scale: 0.8, opacity: 0 },
                 };
               } else if (isPrev) {
-                positionStyles += " w-2/5 -left-24 opacity-40 z-10";
+                positionStyles +=
+                  " w-[100px] md:w-[200px] -left-24 opacity-40 scale-[0.9] z-10";
                 motionProps = {
                   initial: { x: -50, opacity: 0 },
                   animate: { x: 0, opacity: 0.4 },
                   exit: { x: -50, opacity: 0 },
                 };
               } else if (isNext) {
-                positionStyles += " w-2/5 -right-24 opacity-40 z-10";
+                positionStyles +=
+                  " w-[100px] md:w-[200px] -right-24 opacity-40 scale-[0.9] z-10";
                 motionProps = {
                   initial: { x: 50, opacity: 0 },
                   animate: { x: 0, opacity: 0.4 },
@@ -108,19 +113,21 @@ export default function VideosSection() {
                     transition={{ duration: 0.6 }}
                   >
                     <iframe
-                      src={video.embedUrl}
+                      src={`${video.embedUrl}${
+                        index === 1 ? "?autoplay=1&mute=1" : ""
+                      }`}
                       title={video.title}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                      className="w-full h-full"
-                    ></iframe>
+                      className="w-full h-full rounded-xl"
+                    />
                   </motion.div>
                 </AnimatePresence>
               );
             })}
           </div>
 
-          <div className="text-center mt-20 mb-8">
+          <div className="text-center mt-10 mb-8">
             <h3 className="text-xl font-bold">{videos[currentIndex].title}</h3>
           </div>
 

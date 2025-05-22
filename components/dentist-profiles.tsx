@@ -50,14 +50,14 @@ export default function DentistProfiles() {
           src="/images/Consultorio.jpg"
           alt="Consultorio odontológico"
           fill
-          className="object-cover scale-125 translate-x-[-200px]"
+          className="object-cover scale-125 md:translate-x-[-200px]"
         />
       </div>
 
       {/* Overlay para asegurar legibilidad */}
       <div className="absolute inset-0 bg-co-secondary-beige opacity-70 z-10"></div>
 
-      <div className="container mx-auto px-4 relative h-[600px] md:h-[700px] z-20">
+      <div className="container mx-auto px-4 relative h-[550px] md:h-[700px] z-20">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -78,7 +78,7 @@ export default function DentistProfiles() {
                     src="/images/FabianaSF.png"
                     alt="Dra. Fabiana Zelpo"
                     fill
-                    className="object-contain object-left-bottom"
+                    className="object-contain object-left-bottom scale-[2] md:scale-100 translate-y-[-250px] translate-x-[-90px] md:translate-x-[0px] md:translate-y-[0px]"
                   />
                 </div>
               </motion.div>
@@ -86,12 +86,12 @@ export default function DentistProfiles() {
               {/* Texto de Fabiana */}
               <motion.div
                 variants={itemVariants}
-                className="absolute left-0 top-[40%] text-left max-w-[320px] "
+                className="absolute left-0 bottom-1 md:top-[40%] text-left md:max-w-[320px] "
               >
-                <h3 className="text-3xl md:text-5xl font-bold text-white mb-3">
+                <h3 className="text-2xl md:text-5xl font-bold text-white md:mb-3">
                   Dra. Fabiana Zelpo
                 </h3>
-                <p className="text-white/90 text-sm md:text-base mb-4">
+                <p className="text-white text-xs md:text-base mb-1 md:mb-4">
                   Especialista en Armonización Orofacial (c) Ortodoncia y
                   Ortopedia
                 </p>
@@ -99,7 +99,8 @@ export default function DentistProfiles() {
                 <Link href="#">
                   <Button
                     variant="outline"
-                    className="bg-transparent border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300"
+                    size="sm"
+                    className="bg-transparent border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300 text-xs md:text-base"
                   >
                     Saber más
                   </Button>
@@ -119,7 +120,7 @@ export default function DentistProfiles() {
                     src="/images/NadiaSF.png"
                     alt="Dra. Nadia Pérez"
                     fill
-                    className="object-contain object-right-bottom"
+                    className="object-contain object-right-bottom scale-[2] md:scale-100 translate-y-[-250px] translate-x-[80px] md:translate-x-[0px] md:translate-y-[0px]"
                   />
                 </div>
               </motion.div>
@@ -127,19 +128,20 @@ export default function DentistProfiles() {
               {/* Texto de Nadia */}
               <motion.div
                 variants={itemVariants}
-                className="absolute right-0 top-[40%] text-right max-w-[320px] "
+                className="absolute right-0 bottom-1 md:top-[40%] text-right md:max-w-[320px] "
               >
-                <h3 className="text-3xl md:text-5xl font-bold text-white mb-3">
+                <h3 className="text-2xl md:text-5xl font-bold text-white md:mb-3">
                   Dra. Nadia Pérez
                 </h3>
-                <p className="text-white/90 text-sm md:text-base mb-4">
+                <p className="text-white text-xs md:text-base mb-1 md:mb-4">
                   Especialista en Rehabilitación
                   <br /> Implantología y Cirugía
                 </p>
                 <Link href="/dentistas/nadia-perez">
                   <Button
                     variant="outline"
-                    className="bg-transparent border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300"
+                    size="sm"
+                    className="bg-transparent border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300 text-xs md:text-base"
                   >
                     Saber más
                   </Button>
@@ -149,18 +151,6 @@ export default function DentistProfiles() {
           </div>
         </motion.div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.6 }}
-        className="absolute bottom-8 w-full flex justify-center z-50"
-      >
-        <Link href="historia">
-          <Button className="bg-white hover:bg-white/90 text-co-secondary-beige px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 hover:scale-105">
-            Conocé nuestra historia
-          </Button>
-        </Link>
-      </motion.div>
     </section>
   );
 }

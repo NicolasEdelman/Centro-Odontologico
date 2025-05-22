@@ -28,11 +28,14 @@ export default function CompanyAgreements() {
   ];
 
   // Repetimos el array para efecto infinito
-  const allCompanies = useMemo(() => [...companies, ...companies, ...companies], [companies]);
+  const allCompanies = useMemo(
+    () => [...companies, ...companies, ...companies],
+    [companies]
+  );
 
   return (
     <section id="convenios" className="w-full py-20">
-      <div className="mx-auto">
+      <div className="">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,7 +51,7 @@ export default function CompanyAgreements() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-center text-gray-600 max-w-3xl mx-auto mb-8"
+          className="text-center text-gray-600 md:max-w-3xl mx-auto mb-8 text-sm md:text-base"
         >
           Estas son las empresas que han decidido trabajar con nosotros para
           brindar a sus colaboradores acceso a servicios odontológicos de
@@ -58,7 +61,7 @@ export default function CompanyAgreements() {
         {/* AutoCarousel aquí */}
         <AutoCarousel>
           {allCompanies.map((company, index) => (
-            <div key={index} className="flex-shrink-0 w-[160px]">
+            <div key={index} className="flex-shrink-0 w-[130px] md:w-[160px]">
               <Image
                 src={company.logo || "/placeholder.svg"}
                 alt={company.name}
@@ -74,7 +77,7 @@ export default function CompanyAgreements() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center mt-12"
+          className="flex flex-col sm:flex-row gap-3 md:gap-6 items-center justify-center mt-6 md:mt-12"
         >
           <Link href="/planes#empresas">
             <Button

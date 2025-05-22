@@ -1,15 +1,14 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function MissionVision() {
   return (
-    <section className="w-full bg-white py-16 ">
+    <section id="mision-vision" className="w-full bg-white py-16 ">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Imagen a la izquierda */}
-          <div className="relative w-full h-full overflow-hidden">
+          <div className="relative w-full h-[350px] md:h-full overflow-hidden order-1 md:order-none">
             <Image
               src="/images/nosotras2.png"
               alt="Nosotras"
@@ -20,22 +19,27 @@ export default function MissionVision() {
           </div>
 
           {/* Misión y Visión a la derecha */}
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-4 md:gap-12 order-2 md:order-none">
             {/* Misión */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl shadow-md p-8"
+              className="bg-white rounded-3xl shadow-md px-4 py-8 md:p-8"
             >
-              <h3 className="text-3xl md:text-4xl font-bold text-co-secondary-beige mb-4">
+              <h3 className="text-lg md:text-4xl font-bold text-co-secondary-beige mb-4">
                 Misión
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-xs md:text-base leading-relaxed">
                 Nuestro equipo de profesionales tiene como misión la{" "}
-                <span className="font-bold text-co-secondary-beige">promoción</span>,{" "}
-                <span className="font-bold text-co-secondary-beige">prevención</span>{" "}
+                <span className="font-bold text-co-secondary-beige">
+                  promoción
+                </span>
+                ,{" "}
+                <span className="font-bold text-co-secondary-beige">
+                  prevención
+                </span>{" "}
                 y{" "}
                 <span className="font-bold text-co-secondary-beige">
                   rehabilitación integral
@@ -53,10 +57,17 @@ export default function MissionVision() {
                   ético y humano
                 </span>
                 . Valoramos el{" "}
-                <span className="font-bold text-co-secondary-beige">respeto</span>,{" "}
-                <span className="font-bold text-co-secondary-beige">honestidad</span>{" "}
+                <span className="font-bold text-co-secondary-beige">
+                  respeto
+                </span>
+                ,{" "}
+                <span className="font-bold text-co-secondary-beige">
+                  honestidad
+                </span>{" "}
                 y el{" "}
-                <span className="font-bold text-co-secondary-beige">compromiso</span>{" "}
+                <span className="font-bold text-co-secondary-beige">
+                  compromiso
+                </span>{" "}
                 con cada paciente.
               </p>
             </motion.div>
@@ -67,12 +78,12 @@ export default function MissionVision() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl shadow-md p-8"
+              className="bg-white rounded-3xl shadow-md px-4 py-8 md:p-8"
             >
-              <h3 className="text-3xl md:text-4xl font-bold text-co-secondary-beige mb-4">
+              <h3 className="text-lg md:text-4xl font-bold text-co-secondary-beige mb-4">
                 Visión
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-xs md:text-base leading-relaxed">
                 Aspiramos a ser{" "}
                 <span className="font-bold text-co-secondary-beige">
                   líderes en salud bucal
@@ -99,6 +110,27 @@ export default function MissionVision() {
                 </span>{" "}
                 para cuidar la salud bucal de nuestros pacientes.
               </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex gap-4">
+                <a
+                  className="bg-co-secondary-beige text-white rounded-md px-4 py-2 text-xs md:text-base hover:bg-co-secondary-beige/80 transition-colors"
+                  href="#videos"
+                >
+                  Ver video institucional
+                </a>
+                <a
+                  className="bg-transparent text-co-secondary-beige rounded-md px-4 py-2 text-xs md:text-base border border-co-secondary-beige hover:bg-co-secondary-beige/10 transition-colors"
+                  href="/historia"
+                >
+                  Conocer nuestra historia
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>

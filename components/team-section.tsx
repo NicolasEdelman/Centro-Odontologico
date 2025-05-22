@@ -3,8 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AutoCarousel from "./auto-carrousel";
+import { useState, useEffect } from "react";
 
 export default function TeamSection() {
+  const [useCarousel, setUseCarousel] = useState(false);
+
+  useEffect(() => {
+    setUseCarousel(teamMembers.length > 6 || window.innerWidth < 768);
+  }, []);
+
   const teamMembers = [
     {
       name: "Dra. Florencia Fernandez",
@@ -36,7 +43,6 @@ export default function TeamSection() {
       role: "Cosmetóloga médica",
       image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
     },
-
   ];
 
   const container = {
@@ -61,8 +67,6 @@ export default function TeamSection() {
       },
     },
   };
-
-  const useCarousel = teamMembers.length > 5;
 
   const TeamCard = ({
     name,
@@ -89,14 +93,20 @@ export default function TeamSection() {
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <h3 className="text-lg font-bold text-gray-800">{name}</h3>
-      <p className="text-co-secondary-beige">{role}</p>
+      <div className=" mx-auto overflow-hidden">
+        <h3 className="text-md md:text-lg font-bold text-gray-800  whitespace-normal">
+          {name}
+        </h3>
+        <p className="text-co-secondary-beige md:text-base text-sm  whitespace-normal">
+          {role}
+        </p>
+      </div>
     </motion.div>
   );
 
   return (
-    <section className="w-full pb-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="w-full pt-10 md:pt-0 pb-20 bg-white">
+      <div className=" md:mx-auto ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -105,7 +115,7 @@ export default function TeamSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             Nuestro Equipo
           </h2>
-          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-12"></div>
+          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-4 md:mb-12"></div>
         </motion.div>
 
         {useCarousel ? (
@@ -119,7 +129,7 @@ export default function TeamSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 container mx-auto"
           >
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />
