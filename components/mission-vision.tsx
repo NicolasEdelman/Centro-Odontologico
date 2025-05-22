@@ -10,7 +10,7 @@ export default function MissionVision() {
           {/* Imagen a la izquierda */}
           <div className="relative w-full h-[350px] md:h-full overflow-hidden order-1 md:order-none">
             <Image
-              src="/images/nosotras2.png"
+              src="/images/Nosotras2.png"
               alt="Nosotras"
               fill
               className="object-cover"
