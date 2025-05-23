@@ -41,7 +41,7 @@ export default function TeamSection() {
     {
       name: "Victoria Rodriguez",
       role: "Cosmetóloga médica",
-      image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
+      image: "/images/Staff/EquipoMarron/VictoriaRodriguez.png",
     },
   ];
 

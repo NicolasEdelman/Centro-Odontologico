@@ -88,10 +88,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#convenios"
+                  href="/#planes"
                   className="text-co-primary-gray hover:text-co-primary-blue transition-colors"
                 >
-                  Convenios
+                  Planes
                 </a>
               </li>
               <li>

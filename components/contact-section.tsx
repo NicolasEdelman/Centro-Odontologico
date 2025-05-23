@@ -112,7 +112,7 @@ export default function ContactSection() {
                 Hablános por WhatsApp
               </Link>
               <Link
-                href="https://g.page/r/CentroOdontologicoUY/review"
+                href="https://www.google.com/maps/place/Centro+Odontol%C3%B3gico+Dra+Zelpo+Dra+P%C3%A9rez/@-34.9044397,-56.1882703,17z/data=!3m1!4b1!4m6!3m5!1s0x959f8100143b0261:0x28206a1815e77e03!8m2!3d-34.9044397!4d-56.1882703!16s%2Fg%2F11xdjpzcvj?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-co-primary-blue border border-co-primary-blue py-3 px-6 rounded-lg text-base shadow-lg transition-all"
@@ -167,7 +167,7 @@ export default function ContactSection() {
               className="rounded-2xl overflow-hidden shadow-xl h-[300px] w-full"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9617672460623!2d-56.1909379!3d-34.9044309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81e077437e67%3A0xf4fe5ae4dc39577e!2sTorre%20de%20los%20Profesionales!5e0!3m2!1ses-419!2suy!4v1712403827054!5m2!1ses-419!2suy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9617672460623!2d-56.1909379!3d-34.9044309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81e077437e67%3A0xf4fe5ae4dc39577e!2sTorre%20de%20los%20Profesionales!5e0!3m2!1ses-419!2suy!4v1712403827054!5m2!1ses-419!2su"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

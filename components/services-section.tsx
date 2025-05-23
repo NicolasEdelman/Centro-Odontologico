@@ -32,6 +32,31 @@ export default function ServicesSection() {
       description: "Tratamientos no invasivos para realzar la belleza natural de tu rostro y complementar tu sonrisa.",
       image: "/images/dental-treatment-4.jpeg",
     },
+    {
+      id: "rehabilitacion2",
+      title: "Rehabilitación",
+      description: "Restauración completa de la función y estética dental para devolverte la confianza en tu sonrisa.",
+      image: "/images/dental-treatment-1.jpeg",
+    },
+    {
+      id: "ortodoncia2",
+      title: "Ortodoncia",
+      description: "Alineación dental perfecta con tratamientos personalizados para todas las edades.",
+      image: "/images/dental-treatment-2.jpeg",
+    },
+    {
+      id: "implantologia2",
+      title: "Implantes",
+      description:
+        "Soluciones permanentes para dientes perdidos con tecnología de vanguardia y materiales de alta calidad.",
+      image: "/images/dental-treatment-3.jpeg",
+    },
+    {
+      id: "estetica-facial2",
+      title: "Estética facial",
+      description: "Tratamientos no invasivos para realzar la belleza natural de tu rostro y complementar tu sonrisa.",
+      image: "/images/dental-treatment-4.jpeg",
+    },
   ]
 
   const container = {
@@ -58,7 +83,7 @@ export default function ServicesSection() {
   }
 
   return (
-    <section id="servicios" className="w-full py-20 bg-[#f0f7ff]">
+    <section id="servicios" className="w-full py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Servicios</h2>

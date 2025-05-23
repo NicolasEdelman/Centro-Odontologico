@@ -31,7 +31,7 @@ export default function Navbar() {
     { name: "Inicio", href: "/#" },
     { name: "Staff", href: "/#equipo" },
     { name: "Servicios", href: "/#servicios" },
-    { name: "Convenios", href: "/#convenios" },
+    { name: "Planes", href: "/#planes" },
     { name: "Contacto", href: "/#contacto" },
   ];
 

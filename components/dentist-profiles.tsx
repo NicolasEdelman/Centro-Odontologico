@@ -42,12 +42,13 @@ export default function DentistProfiles() {
   return (
     <section
       id="nosotras"
-      className="w-full bg-co-secondary-beige text-white overflow-hidden relative"
+      className="w-full bg-co-secondary-beige text-white overflow-hidden relative "
     >
       <div className="bg-black opacity-50 absolute inset-0 z-0"></div>
-      <div className="absolute inset-0 z-0 opacity-40">
+      <div className="absolute inset-0 z-0 opacity-40 ">
         <Image
-          src="/images/Consultorio.jpg"
+          // src="/images/Consultorio.jpg"
+          src="/images/torreprofesionales.jpg"
           alt="Consultorio odontológico"
           fill
           className="object-cover scale-125 md:translate-x-[-200px]"

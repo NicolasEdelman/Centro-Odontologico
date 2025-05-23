@@ -119,12 +119,6 @@ export default function MissionVision() {
             >
               <div className="flex gap-4">
                 <a
-                  className="bg-co-secondary-beige text-white rounded-md px-4 py-2 text-xs md:text-base hover:bg-co-secondary-beige/80 transition-colors"
-                  href="#videos"
-                >
-                  Ver video institucional
-                </a>
-                <a
                   className="bg-transparent text-co-secondary-beige rounded-md px-4 py-2 text-xs md:text-base border border-co-secondary-beige hover:bg-co-secondary-beige/10 transition-colors"
                   href="/historia"
                 >

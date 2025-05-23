@@ -14,7 +14,7 @@ export default function SpecialistsSection() {
 
   const specialists = [
     {
-      name: "Dra. Gisella Rodriguez",
+      name: "Dra. Gissela Rodríguez",
       role: "Especialista en Cirugía Buco Maxilo Facial",
       image: "/images/Staff/GisellaRodriguez.png",
     },

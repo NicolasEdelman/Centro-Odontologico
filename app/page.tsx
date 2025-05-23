@@ -1,9 +1,7 @@
-
 import HeroSection from "@/components/hero-section";
 import DentistProfiles from "@/components/dentist-profiles";
 import ServicesSection from "@/components/services-section";
 import TeamSection from "@/components/team-section";
-import CompanyAgreements from "@/components/company-agreements";
 import MissionVision from "@/components/mission-vision";
 import VideosSection from "@/components/videos-section";
 import InstagramFeed from "@/components/instagram-feed";
@@ -12,7 +10,8 @@ import DentalTips from "@/components/dental-tips";
 import SpecialistsSection from "@/components/specialists-section";
 import AnimatedSection from "@/components/animated-section";
 import { CTA } from "@/components/call-to-action";
-
+import PlansSection from "@/components/plans-section";
+import AgreementsSection from "@/components/agreements-section";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -31,17 +30,20 @@ export default function Home() {
         <ServicesSection />
       </AnimatedSection>
 
+      <AnimatedSection variant="slideRight" fullWidth>
+        <VideosSection />
+      </AnimatedSection>
 
       <AnimatedSection variant="scale" fullWidth>
         <MissionVision />
       </AnimatedSection>
 
       <AnimatedSection variant="rotate" fullWidth>
-        <CompanyAgreements />
+        <PlansSection />
       </AnimatedSection>
 
-      <AnimatedSection variant="slideRight" fullWidth>
-        <VideosSection />
+      <AnimatedSection variant="rotate" fullWidth>
+        <AgreementsSection />
       </AnimatedSection>
 
       <div className="relative w-full bg-cover bg-center py-16">
