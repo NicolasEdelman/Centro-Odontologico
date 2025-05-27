@@ -6,8 +6,14 @@ import Link from "next/link";
 
 export default function VideosSection() {
   return (
-    <section id="propósito" className="w-full bg-co-secondary-beige text-white py-16 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section
+      id="propósito"
+      className="w-full bg-white text-white py-16 px-6 relative"
+    >
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="bg-co-secondary-beige shadow-lg w-full h-3/4"></div>
+      </div>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
         {/* Texto a la izquierda */}
         <motion.div
           className="md:w-1/2"
@@ -27,12 +33,10 @@ export default function VideosSection() {
           <p className="text-lg mb-6">
             Por esto, nuestro propósito es brindarte un centro donde encuentres
             un equipo de especialistas, que escuchen y entiendan lo que sentís y
-            deseás.
-          </p>
-          <p className="text-lg mb-8">
-            Y así idear y conducir tus tratamientos utilizando la última
+            deseás. Y así idear y conducir tus tratamientos utilizando la última
             tecnología en odontología.
           </p>
+
           <Link
             href="/#contacto"
             className="inline-block bg-white text-co-secondary-beige px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300"
@@ -43,7 +47,7 @@ export default function VideosSection() {
 
         {/* Video a la derecha */}
         <motion.div
-          className="md:ml-20 md:w-1/2 aspect-[9/16] max-w-[360px] w-full overflow-hidden rounded-xl shadow-lg relative group"
+          className="md:ml-20 md:w-1/2 aspect-[9/16] max-w-[420px] w-full overflow-hidden rounded-xl shadow-lg relative group"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}

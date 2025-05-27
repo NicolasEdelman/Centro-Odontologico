@@ -12,6 +12,7 @@ import AnimatedSection from "@/components/animated-section";
 import { CTA } from "@/components/call-to-action";
 import PlansSection from "@/components/plans-section";
 import AgreementsSection from "@/components/agreements-section";
+import OurHistory from "@/components/our-history";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -38,36 +39,36 @@ export default function Home() {
         <MissionVision />
       </AnimatedSection>
 
-      <AnimatedSection variant="rotate" fullWidth>
-        <PlansSection />
-      </AnimatedSection>
-
-      <AnimatedSection variant="rotate" fullWidth>
-        <AgreementsSection />
+      <AnimatedSection variant="slideRight" fullWidth>
+        <OurHistory />
       </AnimatedSection>
 
       <div className="relative w-full bg-cover bg-center py-16">
         <img
           src="/images/MAgua.png"
           alt=""
-          className="hidden md:block absolute left-0 bottom-10 h-[50%] object-contain z-0 opacity-20 transform rotate-180"
+          className="hidden md:block absolute left-0 top-10  h-[50%] object-contain z-0 opacity-20 transform rotate-180"
         />
         <img
           src="/images/MAgua.png"
           alt=""
-          className="hidden md:block absolute right-0 top-10  h-[50%] object-contain z-0 opacity-20"
+          className="hidden md:block absolute right-0 bottom-10 h-[50%] object-contain z-0 opacity-20 "
         />
 
         <div className="relative z-10">
-          <AnimatedSection variant="bounce" fullWidth>
-            <DentalTips />
-          </AnimatedSection>
-
           <AnimatedSection variant="slideUp" fullWidth>
             <InstagramFeed />
           </AnimatedSection>
+
+          <AnimatedSection variant="rotate" fullWidth>
+            <PlansSection />
+          </AnimatedSection>
         </div>
       </div>
+
+      <AnimatedSection variant="rotate" fullWidth>
+        <AgreementsSection />
+      </AnimatedSection>
 
       <AnimatedSection variant="scale" delay={0.2} fullWidth>
         <CTA />

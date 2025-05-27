@@ -38,7 +38,7 @@ export default function InstagramFeed() {
   };
 
   return (
-    <section className="w-full pb-20">
+    <section className="w-full ">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

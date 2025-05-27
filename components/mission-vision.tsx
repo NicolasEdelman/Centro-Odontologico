@@ -4,22 +4,23 @@ import Image from "next/image";
 
 export default function MissionVision() {
   return (
-    <section id="mision-vision" className="w-full bg-white py-16 ">
+    <section id="mision-vision" className="w-full bg-white  ">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center  mx-auto">
           {/* Imagen a la izquierda */}
-          <div className="relative w-full h-[350px] md:h-full overflow-hidden order-1 md:order-none">
+          <div className="relative w-full aspect-[3/4] md:h-auto overflow-hidden order-1 md:order-none">
             <Image
               src="/images/Nosotras2.png"
               alt="Nosotras"
-              fill
-              className="object-cover"
+              width={600}
+              height={800}
+              className="w-full h-auto object-contain"
               priority
             />
           </div>
 
           {/* Misión y Visión a la derecha */}
-          <div className="flex flex-col gap-4 md:gap-12 order-2 md:order-none">
+          <div className="flex flex-col gap-4 md:gap-12 order-2 md:order-none ">
             {/* Misión */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -110,21 +111,6 @@ export default function MissionVision() {
                 </span>{" "}
                 para cuidar la salud bucal de nuestros pacientes.
               </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex gap-4">
-                <a
-                  className="bg-transparent text-co-secondary-beige rounded-md px-4 py-2 text-xs md:text-base border border-co-secondary-beige hover:bg-co-secondary-beige/10 transition-colors"
-                  href="/historia"
-                >
-                  Conocer nuestra historia
-                </a>
-              </div>
             </motion.div>
           </div>
         </div>

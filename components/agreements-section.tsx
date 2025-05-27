@@ -32,7 +32,7 @@ export default function AgreementsSection() {
   );
 
   return (
-    <section id="convenios" className="w-full py-10">
+    <section id="convenios" className="w-full py-20">
       <div className="">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

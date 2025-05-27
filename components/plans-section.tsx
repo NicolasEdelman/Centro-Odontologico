@@ -14,7 +14,7 @@ export default function PlansSection() {
   ];
 
   return (
-    <section id="planes" className="w-full py-20">
+    <section id="planes" className="w-full pb-10">
       <div className="">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
