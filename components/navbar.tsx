@@ -151,7 +151,7 @@ export default function Navbar() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-white hover:text-co-primary-gray transition-colors"
+                className="flex items-center text-gray-800 hover:text-co-primary-gray transition-colors"
               >
                 <WhatsAppIcon className="mr-2" />
                 <span className="text-sm">Enviar mensaje por WhatsApp</span>
@@ -161,10 +161,10 @@ export default function Navbar() {
                 href="https://www.instagram.com/centroodontologico.uy/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-white hover:text-co-primary-gray transition-colors"
+                className="flex items-center text-gray-800 hover:text-co-primary-gray transition-colors"
               >
                 <InstagramIcon className="mr-2" />
-                <span className="text-sm">Instagram</span>
+                <span className="text-sm">Visitá nuestro Instagram</span>
               </a>
 
               <a href="#contacto" onClick={() => setIsOpen(false)}>
