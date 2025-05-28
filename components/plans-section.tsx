@@ -14,7 +14,7 @@ export default function PlansSection() {
   ];
 
   return (
-    <section id="planes" className="w-full pb-10">
+    <section id="planes" className="w-full md:pb-10">
       <div className="">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function PlansSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto px-4 mb-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-4 mb-12"
         >
           {plans.map((plan, index) => (
             <Link
@@ -56,7 +56,7 @@ export default function PlansSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="flex flex-col sm:flex-row gap-3 md:gap-6 items-center justify-center mt-4 md:mt-4"
+          className="flex flex-col sm:flex-row gap-3 md:gap-6 items-center justify-center md:mt-4"
         >
           <Link href="/planes">
             <Button

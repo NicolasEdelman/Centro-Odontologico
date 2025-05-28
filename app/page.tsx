@@ -43,7 +43,7 @@ export default function Home() {
         <OurHistory />
       </AnimatedSection>
 
-      <div className="relative w-full bg-cover bg-center py-16">
+      <div className="relative w-full bg-cover bg-center md:py-16">
         <img
           src="/images/MAgua.png"
           alt=""

@@ -8,26 +8,26 @@ export default function OurHistory() {
   return (
     <section
       id="trayectoria"
-      className="bg-white text-white mb-20 w-full relative"
+      className="bg-white text-white mb-10 md:mb-20 w-full relative"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-co-primary-blue shadow-lg w-full h-3/4"></div>
+        <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-5/6"></div>
       </div>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
+      <div className="md:container mx-4 md:mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
         {/* Texto a la izquierda */}
         <motion.div
-          className="md:w-2/3 mr-5"
+          className="md:w-2/3 mr-10"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-start text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-start text-white pt-10 md:pt-0 mb-4">
             Más de 15 años de trayectoria
           </h2>
           <div className="w-20 h-1 bg-white mb-4"></div>
-          <div>
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-full md:w-1/5 ">
+          <div className="flex flex-col gap-6 hidden md:block">
+            <div className="flex md:flex-row md:items-center md:gap-4">
+              <div className="w-1/5 ">
                 <Image
                   src="/images/NadiaBlanco.png"
                   alt="Nadia"
@@ -36,8 +36,8 @@ export default function OurHistory() {
                   className="w-full h-auto object-contain rounded-xl"
                 />
               </div>
-              <div className="w-full md:w-4/5">
-                <p className="italic text-md p-2 rounded-xl">
+              <div className="w-4/5">
+                <p className="italic text-xs md:text-base p-2 rounded-xl">
                   <strong>
                     "Todo surgió un año antes de recibirnos, en el año 2009.
                     Habíamos estado toda la tarde estudiando para un examen.
@@ -53,6 +53,19 @@ export default function OurHistory() {
                   </strong>
                   "
                 </p>
+                <div className="flex flex-row items-center justify-between">
+                  <audio
+                    controls
+                    className=" w-1/2 h-8"
+                    src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Audios+Nuestra+Historia/Historia1.mp3"
+                  >
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+
+                  <p className="font-semibold text-co-secondary-beige text-right text-lg">
+                    — Nadia
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col md:flex-row-reverse items-center ">
@@ -66,7 +79,7 @@ export default function OurHistory() {
                 />
               </div>
               <div className="w-full md:w-4/5 ">
-                <p className="italic text-md p-2 rounded-xl">
+                <p className="italic text-xs md:text-base p-2 rounded-xl">
                   <strong>
                     "Hicimos casi toda la carrera juntas. Estudiábamos con
                     amigas... pasábamos muchas horas en la Facultad,
@@ -82,26 +95,43 @@ export default function OurHistory() {
                   </strong>
                   "
                 </p>
+                <div className="flex flex-row items-center justify-between">
+                  <audio
+                    controls
+                    className=" w-1/2 h-8"
+                    src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Audios+Nuestra+Historia/Historia2.mp3"
+                  >
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+
+                  <p className="font-semibold text-co-secondary-beige text-right text-lg">
+                    — Fabiana
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
-          <Link
-            href="/historia"
-            className="inline-block bg-white text-co-primary-blue px-4 py-3 rounded-lg  hover:bg-opacity-90 transition-all duration-300 mt-4"
-          >
-            Conocé más sobre nuestra historia
-          </Link>
+          <div className="flex justify-center">
+            <Link
+              href="/historia"
+              className="inline-block bg-white  text-co-secondary-beige px-4 py-3 rounded-lg  hover:bg-opacity-90 transition-all duration-300 mt-4 mb-8 md:mb-0"
+            >
+              <span className="block md:hidden">
+                Conocer toda nuestra historia
+              </span>
+              <span className="hidden md:block">Seguir leyendo</span>
+            </Link>
+          </div>
         </motion.div>
 
         {/* Video a la derecha */}
         <motion.div
-          className="md:w-1/3 flex justify-end"
+          className="md:w-1/3 flex justify-end mb-8 md:mb-0"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="aspect-[9/16] w-full  overflow-hidden rounded-xl shadow-lg relative group">
+          <div className="aspect-[9/16] w-full overflow-hidden rounded-xl shadow-lg relative group">
             <video
               controls
               autoPlay

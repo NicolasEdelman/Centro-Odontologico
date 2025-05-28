@@ -72,9 +72,9 @@ export default function SpecialistsSection() {
   }) => (
     <motion.div
       variants={item}
-      className="group text-center flex-shrink-0 w-[200px] max-w-[200px] "
+      className="group text-center flex-shrink-0 w-[150px] md:w-[200px] max-w-[200px] "
     >
-      <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
+      <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[200px]">
         <Image
           src={image || "/placeholder.svg"}
           alt={name}
@@ -105,7 +105,7 @@ export default function SpecialistsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             Nuestras Especialistas
           </h2>
-          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-4 md:mb-12" />
+          <div className="w-20 h-1 bg-co-secondary-beige mx-auto md:mb-12" />
         </motion.div>
 
         {useCarousel ? (

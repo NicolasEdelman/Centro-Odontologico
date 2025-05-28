@@ -14,7 +14,6 @@ export default function InstagramFeed() {
     { id: 5, image: "/placeholder.svg?height=400&width=400" },
     { id: 6, image: "/placeholder.svg?height=400&width=400" },
   ];
-  
 
   const container = {
     hidden: { opacity: 0 },
@@ -38,7 +37,7 @@ export default function InstagramFeed() {
   };
 
   return (
-    <section className="w-full ">
+    <section className="w-full pb-4 md:pb-12">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,15 +57,15 @@ export default function InstagramFeed() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-5 md:grid-cols-3 md:gap-8 items-start">
           {/* Primeros 2 tercios */}
-          <div className="md:col-span-2 flex flex-col items-center md:items-end text-center md:text-right space-y-6 pl-20">
+          <div className="col-span-3 md:col-span-2 pt-5 md:pt-0 flex flex-col items-end text-right md:space-y-6 md:pl-20">
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-gray-600 max-w-xl"
+              className="text-gray-600 max-w-xl text-sm md:text-lg"
             >
               Mantente al día con nuestros últimos casos, consejos de salud
               bucal y promociones especiales
@@ -122,7 +121,7 @@ export default function InstagramFeed() {
                 href="https://instagram.com/centroodontologico.uy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-pink-600 font-medium hover:underline"
+                className="inline-flex items-center gap-2 text-pink-600 font-medium hover:underline text-sm md:text-lg"
               >
                 <span>@centroodontologico.uy</span>
                 <Instagram size={20} />
@@ -136,9 +135,9 @@ export default function InstagramFeed() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex justify-center lg:justify-start"
+            className="flex justify-center lg:justify-start md:mb-10 col-span-2 md:col-span-1"
           >
-            <div className="w-[80%] flex justify-center">
+            <div className="md:w-[80%] flex justify-center">
               <Image
                 src="/images/CeluInstagram.png"
                 alt="Celu Imagen"

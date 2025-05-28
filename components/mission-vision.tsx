@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function MissionVision() {
   return (
-    <section id="mision-vision" className="w-full bg-white  ">
+    <section id="mision-vision" className="w-full bg-white pb-10  ">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center  mx-auto">
           {/* Imagen a la izquierda */}
-          <div className="relative w-full aspect-[3/4] md:h-auto overflow-hidden order-1 md:order-none">
+          <div className="relative w-full md:h-auto overflow-hidden order-1 md:order-none pt-10 md:pt-0">
             <Image
               src="/images/Nosotras2.png"
               alt="Nosotras"

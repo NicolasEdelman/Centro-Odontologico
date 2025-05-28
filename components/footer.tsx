@@ -8,14 +8,17 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Footer() {
+  const whatsappNumber = "59892632263";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
   return (
     <footer className="bg-brand-dark">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <Link href="/" className="inline-block mb-6">
+            <Link href="/" className="inline-block mb-2 md:mb-6">
               <Image
                 src="/images/logo.png"
                 alt="Centro Odontológico"
@@ -24,7 +27,7 @@ export default function Footer() {
                 className="h-12 w-auto"
               />
             </Link>
-            <p className="text-co-primary-gray mb-6">
+            <p className="text-co-primary-gray mb-2 md:mb-6 text-sm md:text-base">
               Cuidamos tu sonrisa con profesionalismo y dedicación. Más de 15
               años de experiencia nos respaldan.
             </p>
@@ -48,18 +51,18 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="https://twitter.com/centroodonto_uy"
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-co-primary-gray hover:text-co-primary-blue transition-colors"
               >
-                <Twitter size={20} />
-                <span className="sr-only">Twitter</span>
+                <WhatsAppIcon className="w-5 h-5 mb-1" />
+                <span className="sr-only">Whatsapp</span>
               </Link>
             </div>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-lg font-bold mb-6">Enlaces Rápidos</h3>
             <ul className="space-y-3">
               <li>
@@ -105,7 +108,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-lg font-bold mb-6">Servicios</h3>
             <ul className="space-y-3">
               <li>
@@ -143,7 +146,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-lg font-bold mb-6">Contacto</h3>
             <ul className="space-y-4">
               <li className="flex items-start">

@@ -35,7 +35,7 @@ export default function Navbar() {
     { name: "Contacto", href: "/#contacto" },
   ];
 
-  const whatsappNumber = "59891234567";
+  const whatsappNumber = "59892632263";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -72,9 +72,9 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
+                className={`text-sm font-medium transition-colors hover:text-gray-400 ${
                   pathname === link.href
-                    ? "text-co-primary-blue"
+                    ? "text-black"
                     : isScrolled
                     ? "text-gray-800"
                     : "text-white"
@@ -88,7 +88,7 @@ export default function Navbar() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
+              className={`text-sm font-medium transition-colors hover:text-gray-400 ${
                 isScrolled ? "text-gray-800" : "text-white"
               }`}
             >
@@ -98,7 +98,7 @@ export default function Navbar() {
               href="https://www.instagram.com/centroodontologico.uy/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-sm font-medium transition-colors hover:text-co-primary-blue ${
+              className={`text-sm font-medium transition-colors hover:text-gray-400 ${
                 isScrolled ? "text-gray-800" : "text-white"
               }`}
             >

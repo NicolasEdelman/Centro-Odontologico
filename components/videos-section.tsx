@@ -11,7 +11,7 @@ export default function VideosSection() {
       className="w-full bg-white text-white py-16 px-6 relative"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-co-secondary-beige shadow-lg w-full h-3/4"></div>
+        <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-3/4"></div>
       </div>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
         {/* Texto a la izquierda */}
@@ -25,12 +25,12 @@ export default function VideosSection() {
             Nuestro propósito
           </h2>
           <div className="w-20 h-1 bg-white mb-4 md:mb-12"></div>
-          <p className="text-lg mb-6">
+          <p className="text-sm md:text-lg mb-6">
             En Centro Odontológico creemos que todas las personas merecen
             sentirse cómodas y felices con su sonrisa. Reír, comer, tomarse una
             foto con confianza son experiencias que todos deberíamos disfrutar.
           </p>
-          <p className="text-lg mb-6">
+          <p className="text-sm md:text-lg mb-6">
             Por esto, nuestro propósito es brindarte un centro donde encuentres
             un equipo de especialistas, que escuchen y entiendan lo que sentís y
             deseás. Y así idear y conducir tus tratamientos utilizando la última
@@ -39,7 +39,7 @@ export default function VideosSection() {
 
           <Link
             href="/#contacto"
-            className="inline-block bg-white text-co-secondary-beige px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300"
+            className="inline-block text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300"
           >
             Agendar una consulta
           </Link>
@@ -59,7 +59,7 @@ export default function VideosSection() {
             loop
             playsInline
             className="w-full h-full object-cover rounded-xl"
-            src="https://centro-odontologico.s3.us-east-2.amazonaws.com/VideoInstitucional.mp4"
+            src="https://centro-odontologico.s3.us-east-2.amazonaws.com/VideoInstitucional.webm"
           >
             <Link
               href="https://www.instagram.com/centroodontologico.uy/"

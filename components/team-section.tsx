@@ -83,9 +83,9 @@ export default function TeamSection() {
         y: -10,
         transition: { duration: 0.3 },
       }}
-      className="group text-center flex-shrink-0 w-[200px]"
+      className="group text-center flex-shrink-0 w-[150px] md:w-[200px]"
     >
-      <div className="relative w-full aspect-square overflow-hidden mb-4 mx-auto max-w-[200px]">
+      <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[200px]">
         <Image
           src={image || "/placeholder.svg"}
           alt={name}
@@ -105,7 +105,7 @@ export default function TeamSection() {
   );
 
   return (
-    <section className="w-full pt-10 md:pt-0 pb-20 bg-white">
+    <section className="w-full pt-5 md:pt-0 md:pb-20 bg-white">
       <div className=" md:mx-auto ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export default function TeamSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             Nuestro Equipo
           </h2>
-          <div className="w-20 h-1 bg-co-secondary-beige mx-auto mb-4 md:mb-12"></div>
+          <div className="w-20 h-1 bg-co-secondary-beige mx-auto md:mb-12"></div>
         </motion.div>
 
         {useCarousel ? (

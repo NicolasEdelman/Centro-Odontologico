@@ -25,17 +25,17 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
       onClick={handleBackdropClick}
     >
       <div
-        className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-10 text-center relative"
+        className="bg-white rounded-3xl shadow-2xl w-full max-w-sm md:max-w-2xl p-4 sm:p-10 text-center relative"
         onClick={handleContentClick}
       >
         <h3 className="text-3xl font-bold text-co-primary-blue mb-2">
           Elegí con quién agendar
         </h3>
-        <p className="text-gray-600 mb-8 text-base">
+        <p className="text-gray-600 mb-8 text-sm md:text-base">
           Seleccioná una profesional para continuar con tu reserva.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+        <div className="flex flex-row gap-4 md:gap-8 justify-center items-center">
           <a
             href="https://cal.com/nicolas-edelman"
             target="_blank"
