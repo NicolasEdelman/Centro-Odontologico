@@ -10,7 +10,7 @@ export default function MissionVision() {
           {/* Imagen a la izquierda */}
           <div className="relative w-full md:h-auto overflow-hidden order-1 md:order-none pt-10 md:pt-0">
             <Image
-              src="/images/Nosotras2.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/NosotrasSF2.png"
               alt="Nosotras"
               width={600}
               height={800}

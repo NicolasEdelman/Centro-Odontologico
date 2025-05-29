@@ -38,6 +38,11 @@ export default function SpecialistsSection() {
       role: "Especialista en Trastornos Temporo Mandibulares y Sueño",
       image: "/images/Staff/VirginiaMachado.png",
     },
+    {
+      name: "Victoria Rodriguez",
+      role: "Cosmetóloga médica",
+      image: "/images/Staff/EquipoMarron/VictoriaRodriguez.png",
+    },
   ];
 
   const container = {
@@ -72,7 +77,7 @@ export default function SpecialistsSection() {
   }) => (
     <motion.div
       variants={item}
-      className="group text-center flex-shrink-0 w-[150px] md:w-[200px] max-w-[200px] "
+      className="group text-center flex-shrink-0 w-[150px] md:w-[200px] max-w-[200px]"
     >
       <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[200px]">
         <Image
@@ -119,7 +124,7 @@ export default function SpecialistsSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto"
           >
             {specialists.map((spec, i) => (
               <SpecialistCard key={i} {...spec} />

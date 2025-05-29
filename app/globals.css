@@ -81,7 +81,7 @@ body {
   overflow-x: hidden;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Avenir";
   src: url("/fonts/Avenir.woff2") format("woff2");
   font-weight: normal;
@@ -95,5 +95,5 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 

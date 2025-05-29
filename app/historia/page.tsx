@@ -54,7 +54,7 @@ export default function HistoriaPage() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3">
             <Image
-              src="/images/1Marron.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/NadiaMarron.webp"
               alt="Nadia"
               width={400}
               height={400}
@@ -100,7 +100,7 @@ export default function HistoriaPage() {
         <div className="flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="w-full md:w-1/3">
             <Image
-              src="/images/2Marron.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/FabianaMarron.webp"
               alt="Fabiana"
               width={400}
               height={400}
@@ -192,7 +192,7 @@ export default function HistoriaPage() {
         <div className="flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="w-full md:w-1/3">
             <Image
-              src="/images/2Marron.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/FabianaMarron.webp"
               alt="Mudanza"
               width={400}
               height={400}
@@ -235,7 +235,7 @@ export default function HistoriaPage() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3">
             <Image
-              src="/images/1Marron.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/NadiaMarron.webp"
               alt="Nadia"
               width={400}
               height={400}

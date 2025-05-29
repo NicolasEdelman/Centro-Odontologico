@@ -8,10 +8,10 @@ export default function VideosSection() {
   return (
     <section
       id="propósito"
-      className="w-full bg-white text-white py-16 px-6 relative"
+      className="w-full bg-white text-white  px-6 relative"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-3/4"></div>
+        <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-[92%]"></div>
       </div>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
         {/* Texto a la izquierda */}
@@ -27,13 +27,17 @@ export default function VideosSection() {
           <div className="w-20 h-1 bg-white mb-4 md:mb-12"></div>
           <p className="text-sm md:text-lg mb-6">
             En Centro Odontológico creemos que todas las personas merecen
-            sentirse cómodas y felices con su sonrisa. Reír, comer, tomarse una
-            foto con confianza son experiencias que todos deberíamos disfrutar.
+            sentirse cómodas y felices con su sonrisa.{" "}
+            <strong>Reír, comer, tomarse una foto con confianza</strong> son
+            experiencias que todos deberíamos disfrutar.
           </p>
           <p className="text-sm md:text-lg mb-6">
-            Por esto, nuestro propósito es brindarte un centro donde encuentres
-            un equipo de especialistas, que escuchen y entiendan lo que sentís y
-            deseás. Y así idear y conducir tus tratamientos utilizando la última
+            Por esto, nuestro propósito es{" "}
+            <strong>
+              brindarte un centro donde encuentres un equipo de especialistas,
+              que escuchen y entiendan lo que sentís y deseás.
+            </strong>{" "}
+            Y así idear y conducir tus tratamientos utilizando la última
             tecnología en odontología.
           </p>
 
@@ -47,7 +51,7 @@ export default function VideosSection() {
 
         {/* Video a la derecha */}
         <motion.div
-          className="md:ml-20 md:w-1/2 aspect-[9/16] max-w-[420px] w-full overflow-hidden rounded-xl shadow-lg relative group"
+          className="md:ml-20 md:w-1/3 aspect-[9/16] max-w-[410px] w-full overflow-hidden rounded-xl shadow-lg relative group"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}

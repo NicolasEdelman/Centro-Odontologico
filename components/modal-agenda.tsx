@@ -43,7 +43,7 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
             className="flex flex-col items-center gap-3 hover:scale-105 transition"
           >
             <Image
-              src="/images/4Azul.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/FabianaAzul.webp"
               alt="Fabiana"
               width={128}
               height={128}
@@ -58,7 +58,7 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
             className="flex flex-col items-center gap-3 hover:scale-105 transition"
           >
             <Image
-              src="/images/3Azul.png"
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/NadiaAzul.webp"
               alt="Nadia"
               width={128}
               height={128}

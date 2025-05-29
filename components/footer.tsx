@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-2 md:mb-6">
               <Image
-                src="/images/logo.png"
+                src="/images/LogoColor.png"
                 alt="Centro Odontológico"
                 width={180}
                 height={60}

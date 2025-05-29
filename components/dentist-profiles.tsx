@@ -45,15 +45,10 @@ export default function DentistProfiles() {
       className="w-full bg-co-secondary-beige text-white overflow-hidden relative "
     >
       <div className="bg-black opacity-50 absolute inset-0 z-0"></div>
-      <div className="absolute inset-0 z-0 opacity-40 ">
-        <Image
-          // src="/images/Consultorio.jpg"
-          src="/images/torreprofesionales.jpg"
-          alt="Consultorio odontológico"
-          fill
-          className="object-cover scale-125 md:translate-x-[-200px]"
-        />
-      </div>
+      <div
+        className="absolute inset-0 z-0 bg-fixed bg-center bg-cover opacity-40"
+        style={{ backgroundImage: "url('/images/torreprofesionales.jpg')" }}
+      ></div>
 
       {/* Overlay para asegurar legibilidad */}
       <div className="absolute inset-0 bg-co-secondary-beige opacity-70 z-10"></div>
@@ -66,7 +61,7 @@ export default function DentistProfiles() {
           className="relative h-full"
         >
           {/* Contenedor principal con grid */}
-          <div className="grid grid-cols-2 h-full">
+          <div className="grid grid-cols-2 h-full pt-4">
             {/* Columna izquierda - Fabiana */}
             <div className="relative">
               {/* Imagen de Fabiana */}
@@ -76,10 +71,10 @@ export default function DentistProfiles() {
               >
                 <div className="relative w-full h-full">
                   <Image
-                    src="/images/FabianaSF.png"
+                    src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/FabianaSF.png"
                     alt="Dra. Fabiana Zelpo"
                     fill
-                    className="object-contain object-left-bottom scale-[2] md:scale-100 translate-y-[-250px] translate-x-[-90px] md:translate-x-[0px] md:translate-y-[0px]"
+                    className="object-contain object-left-bottom scale-[1.8] md:scale-[1.2] translate-y-[-130px] md:translate-y-[90px] translate-x-[-70px] md:translate-x-[120px] "
                   />
                 </div>
               </motion.div>
@@ -87,7 +82,7 @@ export default function DentistProfiles() {
               {/* Texto de Fabiana */}
               <motion.div
                 variants={itemVariants}
-                className="absolute left-0 bottom-1 md:top-[40%] text-left md:max-w-[320px] "
+                className="absolute left-0 bottom-1 md:top-[40%] text-left md:max-w-[320px] pb-4"
               >
                 <h3 className="text-2xl md:text-5xl font-bold text-white md:mb-3">
                   Dra. Fabiana Zelpo
@@ -97,7 +92,7 @@ export default function DentistProfiles() {
                   Ortopedia
                 </p>
                 {/* <Link href="/dentistas/fabiana-zelpo"> */}
-                <Link href="#">
+                <Link href="/dentistas/fabiana-zelpo">
                   <Button
                     variant="outline"
                     size="sm"
@@ -118,10 +113,10 @@ export default function DentistProfiles() {
               >
                 <div className="relative w-full h-full">
                   <Image
-                    src="/images/NadiaSF.png"
+                    src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/NadiaSF.png"
                     alt="Dra. Nadia Pérez"
                     fill
-                    className="object-contain object-right-bottom scale-[2] md:scale-100 translate-y-[-250px] translate-x-[80px] md:translate-x-[0px] md:translate-y-[0px]"
+                    className="object-contain object-right-bottom [transform:scale(1.8)_translateY(-70px)_translateX(30px)_scaleX(-1)] md:[transform:scale(1.2)_translateY(80px)_translateX(160px)_scaleX(-1)]"
                   />
                 </div>
               </motion.div>
@@ -129,7 +124,7 @@ export default function DentistProfiles() {
               {/* Texto de Nadia */}
               <motion.div
                 variants={itemVariants}
-                className="absolute right-0 bottom-1 md:top-[40%] text-right md:max-w-[320px] "
+                className="absolute right-0 bottom-1 md:top-[40%] text-right md:max-w-[320px] pb-4"
               >
                 <h3 className="text-2xl md:text-5xl font-bold text-white md:mb-3">
                   Dra. Nadia Pérez
