@@ -26,21 +26,24 @@ export default function BiographyGallery() {
                 title: "Doctora en Odontología",
                 text: (
                   <>
-                    La Dra. Nadia Pérez Protto es egresada de la Facultad de
+                    La Dra. Fabiana Zelpo es egresada de la Facultad de
                     Odontología de la Universidad de la República (UdelaR), en
                     Montevideo, Uruguay.
                   </>
                 ),
               },
               {
-                title: "Especialista en Odontología Restauradora Integral",
+                title: "Especialista en Armonización Orofacial",
                 text: (
                   <>
-                    Título otorgado también por la Facultad de Odontología,
-                    UdelaR. <br />
-                    Esta Especialidad se trata del diagnóstico y resolución de
-                    casos complejos utilizando todas las herramientas
-                    restauradoras disponibles actualmente.
+                    Este título es otorgado por el Instituto Universitario
+                    Centro de Estudio y Diagnóstico de las Disgnacias del
+                    Uruguay (IUCEDDU). <br />
+                    Esta especialidad se trata de prevenir, diagnosticar y
+                    tratar, diversas alteraciones morfo-estético-funcionales
+                    orofaciales, utilizando técnicas mínimamente invasivas, para
+                    promover el equilibrio estético funcional del rostro y la
+                    sonrisa.
                   </>
                 ),
                 reverse: true,
@@ -49,16 +52,15 @@ export default function BiographyGallery() {
                 title: "Estudios de Postgrado",
                 text: (
                   <>
-                    Su formación de <strong>Posgrado</strong> se ha centrado
-                    principalmente en Cirugía Menor, incluyendo{" "}
+                    Su formación se ha centrado en el área del desarrollo y
+                    crecimiento de la cara y maxilares obteniendo un{" "}
+                    <strong>Posgrado en Ortopedia Funcional</strong> en la
+                    Universidad Católica del Uruguay (UCU) y un{" "}
                     <strong>
-                      Implantes Dentales Oseointegrados, Regeneración Ósea,
-                      Elevación de Seno Maxilar y Prótesis Implanto Asistida
+                      Posgrado en Ortodoncia para niños, adolescentes y adultos
                     </strong>{" "}
-                    en la Clínica Ibañez (Córdoba, Argentina). <br />
-                    También se ha especializado en Cirugía de{" "}
-                    <strong>Terceros Molares retenidos</strong> en la Cátedra de
-                    Cirugía de la UdelaR.
+                    en el Centro de Formación y Posgrado en Ortodoncia del Dr.
+                    Rubens Demicheri.
                   </>
                 ),
               },
@@ -66,21 +68,20 @@ export default function BiographyGallery() {
                 title: "Otras acreditaciones",
                 text: (
                   <>
-                    La Dra. Nadia cuenta con un{" "}
-                    <strong>Máster en Ciencias Odontológicas</strong> de la{" "}
-                    <strong>Universidad de Valencia</strong>, España.
+                    La Dra. Fabiana cuenta con la{" "}
+                    <strong>Acreditación de KeepSmiling</strong> lo que es
+                    conocido como <strong> "Ortodoncia Invisible"</strong>
                   </>
                 ),
                 reverse: true,
               },
               {
-                title: "Experiencia Docente",
+                title: "En el ambito internacional",
                 text: (
                   <>
-                    Nadia ha sido <strong>Docente Grado 2</strong> durante 14
-                    años en la{" "}
-                    <strong>Cátedra de Técnica de Operatoria Dental</strong>{" "}
-                    desde el año 2007 al 2021 en la UdelaR.
+                    Fabiana cuenta con un{" "}
+                    <strong>"Diploma do Internacional en Ortoperio"</strong> que
+                    se trata de Ortodoncia enfocada en pacientes periodontales.
                   </>
                 ),
               },

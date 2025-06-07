@@ -33,14 +33,14 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Dra. Nadia Pérez
+                Dra. Fabiana Zelpo
               </h1>
               <p className="text-xl text-white/90 mb-8">
-                Especialista en Rehabilitación Implantología y Cirugía
-                <br />
-                "Me dedico a diseñar y concretar proyectos desde sus cimientos
-                hasta su expresión, elevando la confianza y el bienestar de cada
-                persona."
+                Especialista en Armonización Orofacial (c) Ortodoncia y
+                Ortopedia. <br />
+                "Me dedico a acompañar el desarrollo orofacial desde una mirada
+                funcional y estética, abordando tanto las etapas de crecimiento
+                como los cambios propios del envejecimiento"
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -59,8 +59,8 @@ export default function Hero() {
               className="relative h-[500px] w-[80%] rounded-xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/images/nadia-perez.png"
-                alt="Dra. Nadia Pérez"
+                src="/images/fabiana-zelpo.png"
+                alt="Dra. Fabiana Zelpo"
                 fill
                 className="object-cover bg-[#e6d5a8]/50"
               />

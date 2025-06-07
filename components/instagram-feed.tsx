@@ -7,12 +7,36 @@ import { motion } from "framer-motion";
 
 export default function InstagramFeed() {
   const instagramPosts = [
-    { id: 1, image: "/placeholder.svg?height=400&width=400" },
-    { id: 2, image: "/placeholder.svg?height=400&width=400" },
-    { id: 3, image: "/placeholder.svg?height=400&width=400" },
-    { id: 4, image: "/placeholder.svg?height=400&width=400" },
-    { id: 5, image: "/placeholder.svg?height=400&width=400" },
-    { id: 6, image: "/placeholder.svg?height=400&width=400" },
+    {
+      id: 1,
+      image: "images/InstagramPosts/Ig1.png",
+      link: "https://www.instagram.com/p/C3IvHnnOgjE/?igsh=MWtucnlnODRldTVoYw%3D%3D&img_index=1",
+    },
+    {
+      id: 2,
+      image: "images/InstagramPosts/Ig2.png",
+      link: "https://www.instagram.com/reel/DGByE42SQMO/?igsh=MXdpbzI2NTlmZ3hlcA%3D%3D",
+    },
+    {
+      id: 3,
+      image: "images/InstagramPosts/Ig3.png",
+      link: "https://www.instagram.com/reel/C5oXtrXOew4/?igsh=MWM1MzUzaXFoODQ2bg%3D%3D",
+    },
+    {
+      id: 4,
+      image: "images/InstagramPosts/Ig4.png",
+      link: "https://www.instagram.com/stories/highlights/18070370275382193/",
+    },
+    {
+      id: 5,
+      image: "images/InstagramPosts/Ig5.png",
+      link: "https://www.instagram.com/reel/C8M4ncBA4Tx/?igsh=bnpxNWptMHpqM3dp",
+    },
+    {
+      id: 6,
+      image: "images/InstagramPosts/Ig6.png",
+      link: "https://www.instagram.com/p/Czb_wUkgvPo/?igsh=MWVqNXE2cm1yenBhaQ%3D%3D",
+    },
   ];
 
   const container = {
@@ -86,7 +110,7 @@ export default function InstagramFeed() {
                   className="relative w-full max-w-[150px] aspect-square rounded-lg bg-gray-200 overflow-hidden"
                 >
                   <Link
-                    href="https://instagram.com/centroodontologico.uy"
+                    href={post.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group block w-full h-full"

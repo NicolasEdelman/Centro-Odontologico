@@ -11,7 +11,7 @@ export default function OurHistory() {
       className="bg-white text-white mb-10 md:mb-20 w-full relative"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-[92%]"></div>
+        <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-[95%]"></div>
       </div>
       <div className="md:container mx-4 md:mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
         {/* Texto a la izquierda */}
@@ -26,7 +26,7 @@ export default function OurHistory() {
           </h2>
           <div className="w-20 h-1 bg-white mb-4"></div>
           <div className="flex flex-col gap-6 hidden md:block">
-            <div className="flex md:flex-row md:items-center md:gap-4 mb-4">
+            <div className="flex md:flex-row md:items-center md:gap-4 mb-6">
               <div className="w-1/5 ">
                 <Image
                   src="/images/NadiaBlanco.png"
@@ -37,7 +37,7 @@ export default function OurHistory() {
                 />
               </div>
               <div className="w-4/5">
-                <p className="italic text-xs md:text-sm p-2 rounded-xl">
+                <p className="italic text-sm md:text-base p-2 rounded-xl">
                   <strong>
                     "Todo surgió un año antes de recibirnos, en el año 2009.
                     Habíamos estado toda la tarde estudiando para un examen.
@@ -79,7 +79,7 @@ export default function OurHistory() {
                 />
               </div>
               <div className="w-full md:w-4/5 ">
-                <p className="italic text-xs md:text-sm p-2 rounded-xl">
+                <p className="italic text-sm md:text-base p-2 rounded-xl">
                   <strong>
                     "Hicimos casi toda la carrera juntas. Estudiábamos con
                     amigas... pasábamos muchas horas en la Facultad,
@@ -126,7 +126,7 @@ export default function OurHistory() {
 
         {/* Video a la derecha */}
         <motion.div
-          className="md:w-1/4 flex justify-end mb-8 md:mb-0"
+          className="md:w-[27%]  flex justify-end mb-8 md:mb-0"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
