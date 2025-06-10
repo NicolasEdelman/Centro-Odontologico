@@ -9,33 +9,39 @@ export default function InstagramFeed() {
   const instagramPosts = [
     {
       id: 1,
-      image: "images/InstagramPosts/Ig1.png",
-      link: "https://www.instagram.com/p/C3IvHnnOgjE/?igsh=MWtucnlnODRldTVoYw%3D%3D&img_index=1",
+      image: "images/InstagramPosts/1.png",
+      link: "https://www.instagram.com/p/DF8XROkJ30A/",
+      caption: "Blanqueamiento dental",
     },
     {
       id: 2,
-      image: "images/InstagramPosts/Ig2.png",
-      link: "https://www.instagram.com/reel/DGByE42SQMO/?igsh=MXdpbzI2NTlmZ3hlcA%3D%3D",
+      image: "images/InstagramPosts/2.png",
+      link: "https://www.instagram.com/p/C2-thT8OXyJ/",
+      caption: "Ortodoncia",
     },
     {
       id: 3,
-      image: "images/InstagramPosts/Ig3.png",
-      link: "https://www.instagram.com/reel/C5oXtrXOew4/?igsh=MWM1MzUzaXFoODQ2bg%3D%3D",
+      image: "images/InstagramPosts/3.png",
+      link: "https://www.instagram.com/p/DCg_ldIJmZJ/",
+      caption: "Cirugía e Implantes Dentales",
     },
     {
       id: 4,
-      image: "images/InstagramPosts/Ig4.png",
-      link: "https://www.instagram.com/stories/highlights/18070370275382193/",
+      image: "images/InstagramPosts/4.png",
+      link: "https://www.instagram.com/p/C5oXtrXOew4/",
+      caption: "Odontología Digital",
     },
     {
       id: 5,
-      image: "images/InstagramPosts/Ig5.png",
-      link: "https://www.instagram.com/reel/C8M4ncBA4Tx/?igsh=bnpxNWptMHpqM3dp",
+      image: "images/InstagramPosts/5.png",
+      link: "https://www.instagram.com/p/DB_kBqKp_8f/",
+      caption: "Odontopediatria",
     },
     {
       id: 6,
-      image: "images/InstagramPosts/Ig6.png",
-      link: "https://www.instagram.com/p/Czb_wUkgvPo/?igsh=MWVqNXE2cm1yenBhaQ%3D%3D",
+      image: "images/InstagramPosts/6.png",
+      link: "https://www.instagram.com/p/C9vKxptJBsK/",
+      caption: "Estética facial",
     },
   ];
 
@@ -119,7 +125,7 @@ export default function InstagramFeed() {
                       src={post.image || "/placeholder.svg"}
                       alt="Instagram post"
                       className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
-                      fill={false} // Esto es clave: no uses fill
+                      fill={false}
                       width={400}
                       height={400}
                     />
@@ -128,6 +134,9 @@ export default function InstagramFeed() {
                         size={32}
                         className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       />
+                    </div>
+                    <div className="absolute bottom-0 right-0 bg-white/90 text-gray-700 text-xs px-2 py-1  rounded-lg">
+                      {post.caption}
                     </div>
                   </Link>
                 </motion.div>
