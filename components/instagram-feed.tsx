@@ -108,37 +108,81 @@ export default function InstagramFeed() {
               viewport={{ once: true }}
               className="md:grid grid-cols-2 md:grid-cols-3 gap-4 hidden"
             >
-              {instagramPosts.map((post) => (
+              {/* Primeras 3 imágenes (caption arriba) */}
+              {instagramPosts.slice(0, 3).map((post) => (
                 <motion.div
                   key={post.id}
                   variants={item}
                   whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-                  className="relative w-full max-w-[150px] aspect-square rounded-lg bg-gray-200 overflow-hidden"
+                  className="relative w-full  rounded-lg bg-white overflow-hidden"
                 >
-                  <Link
-                    href={post.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group block w-full h-full"
-                  >
-                    <Image
-                      src={post.image || "/placeholder.svg"}
-                      alt="Instagram post"
-                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
-                      fill={false}
-                      width={400}
-                      height={400}
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                      <Instagram
-                        size={32}
-                        className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      />
-                    </div>
-                    <div className="absolute bottom-0 right-0 bg-white/90 text-gray-700 text-xs px-2 py-1  rounded-lg">
+                  <div className="relative w-full max-w-[150px] h-auto   overflow-visible space-y-2">
+                    {/* Caption arriba */}
+                    <div className="text-gray-700 text-center text-[11px] py-1">
                       {post.caption}
                     </div>
-                  </Link>
+
+                    <Link
+                      href={post.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block w-full h-full aspect-square max-w-[150px]"
+                    >
+                      <Image
+                        src={post.image || "/placeholder.svg"}
+                        alt="Instagram post"
+                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110 rounded-lg"
+                        fill={false}
+                        width={400}
+                        height={400}
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+                        <Instagram
+                          size={32}
+                          className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                </motion.div>
+              ))}
+
+              {/* Últimas 3 imágenes (caption abajo) */}
+              {instagramPosts.slice(3).map((post) => (
+                <motion.div
+                  key={post.id}
+                  variants={item}
+                  whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                  className="relative w-full  rounded-lg bg-white overflow-hidden"
+                >
+                  <div className="relative w-full max-w-[150px] h-auto  overflow-visible space-y-2">
+                    {/* Caption arriba */}
+
+                    <Link
+                      href={post.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block w-full h-full aspect-square max-w-[150px]"
+                    >
+                      <Image
+                        src={post.image || "/placeholder.svg"}
+                        alt="Instagram post"
+                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110 rounded-lg"
+                        fill={false}
+                        width={400}
+                        height={400}
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+                        <Instagram
+                          size={32}
+                          className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        />
+                      </div>
+                    </Link>
+                    <div className="text-gray-700 text-center text-[11px] py-1">
+                      {post.caption}
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
