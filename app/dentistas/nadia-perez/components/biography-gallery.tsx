@@ -56,6 +56,7 @@ export default function BiographyGallery() {
                       Elevación de Seno Maxilar y Prótesis Implanto Asistida
                     </strong>{" "}
                     en la Clínica Ibañez (Córdoba, Argentina). <br />
+                    <br />
                     También se ha especializado en Cirugía de{" "}
                     <strong>Terceros Molares retenidos</strong> en la Cátedra de
                     Cirugía de la UdelaR.
@@ -63,7 +64,7 @@ export default function BiographyGallery() {
                 ),
               },
               {
-                title: "Otras acreditaciones",
+                title: "Título de Máster",
                 text: (
                   <>
                     La Dra. Nadia cuenta con un{" "}

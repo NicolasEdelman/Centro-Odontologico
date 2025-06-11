@@ -130,8 +130,8 @@ export default function DentistProfiles() {
                   Dra. Nadia Pérez
                 </h3>
                 <p className="text-white text-xs md:text-base mb-1 md:mb-4">
-                  Especialista en Rehabilitación
-                  <br /> Implantología y Cirugía
+                  Especialista en Odontología Restauradora Integral.
+                  Implantología y Cirugía
                 </p>
                 <Link href="/dentistas/nadia-perez">
                   <Button

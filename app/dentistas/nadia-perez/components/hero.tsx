@@ -35,9 +35,11 @@ export default function Hero() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 Dra. Nadia Pérez
               </h1>
-              <p className="text-xl text-white/90 mb-8">
-                Especialista en Rehabilitación Implantología y Cirugía
-                <br />
+              <p className="text-xl text-white font-bold md:mb-4">
+                Especialista en Odontología Restauradora Integral. Implantología
+                y Cirugía
+              </p>
+              <p className="text-xl text-white/90 mb-8 italic">
                 "Me dedico a diseñar y concretar proyectos desde sus cimientos
                 hasta su expresión, elevando la confianza y el bienestar de cada
                 persona."

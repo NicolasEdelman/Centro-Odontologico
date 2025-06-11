@@ -65,7 +65,7 @@ export default function BiographyGallery() {
                 ),
               },
               {
-                title: "Otras acreditaciones",
+                title: "Acreditaciones",
                 text: (
                   <>
                     La Dra. Fabiana cuenta con la{" "}
@@ -76,11 +76,11 @@ export default function BiographyGallery() {
                 reverse: true,
               },
               {
-                title: "En el ambito internacional",
+                title: "Diplomatura",
                 text: (
                   <>
                     Fabiana cuenta con un{" "}
-                    <strong>"Diploma do Internacional en Ortoperio"</strong> que
+                    <strong>"Diplomado Internacional en Ortoperio"</strong> que
                     se trata de Ortodoncia enfocada en pacientes periodontales.
                   </>
                 ),

@@ -35,9 +35,11 @@ export default function Hero() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 Dra. Fabiana Zelpo
               </h1>
-              <p className="text-xl text-white/90 mb-8">
+              <p className="text-xl text-white font-bold md:mb-4">
                 Especialista en Armonización Orofacial (c) Ortodoncia y
                 Ortopedia. <br />
+              </p>
+              <p className="text-xl text-white/90 mb-8 italic">
                 "Me dedico a acompañar el desarrollo orofacial desde una mirada
                 funcional y estética, abordando tanto las etapas de crecimiento
                 como los cambios propios del envejecimiento"
