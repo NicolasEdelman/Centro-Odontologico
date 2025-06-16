@@ -23,6 +23,7 @@ export default function BiographyGallery() {
             {/* Bloques individuales con animación simple al scrollear */}
             {[
               {
+                image: "/Biografia/FacultadNadia.png",
                 title: "Doctora en Odontología",
                 text: (
                   <>
@@ -34,6 +35,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Especialista en Odontología Restauradora Integral",
+                image: "/Biografia/OdontologiaRestauradora.png",
                 text: (
                   <>
                     Título otorgado también por la Facultad de Odontología,
@@ -47,6 +49,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Estudios de Postgrado",
+                image: "/Biografia/PostgradoNadia.png",
                 text: (
                   <>
                     Su formación de <strong>Posgrado</strong> se ha centrado
@@ -65,6 +68,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Título de Máster",
+                image: "/Biografia/Master.png",
                 text: (
                   <>
                     La Dra. Nadia cuenta con un{" "}
@@ -76,6 +80,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Experiencia Docente",
+                image: "/Biografia/ExperienciaDocente.png",
                 text: (
                   <>
                     Nadia ha sido <strong>Docente Grado 2</strong> durante 14
@@ -98,7 +103,7 @@ export default function BiographyGallery() {
               >
                 <div className="w-full lg:w-1/2 relative h-96 rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/placeholder.svg"
+                    src={block.image || "/placeholder.svg"}
                     alt={block.title}
                     fill
                     className="object-cover"

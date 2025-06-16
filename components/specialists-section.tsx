@@ -40,8 +40,13 @@ export default function SpecialistsSection() {
     },
     {
       name: "Victoria Rodriguez",
-      role: "Cosmetóloga médica",
+      role: "Cosmetóloga Médica",
       image: "/images/Staff/EquipoMarron/VictoriaRodriguez.png",
+    },
+    {
+      name: "Valentina Armand",
+      role: "Fonoaudióloga",
+      image: "/images/Staff/ValentinaArmand.png",
     },
   ];
 
@@ -92,7 +97,7 @@ export default function SpecialistsSection() {
         <h3 className="text-md md:text-lg font-bold text-gray-800  whitespace-normal">
           {name}
         </h3>
-        <p className="text-co-secondary-beige md:text-base text-sm  whitespace-normal">
+        <p className="text-co-secondary-beige md:text-base text-sm  whitespace-normal h-[68px]">
           {role}
         </p>
       </div>
@@ -101,7 +106,7 @@ export default function SpecialistsSection() {
 
   return (
     <section id="equipo" className="w-full pt-20 md:py-20 bg-white">
-      <div className="md:container md:mx-auto md:px-4">
+      <div className="md:mx-auto md:px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -120,16 +125,18 @@ export default function SpecialistsSection() {
             ))}
           </AutoCarousel>
         ) : (
-          <motion.div
-            variants={container}
-            initial="hidden"
-            animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto"
-          >
-            {specialists.map((spec, i) => (
-              <SpecialistCard key={i} {...spec} />
-            ))}
-          </motion.div>
+          <div className="md:container md:mx-auto md:px-4">
+            <motion.div
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto"
+            >
+              {specialists.map((spec, i) => (
+                <SpecialistCard key={i} {...spec} />
+              ))}
+            </motion.div>
+          </div>
         )}
       </div>
     </section>

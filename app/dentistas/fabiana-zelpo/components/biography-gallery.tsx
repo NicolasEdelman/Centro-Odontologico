@@ -24,6 +24,7 @@ export default function BiographyGallery() {
             {[
               {
                 title: "Doctora en Odontología",
+                image: "/Biografia/FacultadFabi.png",
                 text: (
                   <>
                     La Dra. Fabiana Zelpo es egresada de la Facultad de
@@ -34,6 +35,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Especialista en Armonización Orofacial",
+                image: "/Biografia/ArmonizacionOrofacial.png",
                 text: (
                   <>
                     Este título es otorgado por el Instituto Universitario
@@ -50,6 +52,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Estudios de Postgrado",
+                image: "/Biografia/PostgradoFabi.png",
                 text: (
                   <>
                     Su formación se ha centrado en el área del desarrollo y
@@ -66,6 +69,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Acreditaciones",
+                image: "/Biografia/Acreditaciones.png",
                 text: (
                   <>
                     La Dra. Fabiana cuenta con la{" "}
@@ -77,6 +81,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Diplomatura",
+                image: "/Biografia/DiplomadoInternacional.png",
                 text: (
                   <>
                     Fabiana cuenta con un{" "}
@@ -98,7 +103,7 @@ export default function BiographyGallery() {
               >
                 <div className="w-full lg:w-1/2 relative h-96 rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/placeholder.svg"
+                    src={block.image || "/placeholder.svg"}
                     alt={block.title}
                     fill
                     className="object-cover"

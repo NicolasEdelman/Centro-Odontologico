@@ -7,25 +7,22 @@ import AutoCarousel from "./auto-carrousel";
 
 export default function AgreementsSection() {
   const companies = [
-    { name: "CDM Logistica", logo: "/convenios/CDM.png?height=80&width=160" },
-    {
-      name: "Costa Oriental",
-      logo: "/convenios/CostaOriental.png?height=80&width=160",
-    },
-    {
-      name: "Electro sistemas",
-      logo: "/convenios/Electrosistemas.png?height=80&width=160",
-    },
-    { name: "Elese", logo: "/convenios/Elese.png?height=80&width=160" },
-    { name: "FSC", logo: "/convenios/FSC.png?height=80&width=160" },
-    { name: "Infoland", logo: "/convenios/Infoland.png?height=80&width=160" },
-    { name: "Juan 23", logo: "/convenios/Juan23.png?height=80&width=160" },
-    { name: "Red Pagos", logo: "/convenios/RedPagos.png?height=80&width=160" },
-    { name: "Sinapsis", logo: "/convenios/Sinapsis.gif?height=80&width=160" },
-    { name: "Viva fit", logo: "/convenios/VivaFit.png?height=80&width=160" },
+    { name: "Anglo", logo: "/convenios/Anglo.jpg" },
+    { name: "Bike", logo: "/convenios/Bike.jpg" },
+    { name: "Correo Uruguayo", logo: "/convenios/CorreoUruguayo.png" },
+    { name: "CGT", logo: "/convenios/CGT.png" },
+    { name: "Elese", logo: "/convenios/Elese.jpg" },
+    { name: "Little Dancers", logo: "/convenios/LittleDancers.png" },
+    { name: "Mi Dinero", logo: "/convenios/MiDinero.png" },
+    { name: "Jacaranda", logo: "/convenios/Jacaranda.jpg" },
+    { name: "Prosegur", logo: "/convenios/Prosegur.png" },
+    { name: "Mi Dinero YA", logo: "/convenios/MiDineroYa.jpg" },
+    { name: "Redpagos", logo: "/convenios/Redpagos.png" },
+    { name: "River", logo: "/convenios/River.png" },
+    { name: "Sinapsis", logo: "/convenios/Sinapsis.png" },
+    { name: "Setif", logo: "/convenios/Setif.png" },
   ];
 
-  // Repetimos el array para efecto infinito
   const allCompanies = useMemo(
     () => [...companies, ...companies, ...companies, ...companies],
     [companies]
