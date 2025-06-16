@@ -4,9 +4,13 @@ import { useEffect, useRef } from "react";
 
 interface AutoCarouselProps {
   children: React.ReactNode;
+  paused?: boolean;
 }
 
-export default function AutoCarousel({ children }: AutoCarouselProps) {
+export default function AutoCarousel({
+  children,
+  paused = false,
+}: AutoCarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -18,6 +22,7 @@ export default function AutoCarousel({ children }: AutoCarouselProps) {
     const speed = 1.5;
 
     const animate = () => {
+      if (paused) return;
       position -= speed;
 
       const totalWidth = carousel.scrollWidth / 3;
@@ -31,8 +36,7 @@ export default function AutoCarousel({ children }: AutoCarouselProps) {
 
     animationId = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animationId);
-  }, []);
-
+  }, [paused]);
 
   const repeatedChildren = [children, children, children];
 
