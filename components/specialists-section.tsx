@@ -136,7 +136,7 @@ export default function SpecialistsSection() {
       image: "/images/Staff/VirginiaMachado.png",
       text: (
         <>
-          Ella es <strong>Doctora en Odontología</strong> y nuestra
+          Ella es <strong>Doctora en Odontología</strong> y nuestra{" "}
           <strong>
             "Especialista en Trastornos Temporo Mandibulares y Sueño"
           </strong>
@@ -179,6 +179,30 @@ export default function SpecialistsSection() {
       name: "Valentina Armand",
       role: "Fonoaudióloga",
       image: "/images/Staff/ValentinaArmand.png",
+      text: (
+        <>
+          Ella es <strong>Fonoaudióloga</strong>, egresada de la Escuela
+          Universitaria de Tecnología Médica (EUTM), Universidad de la República
+          (UdelaR) Montevideo, Uruguay.
+          <br />
+          <br />
+          Es <strong> Licenciada en Neurofisiología Clínica</strong> egresada de
+          la EUTM, UdelaR.
+          <br />
+          <br />
+          Tiene <strong>Formación en Motricidad Orofacial</strong> En el
+          Instituto de Rehabilitación Orofacial (IROF), Chile.
+          <br />
+          <br />
+          Cuenta con un <strong>"Diplomado en Medicina del Sueño”</strong> por
+          el Centro Virtual de Postgrados (CEVIPO).
+          <br />
+          <br />
+          Ha realizado un{" "}
+          <strong>Curso teórico-práctico de Taping Neuro Facial</strong> con el
+          Lic. Facundo Caloggera, Argentina.
+        </>
+      ),
     },
   ];
 
