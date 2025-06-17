@@ -32,14 +32,14 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
                 Dra. Fabiana Zelpo
               </h1>
-              <p className="text-xl text-white font-bold md:mb-4">
+              <p className="text-md md:text-xl text-white font-bold mb-4">
                 Especialista en Armonización Orofacial (c) Ortodoncia y
                 Ortopedia. <br />
               </p>
-              <p className="text-xl text-white/90 mb-8 italic">
+              <p className="text-md md:text-xl text-white/90 mb-8 italic">
                 "Me dedico a acompañar el desarrollo orofacial desde una mirada
                 funcional y estética, abordando tanto las etapas de crecimiento
                 como los cambios propios del envejecimiento"
@@ -58,7 +58,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="relative h-[500px] w-[80%] rounded-xl overflow-hidden shadow-xl"
+              className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
               <Image
                 src="/images/fabiana-zelpo.png"

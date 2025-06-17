@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import AnimatedSection from "@/components/animated-section";
 import { SubTitle } from "@/components/sub-title";
 
 const fadeIn = {
@@ -12,15 +11,14 @@ const fadeIn = {
 
 export default function BiographyGallery() {
   return (
-    <AnimatedSection variant="slideUp" fullWidth>
+
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto mb-20">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto mb-12 md:mb-20">
             <SubTitle title="Formación académica" underlineColor="beige" />
           </div>
 
-          <div className="space-y-32">
-            {/* Bloques individuales con animación simple al scrollear */}
+          <div className="space-y-12 md:space-y-32">
             {[
               {
                 title: "Doctora en Odontología",
@@ -99,7 +97,7 @@ export default function BiographyGallery() {
                 viewport={{ once: true }}
                 className={`flex flex-col lg:flex-row ${
                   block.reverse ? "lg:flex-row-reverse" : ""
-                } items-center gap-12`}
+                } items-center gap-8 md:gap-12`}
               >
                 <div className="w-full lg:w-1/2 relative h-96 rounded-lg overflow-hidden shadow-xl">
                   <Image
@@ -109,11 +107,11 @@ export default function BiographyGallery() {
                     className="object-cover"
                   />
                 </div>
-                <div className="w-full lg:w-1/2 text-center lg:text-left">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4 uppercase tracking-wide">
+                <div className="w-full lg:w-1/2 text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 md:mb-4 uppercase tracking-wide">
                     {block.title}
                   </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
                     {block.text}
                   </p>
                 </div>
@@ -151,6 +149,6 @@ export default function BiographyGallery() {
           </div>
         </div>
       </section>
-    </AnimatedSection>
+
   );
 }
