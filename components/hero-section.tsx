@@ -1,16 +1,15 @@
-
 export default function HeroSection() {
   return (
     <section className="w-full h-screen relative flex items-center overflow-hidden">
       {/* Background video */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <video
           src="https://centro-odontologico.s3.us-east-2.amazonaws.com/VideoPortada.webm"
           autoPlay
           loop
           muted
           playsInline
-          className="object-cover brightness-50"
+          className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100"
         />
       </div>
 

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { SubTitle } from "@/components/sub-title";
+import AutoCarousel from "@/components/auto-carrousel";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -11,13 +12,13 @@ const fadeIn = {
 
 export default function BiographyGallery() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto">
+    <section className="md:py-20 bg-white">
+      <div className="">
         <div className="max-w-4xl mx-auto mb-12 md:mb-20">
           <SubTitle title="Formación académica" underlineColor="beige" />
         </div>
 
-        <div className="space-y-12 md:space-y-32">
+        <div className="space-y-12 md:space-y-32 container mx-auto">
           {[
             {
               image: "/Biografia/FacultadNadia.png",
@@ -117,11 +118,30 @@ export default function BiographyGallery() {
           ))}
         </div>
 
-        <div className="my-24">
+        <div className="mt-24 mb-8">
           <SubTitle title="Galería de Imágenes" underlineColor="beige" />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {/* Mobile: AutoCarousel */}
+        <div className="block md:hidden ">
+          <AutoCarousel>
+            {[...Array(8)].map((_, index) => (
+              <div key={index} className="w-60 max-w-xs">
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                  <Image
+                    src="/placeholder.svg?height=300&width=300"
+                    alt={`Galería ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+          </AutoCarousel>
+        </div>
+
+        {/* Desktop: Grid */}
+        <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container mx-auto">
           {[...Array(8)].map((_, index) => (
             <motion.div
               key={index}

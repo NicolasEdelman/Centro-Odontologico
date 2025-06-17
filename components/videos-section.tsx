@@ -13,7 +13,7 @@ export default function VideosSection() {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="bg-co-secondary-beige shadow-lg w-full h-full md:h-[92%]"></div>
       </div>
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10 py-8 md:py-0">
         {/* Texto a la izquierda */}
         <motion.div
           className="md:w-1/2"
