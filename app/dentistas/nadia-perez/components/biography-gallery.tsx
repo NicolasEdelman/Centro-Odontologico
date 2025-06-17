@@ -49,7 +49,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Estudios de Postgrado",
-                image: "/Biografia/PostgradoNadia.png",
+                image: "/Biografia/PostgradoNadia.jpg",
                 text: (
                   <>
                     Su formación de <strong>Posgrado</strong> se ha centrado
@@ -80,7 +80,7 @@ export default function BiographyGallery() {
               },
               {
                 title: "Experiencia Docente",
-                image: "/Biografia/ExperienciaDocente.png",
+                image: "/Biografia/ExperienciaDocent.jpg",
                 text: (
                   <>
                     Nadia ha sido <strong>Docente Grado 2</strong> durante 14

@@ -1,16 +1,16 @@
-import Image from "next/image"
 
 export default function HeroSection() {
   return (
     <section className="w-full h-screen relative flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/dental-treatment-1.jpeg"
-          alt="Centro Odontológico"
-          fill
+        <video
+          src="https://centro-odontologico.s3.us-east-2.amazonaws.com/VideoPortada.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
           className="object-cover brightness-50"
-          priority
         />
       </div>
 
@@ -57,6 +57,5 @@ export default function HeroSection() {
         </svg>
       </div>
     </section>
-  )
+  );
 }
-
