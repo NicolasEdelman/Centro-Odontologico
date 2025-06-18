@@ -11,57 +11,105 @@ export default function ServicesSection() {
       id: "rehabilitacion",
       title: "Rehabilitación",
       description:
-        "Restauración completa de la función y estética dental para devolverte la confianza en tu sonrisa.",
+        "Restauración de la función dental para una sonrisa saludable y estética.",
       image: "/images/dental-treatment-1.jpeg",
     },
     {
-      id: "ortodoncia",
-      title: "Ortodoncia",
+      id: "diseno-de-sonrisa",
+      title: "Diseño de Sonrisa",
       description:
-        "Alineación dental perfecta con tratamientos personalizados para todas las edades.",
+        "Transformación estética personalizada para lograr la sonrisa ideal.",
       image: "/images/dental-treatment-2.jpeg",
     },
     {
-      id: "implantologia",
-      title: "Implantes",
+      id: "ortodoncia-convencional",
+      title: "Ortodoncia Convencional",
       description:
-        "Soluciones permanentes para dientes perdidos con tecnología de vanguardia y materiales de alta calidad.",
+        "Corrección de la posición dental mediante brackets metálicos tradicionales.",
       image: "/images/dental-treatment-3.jpeg",
+    },
+    {
+      id: "ortodoncia-invisible",
+      title: "Ortodoncia Invisible",
+      description:
+        "Alineadores transparentes para corregir tu sonrisa de forma discreta.",
+      image: "/images/dental-treatment-4.jpeg",
+    },
+    {
+      id: "ortopedia",
+      title: "Ortopedia",
+      description:
+        "Guía del desarrollo óseo y dental en niños para una mordida funcional.",
+      image: "/images/dental-treatment-1.jpeg",
     },
     {
       id: "estetica-facial",
-      title: "Estética facial",
+      title: "Estética Facial",
       description:
-        "Tratamientos no invasivos para realzar la belleza natural de tu rostro y complementar tu sonrisa.",
-      image: "/images/dental-treatment-4.jpeg",
-    },
-    {
-      id: "rehabilitacion2",
-      title: "Rehabilitación",
-      description:
-        "Restauración completa de la función y estética dental para devolverte la confianza en tu sonrisa.",
-      image: "/images/dental-treatment-1.jpeg",
-    },
-    {
-      id: "ortodoncia2",
-      title: "Ortodoncia",
-      description:
-        "Alineación dental perfecta con tratamientos personalizados para todas las edades.",
+        "Tratamientos no invasivos para realzar la armonía del rostro.",
       image: "/images/dental-treatment-2.jpeg",
     },
     {
-      id: "implantologia2",
-      title: "Implantes",
+      id: "cosmetologia-medica",
+      title: "Cosmetología Médica",
       description:
-        "Soluciones permanentes para dientes perdidos con tecnología de vanguardia y materiales de alta calidad.",
+        "Cuidado avanzado de la piel para mejorar su salud y apariencia.",
       image: "/images/dental-treatment-3.jpeg",
     },
     {
-      id: "estetica-facial2",
-      title: "Estética facial",
+      id: "fonoaudiologia",
+      title: "Fonoaudiología",
       description:
-        "Tratamientos no invasivos para realzar la belleza natural de tu rostro y complementar tu sonrisa.",
+        "Diagnóstico y tratamiento de trastornos del habla y lenguaje.",
       image: "/images/dental-treatment-4.jpeg",
+    },
+    {
+      id: "implantologia",
+      title: "Implantología",
+      description:
+        "Reemplazo de dientes perdidos con implantes dentales duraderos.",
+      image: "/images/dental-treatment-1.jpeg",
+    },
+    {
+      id: "cirugia",
+      title: "Cirugía",
+      description:
+        "Procedimientos quirúrgicos para resolver problemas bucales complejos.",
+      image: "/images/dental-treatment-2.jpeg",
+    },
+    {
+      id: "periodoncia",
+      title: "Periodoncia",
+      description:
+        "Tratamiento de encías y estructuras que sostienen los dientes.",
+      image: "/images/dental-treatment-3.jpeg",
+    },
+    {
+      id: "endodoncia",
+      title: "Endodoncia",
+      description:
+        "Tratamientos de conducto para salvar dientes dañados o infectados.",
+      image: "/images/dental-treatment-4.jpeg",
+    },
+    {
+      id: "patologia-oral",
+      title: "Patología Oral",
+      description:
+        "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
+      image: "/images/dental-treatment-1.jpeg",
+    },
+    {
+      id: "odontopediatria",
+      title: "Odontopediatría",
+      description: "Atención dental especializada para niños y adolescentes.",
+      image: "/images/dental-treatment-2.jpeg",
+    },
+    {
+      id: "tratornos-temporomandibulares-y-sueno",
+      title: "Sueño y TTM",
+      description:
+        "Tratamiento del sueño y disfunciones temporomandibulares.",
+      image: "/images/dental-treatment-3.jpeg",
     },
   ];
 
@@ -106,7 +154,7 @@ export default function ServicesSection() {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"
+          className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6"
         >
           {services.map((service) => (
             <motion.div
@@ -120,7 +168,7 @@ export default function ServicesSection() {
               }}
               className="group bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 h-full flex flex-col"
             >
-              <div className="relative md:h-48 h-20 w-full overflow-hidden">
+              <div className="relative md:h-32 h-20 w-full overflow-hidden">
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
@@ -130,11 +178,11 @@ export default function ServicesSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/90 to-transparent"></div>
               </div>
 
-              <div className="md:p-4 p-2 flex flex-col flex-grow">
-                <h3 className="md:text-xl text-md font-bold text-brand-blue mb-2">
+              <div className="md:p-3 p-2 flex flex-col flex-grow">
+                <h3 className="md:text-lg text-md font-bold text-brand-blue ">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 md:mb-4 text-xs md:text-sm">
+                <p className="text-gray-600  text-xs md:text-xs">
                   {service.description}
                 </p>
                 <Link href={`/servicios/${service.id}`} className="mt-2">

@@ -38,13 +38,13 @@ export default function AutoCarousel({
     return () => cancelAnimationFrame(animationId);
   }, [paused]);
 
-  const repeatedChildren = [children, children, children];
+  const repeatedChildren = [children, children, children, children];
 
   return (
     <div className="relative w-full overflow-hidden">
       <div
         ref={carouselRef}
-        className="flex items-center gap-10 py-4"
+        className="flex items-center gap-20 py-4"
         style={{ whiteSpace: "nowrap" }}
       >
         {repeatedChildren.map((group, index) => (

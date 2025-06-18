@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="w-full h-screen relative flex items-center overflow-hidden">
+    <section className="w-full h-screen md:h-screen relative flex items-center overflow-hidden">
       {/* Background video */}
       <div className="absolute inset-0 z-0 w-full h-full">
         <video
@@ -15,7 +15,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl md:mt-[20rem]">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-avenir">
             CENTRALIZA <br /> TU ODONTOLOGÍA
           </h1>

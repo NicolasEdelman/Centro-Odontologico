@@ -176,7 +176,7 @@ export default function SpecialistsSection() {
       ),
     },
     {
-      name: "Valentina Armand",
+      name: "Valentina Armand Ugón",
       role: "Fonoaudióloga",
       image: "/images/Staff/ValentinaArmand.png",
       text: (
@@ -250,7 +250,7 @@ export default function SpecialistsSection() {
   }) => (
     <motion.div
       variants={item}
-      className="group text-center flex-shrink-0 w-[150px] md:w-[200px] max-w-[200px]"
+      className="group text-center flex-shrink-0 w-[150px] md:w-[230px] max-w-[230px]"
     >
       <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[200px] pb-4">
         <Image
@@ -262,13 +262,19 @@ export default function SpecialistsSection() {
         />
       </div>
 
-      <div className=" mx-auto overflow-hidden">
+      <div className=" mx-auto overflow-hidden h-[100px]">
         <h3 className="text-md md:text-lg font-bold text-gray-800  whitespace-normal">
           {name}
         </h3>
-        <p className="text-co-secondary-beige md:text-base text-sm  whitespace-normal h-[68px]">
+        <p className="text-co-secondary-beige md:text-base text-sm  whitespace-normal ">
           {role}
         </p>
+        <button
+          onClick={onClick}
+          className="text-gray-400 md:text-base text-sm  whitespace-normal hover:underline hover:cursor-pointer"
+        >
+          Saber más
+        </button>
       </div>
     </motion.div>
   );
