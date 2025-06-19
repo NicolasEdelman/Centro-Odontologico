@@ -250,7 +250,7 @@ export default function SpecialistsSection() {
   }) => (
     <motion.div
       variants={item}
-      className="group text-center flex-shrink-0 w-[150px] md:w-[230px] max-w-[230px]"
+      className="group text-center flex-shrink-0 w-[220px] md:w-[230px] max-w-[230px]"
     >
       <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[200px] pb-4">
         <Image
@@ -262,7 +262,7 @@ export default function SpecialistsSection() {
         />
       </div>
 
-      <div className=" mx-auto overflow-hidden h-[100px]">
+      <div className=" mx-auto overflow-hidden h-[110px]">
         <h3 className="text-md md:text-lg font-bold text-gray-800  whitespace-normal">
           {name}
         </h3>

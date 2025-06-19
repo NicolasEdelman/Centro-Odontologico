@@ -8,13 +8,6 @@ import { motion } from "framer-motion";
 export default function ServicesSection() {
   const services = [
     {
-      id: "rehabilitacion",
-      title: "Rehabilitación",
-      description:
-        "Restauración de la función dental para una sonrisa saludable y estética.",
-      image: "/images/dental-treatment-1.jpeg",
-    },
-    {
       id: "diseno-de-sonrisa",
       title: "Diseño de Sonrisa",
       description:
@@ -22,46 +15,11 @@ export default function ServicesSection() {
       image: "/images/dental-treatment-2.jpeg",
     },
     {
-      id: "ortodoncia-convencional",
-      title: "Ortodoncia Convencional",
+      id: "rehabilitacion",
+      title: "Rehabilitación",
       description:
-        "Corrección de la posición dental mediante brackets metálicos tradicionales.",
-      image: "/images/dental-treatment-3.jpeg",
-    },
-    {
-      id: "ortodoncia-invisible",
-      title: "Ortodoncia Invisible",
-      description:
-        "Alineadores transparentes para corregir tu sonrisa de forma discreta.",
-      image: "/images/dental-treatment-4.jpeg",
-    },
-    {
-      id: "ortopedia",
-      title: "Ortopedia",
-      description:
-        "Guía del desarrollo óseo y dental en niños para una mordida funcional.",
+        "Restauración de la función dental para una sonrisa saludable y estética.",
       image: "/images/dental-treatment-1.jpeg",
-    },
-    {
-      id: "estetica-facial",
-      title: "Estética Facial",
-      description:
-        "Tratamientos no invasivos para realzar la armonía del rostro.",
-      image: "/images/dental-treatment-2.jpeg",
-    },
-    {
-      id: "cosmetologia-medica",
-      title: "Cosmetología Médica",
-      description:
-        "Cuidado avanzado de la piel para mejorar su salud y apariencia.",
-      image: "/images/dental-treatment-3.jpeg",
-    },
-    {
-      id: "fonoaudiologia",
-      title: "Fonoaudiología",
-      description:
-        "Diagnóstico y tratamiento de trastornos del habla y lenguaje.",
-      image: "/images/dental-treatment-4.jpeg",
     },
     {
       id: "implantologia",
@@ -78,6 +36,61 @@ export default function ServicesSection() {
       image: "/images/dental-treatment-2.jpeg",
     },
     {
+      id: "patologia-oral",
+      title: "Patología Oral",
+      description:
+        "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
+      image: "/images/dental-treatment-1.jpeg",
+    },
+    {
+      id: "ortopedia",
+      title: "Ortopedia",
+      description:
+        "Guía del desarrollo óseo y dental en niños para una mordida funcional.",
+      image: "/images/dental-treatment-1.jpeg",
+    },
+    {
+      id: "ortodoncia-convencional",
+      title: "Ortodoncia Convencional",
+      description:
+        "Corrección de la posición dental con brackets metálicos tradicionales.",
+      image: "/images/dental-treatment-3.jpeg",
+    },
+    {
+      id: "ortodoncia-invisible",
+      title: "Ortodoncia Invisible",
+      description:
+        "Alineadores transparentes para corregir tu sonrisa de forma discreta.",
+      image: "/images/dental-treatment-4.jpeg",
+    },
+    {
+      id: "estetica-facial",
+      title: "Estética Facial",
+      description:
+        "Tratamientos no invasivos para realzar la armonía del rostro.",
+      image: "/images/dental-treatment-2.jpeg",
+    },
+    {
+      id: "cosmetologia-medica",
+      title: "Cosmetología Médica",
+      description:
+        "Cuidado avanzado de la piel para mejorar su salud y apariencia.",
+      image: "/images/dental-treatment-3.jpeg",
+    },
+    {
+      id: "odontopediatria",
+      title: "Odontopediatría",
+      description: "Atención dental especializada para niños y adolescentes.",
+      image: "/images/dental-treatment-2.jpeg",
+    },
+    {
+      id: "fonoaudiologia",
+      title: "Fonoaudiología",
+      description:
+        "Diagnóstico y tratamiento de trastornos del habla y lenguaje.",
+      image: "/images/dental-treatment-4.jpeg",
+    },
+    {
       id: "periodoncia",
       title: "Periodoncia",
       description:
@@ -92,23 +105,9 @@ export default function ServicesSection() {
       image: "/images/dental-treatment-4.jpeg",
     },
     {
-      id: "patologia-oral",
-      title: "Patología Oral",
-      description:
-        "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
-      image: "/images/dental-treatment-1.jpeg",
-    },
-    {
-      id: "odontopediatria",
-      title: "Odontopediatría",
-      description: "Atención dental especializada para niños y adolescentes.",
-      image: "/images/dental-treatment-2.jpeg",
-    },
-    {
-      id: "tratornos-temporomandibulares-y-sueno",
+      id: "sueno-y-ttm",
       title: "Sueño y TTM",
-      description:
-        "Tratamiento del sueño y disfunciones temporomandibulares.",
+      description: "Tratamiento del sueño y disfunciones temporomandibulares.",
       image: "/images/dental-treatment-3.jpeg",
     },
   ];
@@ -186,12 +185,9 @@ export default function ServicesSection() {
                   {service.description}
                 </p>
                 <Link href={`/servicios/${service.id}`} className="mt-2">
-                  <Button
-                    className="bg-co-primary-blue hover:bg-brand-blue text-white w-full"
-                    size="sm"
-                  >
-                    Saber Más
-                  </Button>
+                  <button className=" text-co-primary-blue text-sm hover:underline w-full rounded-lg">
+                    Saber más
+                  </button>
                 </Link>
               </div>
             </motion.div>

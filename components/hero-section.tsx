@@ -1,16 +1,74 @@
+"use client";
+import { useRef, useState } from "react";
+
 export default function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [muted, setMuted] = useState(true);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setMuted(videoRef.current.muted);
+    }
+  };
+
   return (
     <section className="w-full h-screen md:h-screen relative flex items-center overflow-hidden">
       {/* Background video */}
       <div className="absolute inset-0 z-0 w-full h-full">
         <video
-          src="https://centro-odontologico.s3.us-east-2.amazonaws.com/VideoPortada.webm"
+          ref={videoRef}
+          src="https://centro-odontologico.s3.us-east-2.amazonaws.com/PortadaDesktop.webm"
           autoPlay
           loop
-          muted
+          muted={muted}
           playsInline
-          className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100"
+          className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 hidden md:block"
         />
+        <video
+          ref={videoRef}
+          src="https://centro-odontologico.s3.us-east-2.amazonaws.com/PortadaMobile.webm"
+          autoPlay
+          loop
+          muted={muted}
+          playsInline
+          className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 md:hidden block"
+        />
+        {/* Botón mute/desmute */}
+        <button
+          onClick={toggleMute}
+          className="absolute bottom-6 right-6 z-10  rounded-full p-2 shadow hover:bg-gray-100/30 transition"
+        >
+          {!muted ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M9 9v6h4l5 5V4l-5 5H9z" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M9 9v6h4l5 5V4l-5 5H9z" />
+              <line
+                x1="19"
+                y1="5"
+                x2="5"
+                y2="19"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
+            </svg>
+          )}
+        </button>
       </div>
 
       {/* Content */}
