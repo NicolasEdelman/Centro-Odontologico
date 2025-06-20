@@ -1,9 +1,11 @@
 "use client";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
+  const [error, setError] = useState(false);
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -12,28 +14,46 @@ export default function HeroSection() {
     }
   };
 
+  const handleVideoError = () => {
+    setError(true);
+  };
+
   return (
     <section className="w-full h-screen md:h-screen relative flex items-center overflow-hidden">
-      {/* Background video */}
+      {/* Background video o imagen de fallback */}
       <div className="absolute inset-0 z-0 w-full h-full">
-        <video
-          ref={videoRef}
-          src="https://centro-odontologico.s3.us-east-2.amazonaws.com/PortadaDesktop.webm"
-          autoPlay
-          loop
-          muted={muted}
-          playsInline
-          className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 hidden md:block"
-        />
-        <video
-          ref={videoRef}
-          src="https://centro-odontologico.s3.us-east-2.amazonaws.com/PortadaMobile.webm"
-          autoPlay
-          loop
-          muted={muted}
-          playsInline
-          className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 md:hidden block"
-        />
+        {error ? (
+          <Image
+            src="/images/PortadaDesktop.jpg" // O .png, o la extensión que sea
+            alt="Fondo"
+            layout="fill"
+            objectFit="cover"
+            className="brightness-50"
+          />
+        ) : (
+          <>
+            <video
+              ref={videoRef}
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/PortadaDesktop.webm"
+              autoPlay
+              loop
+              muted={muted}
+              playsInline
+              className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 hidden md:block"
+              onError={handleVideoError}
+            />
+            <video
+              ref={videoRef}
+              src="https://centro-odontologico.s3.us-east-2.amazonaws.com/PortadaMobile.webm"
+              autoPlay
+              loop
+              muted={muted}
+              playsInline
+              className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 md:hidden block"
+              onError={handleVideoError}
+            />
+          </>
+        )}
         {/* Botón mute/desmute */}
         <button
           onClick={toggleMute}

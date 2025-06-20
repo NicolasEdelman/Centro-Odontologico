@@ -13,6 +13,7 @@ import { CTA } from "@/components/call-to-action";
 import PlansSection from "@/components/plans-section";
 import AgreementsSection from "@/components/agreements-section";
 import OurHistory from "@/components/our-history";
+import OdontologiaDigital from "@/components/odontologia-digital";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -25,6 +26,10 @@ export default function Home() {
 
       <AnimatedSection variant="bounce" fullWidth>
         <TeamSection />
+      </AnimatedSection>
+
+      <AnimatedSection variant="slideRight" fullWidth>
+        <OdontologiaDigital />
       </AnimatedSection>
 
       <AnimatedSection variant="slideLeft" fullWidth>
