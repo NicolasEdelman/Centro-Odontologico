@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { SubTitle } from "@/components/sub-title";
-import AutoCarousel from "@/components/auto-carrousel";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -100,7 +99,7 @@ export default function ODGallery() {
             >
               <div className="w-full lg:w-1/2 relative h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src={block.image || "/placeholder.svg"}
+                  src={ "/placeholder.svg"}
                   alt={block.title}
                   fill
                   className="object-cover"

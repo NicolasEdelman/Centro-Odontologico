@@ -88,7 +88,7 @@ export default function DentistProfiles() {
                   Dra. Fabiana Zelpo
                 </h3>
                 <p className="text-white text-xs md:text-base mb-1 md:mb-4">
-                  Especialista en Armonización Orofacial (c) Ortodoncia y
+                  Especialista en Armonización Orofacial (C). Ortodoncia y
                   Ortopedia
                 </p>
                 {/* <Link href="/dentistas/fabiana-zelpo"> */}

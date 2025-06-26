@@ -250,9 +250,9 @@ export default function SpecialistsSection() {
   }) => (
     <motion.div
       variants={item}
-      className="group text-center flex-shrink-0 w-[220px] md:w-[230px] max-w-[230px]"
+      className="group text-center flex-shrink-0 w-[180px] md:w-[230px] max-w-[230px]"
     >
-      <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[200px] pb-4">
+      <div className="relative w-full aspect-square overflow-hidden md:mb-4 mx-auto max-w-[150px] md:max-w-[200px] pb-4">
         <Image
           src={image || "/placeholder.svg"}
           alt={name}

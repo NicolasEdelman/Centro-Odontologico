@@ -100,7 +100,7 @@ export default function TeamSection() {
   );
 
   return (
-    <section className="w-full pt-5 md:pt-0 md:pb-20 bg-white">
+    <section className="w-full mb-10  md:pt-0 md:pb-20 bg-white">
       <div className=" md:mx-auto ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
