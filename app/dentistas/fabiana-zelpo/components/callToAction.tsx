@@ -37,7 +37,7 @@ export default function CallToAction() {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="/#contacto">
-            <Button size="lg" className="bg-white text-co-secondary-beige hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-co-secondary-beige hover:bg-gray-100 rounded-full">
               Agendar Consulta
               </Button>
             </Link>

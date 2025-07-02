@@ -43,7 +43,7 @@ export default function VideosSection() {
 
           <Link
             href="/#contacto"
-            className="inline-block text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300"
+            className="inline-block text-sm rounded-full md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 hover:bg-opacity-90 transition-all duration-300"
           >
             Agendar una consulta
           </Link>

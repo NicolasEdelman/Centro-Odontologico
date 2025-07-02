@@ -69,13 +69,13 @@ export default function OdontologiaDigital() {
           <div className="flex gap-4">
             <Link
               href="/#contacto"
-              className="inline-block text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300"
+              className="inline-block rounded-full text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 hover:bg-opacity-90 transition-all duration-300"
             >
               Agendar una consulta
             </Link>
             <Link
               href="/odontologia-digital"
-              className="inline-block text-white md:text-base bg-transparent border-2 border-white px-4 md:px-8 py-1 md:py-3 rounded-lg hover:bg-white/10 transition-all duration-300"
+              className="inline-block rounded-full text-white md:text-base bg-transparent border-2 border-white px-4 md:px-8 py-1 md:py-3 hover:bg-white/10 transition-all duration-300"
             >
               Conocer más
             </Link>

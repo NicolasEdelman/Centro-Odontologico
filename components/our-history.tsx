@@ -25,7 +25,7 @@ export default function OurHistory() {
             Más de 15 años de trayectoria
           </h2>
           <div className="w-20 h-1 bg-white mb-4"></div>
-          <div className="flex flex-col gap-6 hidden md:block">
+          <div className="flex flex-col gap-6  md:block">
             <div className="flex md:flex-row md:items-center md:gap-4 mb-6">
               <div className="w-1/5 ">
                 <Image
@@ -114,12 +114,12 @@ export default function OurHistory() {
           <div className="flex justify-center">
             <Link
               href="/historia"
-              className="inline-block bg-white  text-co-secondary-beige px-4 py-3 rounded-lg  hover:bg-opacity-90 transition-all duration-300 mt-4 mb-8 md:mb-0"
+              className="inline-block bg-white rounded-full text-co-secondary-beige px-4 py-3  hover:bg-opacity-90 transition-all duration-300 mt-4 mb-8 md:mb-0"
             >
               <span className="block md:hidden">
                 Conocer toda nuestra historia
               </span>
-              <span className="hidden md:block">Seguir leyendo</span>
+              <span className="hidden md:block ">Seguir leyendo</span>
             </Link>
           </div>
         </motion.div>

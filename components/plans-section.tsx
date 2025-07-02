@@ -61,7 +61,7 @@ export default function PlansSection() {
           <Link href="/planes">
             <Button
               size="lg"
-              className="bg-co-primary-blue hover:bg-co-primary-blue/80 text-white"
+              className="bg-co-primary-blue hover:bg-co-primary-blue/80 text-white rounded-full"
             >
               Más información
             </Button>

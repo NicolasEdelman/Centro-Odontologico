@@ -49,7 +49,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button className="bg-white text-co-secondary-beige hover:bg-white/90">
+                <Button className="bg-white text-co-secondary-beige hover:bg-white/90 rounded-full">
                   Agendar Consulta
                 </Button>
               </motion.div>
