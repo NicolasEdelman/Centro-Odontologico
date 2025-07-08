@@ -96,7 +96,7 @@ export default function DentistProfiles() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="bg-transparent rounded-full border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300 text-xs md:text-base"
+                    className="bg-transparent  border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300 text-xs md:text-base"
                   >
                     Saber más
                   </Button>
@@ -137,7 +137,7 @@ export default function DentistProfiles() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="bg-transparent rounded-full border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300 text-xs md:text-base"
+                    className="bg-transparent border-white text-white hover:bg-white hover:text-co-secondary-beige transition-all duration-300 text-xs md:text-base"
                   >
                     Saber más
                   </Button>

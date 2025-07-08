@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -112,15 +113,15 @@ export default function OurHistory() {
             </div>
           </div>
           <div className="flex justify-center">
-            <Link
+            <Button
               href="/historia"
-              className="inline-block bg-white rounded-full text-co-secondary-beige px-4 py-3  hover:bg-opacity-90 transition-all duration-300 mt-4 mb-8 md:mb-0"
+              className=" bg-white text-co-secondary-beige px-4 py-3   hover:bg-white/60 transition-all duration-300 mt-4 mb-8 md:mb-0"
             >
               <span className="block md:hidden">
                 Conocer toda nuestra historia
               </span>
               <span className="hidden md:block ">Seguir leyendo</span>
-            </Link>
+            </Button>
           </div>
         </motion.div>
 

@@ -47,7 +47,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="lg:col-span-6 bg-white text-gray-800 rounded-xl shadow-xl p-6 md:p-8 md:p-10"
+            className="lg:col-span-6 bg-white text-gray-800 rounded-xl shadow-xl p-6 "
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-8 text-co-primary-blue">
               Información de Contacto
@@ -118,7 +118,7 @@ export default function ContactSection() {
                 href="https://wa.me/59892632263"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-co-primary-blue hover:bg-co-primary-blue/90 text-white py-3 px-2 md:px-6 text-xs md:text-base shadow-lg transition-all"
+                className="inline-flex items-center gap-2 rounded-lg  bg-co-primary-blue hover:bg-co-primary-blue/90 text-white py-3 px-2 md:px-6 text-xs md:text-base shadow-lg transition-all"
               >
                 <WhatsAppIcon className="w-6 h-6" />
                 Hablános por WhatsApp
@@ -127,7 +127,7 @@ export default function ContactSection() {
                 href="https://www.google.com/maps/place/Centro+Odontol%C3%B3gico+Dra+Zelpo+Dra+P%C3%A9rez/@-34.9044397,-56.1882703,17z/data=!3m1!4b1!4m6!3m5!1s0x959f8100143b0261:0x28206a1815e77e03!8m2!3d-34.9044397!4d-56.1882703!16s%2Fg%2F11xdjpzcvj?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-co-primary-blue border rounded-full border-co-primary-blue py-3 px-2 md:px-6 text-xs md:text-base shadow-lg transition-all"
+                className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-co-primary-blue border rounded-lg border-co-primary-blue py-3 px-2 md:px-6 text-xs md:text-base shadow-lg transition-all"
               >
                 <Star className="w-6 h-6" />
                 Dejanos una reseña!

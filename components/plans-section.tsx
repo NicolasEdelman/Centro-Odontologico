@@ -58,14 +58,13 @@ export default function PlansSection() {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="flex flex-col sm:flex-row gap-3 md:gap-6 items-center justify-center md:mt-4"
         >
-          <Link href="/planes">
-            <Button
-              size="lg"
-              className="bg-co-primary-blue hover:bg-co-primary-blue/80 text-white rounded-full"
-            >
-              Más información
-            </Button>
-          </Link>
+          <Button
+            href="/planes"
+            size="lg"
+            className="bg-co-primary-blue hover:bg-co-primary-blue/80 text-white"
+          >
+            Más información
+          </Button>
         </motion.div>
       </div>
     </section>

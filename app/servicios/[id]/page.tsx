@@ -226,7 +226,7 @@ export default function ServicioPage() {
                 <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6">{servicio.title}</h1>
                 <p className="text-xl text-white mb-8">{servicio.description}</p>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className="bg-[#7a9cbf] hover:bg-[#5d7a99] text-white rounded-full">Agendar Consulta</Button>
+                  <Button className="bg-[#7a9cbf] hover:bg-[#5d7a99] text-white ">Agendar Consulta</Button>
                 </motion.div>
               </motion.div>
               <motion.div

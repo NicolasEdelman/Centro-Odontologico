@@ -14,7 +14,7 @@ export const CTA = () => {
         <Link href="/#contacto">
           <Button
             size="lg"
-            className="bg-white text-co-primary-blue hover:bg-gray-100 rounded-full"
+            className="bg-white text-co-primary-blue hover:bg-gray-100"
           >
             Agendar Consulta
           </Button>

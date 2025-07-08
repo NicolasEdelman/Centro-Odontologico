@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import AnimatedSection from "@/components/animated-section"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import AnimatedSection from "@/components/animated-section";
+import Link from "next/link";
 
 export default function CallToAction() {
   return (
@@ -26,7 +26,8 @@ export default function CallToAction() {
             viewport={{ once: true }}
             className="text-xl mb-8 max-w-2xl mx-auto"
           >
-            Agenda una consulta con la Dra. Nadia Pérez y descubrí las opciones que mejor se adaptan a vos.
+            Agenda una consulta con la Dra. Nadia Pérez y descubrí las opciones
+            que mejor se adaptan a vos.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -37,13 +38,16 @@ export default function CallToAction() {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="/#contacto">
-            <Button size="lg" className="bg-white text-co-secondary-beige hover:bg-gray-100 rounded-full">
-              Agendar Consulta
+              <Button
+                size="lg"
+                className="bg-white text-co-secondary-beige hover:bg-gray-100 "
+              >
+                Agendar Consulta
               </Button>
             </Link>
           </motion.div>
         </div>
       </section>
     </AnimatedSection>
-  )
+  );
 }

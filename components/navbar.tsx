@@ -108,10 +108,10 @@ export default function Navbar() {
             {/* Botón de consulta */}
             <a href="#contacto">
               <Button
-                className={` rounded-full ${
+                className={` ${
                   isScrolled
                     ? "bg-co-primary-blue text-white hover:bg-co-primary-blue/50 hover:text-white"
-                    : "bg-white rounded-full hover:bg-co-primary-blue hover:text-white text-gray-500"
+                    : "bg-white hover:bg-co-primary-blue hover:text-white text-gray-500"
                 }`}
               >
                 Agendar Consulta
@@ -174,7 +174,7 @@ export default function Navbar() {
               </a>
 
               <a href="#contacto" onClick={() => setIsOpen(false)}>
-                <Button className="bg-co-primary-blue rounded-full hover:bg-co-primary-gray text-white w-full mt-2">
+                <Button className="bg-co-primary-blue hover:bg-co-primary-gray text-white w-full mt-2">
                   Agendar Consulta
                 </Button>
               </a>
