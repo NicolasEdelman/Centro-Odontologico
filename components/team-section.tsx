@@ -28,11 +28,11 @@ export default function TeamSection() {
       role: "Asistente dental",
       image: "/images/Staff/EquipoMarron/YeniMaciel.png",
     },
-    {
-      name: "Sebastián Gonzalvez",
-      role: "Asistente dental",
-      image: "/images/Staff/EquipoMarron/SebastianGonzalvez.png",
-    },
+    // {
+    //   name: "Sebastián Gonzalvez",
+    //   role: "Asistente dental",
+    //   image: "/images/Staff/EquipoMarron/SebastianGonzalvez.png",
+    // },
     {
       name: "Silvia Acosta",
       role: "Asistente de limpieza",
@@ -124,7 +124,7 @@ export default function TeamSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 container mx-auto max-w-6xl"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 container mx-auto max-w-6xl"
           >
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />

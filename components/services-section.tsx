@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function ServicesSection() {
@@ -11,104 +10,104 @@ export default function ServicesSection() {
       id: "diseno-de-sonrisa",
       title: "Diseño de Sonrisa",
       description:
-        "Transformación estética personalizada para lograr la sonrisa ideal.",
-      image: "/images/Prueba.jpeg",
+        "Transformación estética, emocional y personalizada de la sonrisa.",
+      image: "/LogoPrueba.png",
     },
     {
       id: "rehabilitacion",
       title: "Rehabilitación",
       description:
         "Restauración de la función dental para una sonrisa saludable y estética.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "implantologia",
       title: "Implantología",
       description:
         "Reemplazo de dientes perdidos con implantes dentales duraderos.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "cirugia",
       title: "Cirugía",
       description:
         "Procedimientos quirúrgicos para resolver problemas bucales complejos.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "patologia-oral",
       title: "Patología Oral",
       description:
         "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "ortopedia",
       title: "Ortopedia",
       description:
-        "Guía del desarrollo óseo y dental en niños para una mordida funcional.",
-      image: "/images/Prueba.jpeg",
+        "Guía del crecimiento y desarrollo óseo y de la estructura facial en niños y adolescentes.",
+      image: "/LogoPrueba.png",
     },
     {
       id: "ortodoncia-convencional",
       title: "Ortodoncia Convencional",
       description:
-        "Corrección de la posición dental con brackets metálicos tradicionales.",
-      image: "/images/Prueba.jpeg",
+        "Corrección de la posición dental y ósea con brackets metálicos o estéticos.",
+      image: "/LogoPrueba.png",
     },
     {
       id: "ortodoncia-invisible",
       title: "Ortodoncia Invisible",
       description:
-        "Alineadores transparentes para corregir tu sonrisa de forma discreta.",
-      image: "/images/Prueba.jpeg",
+        "Corrección de la posición dental y ósea con alineadores transparentes removibles.",
+      image: "/LogoPrueba.png",
     },
     {
       id: "estetica-facial",
       title: "Estética Facial",
       description:
-        "Tratamientos no invasivos para realzar la armonía del rostro.",
-      image: "/images/Prueba.jpeg",
+        "Tratamientos mínimamente invasivos para realzar la armonía del rostro y sonrisa.",
+      image: "/LogoPrueba.png",
     },
     {
       id: "cosmetologia-medica",
       title: "Cosmetología Médica",
       description:
         "Cuidado avanzado de la piel para mejorar su salud y apariencia.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "odontopediatria",
       title: "Odontopediatría",
       description: "Atención dental especializada para niños y adolescentes.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "fonoaudiologia",
       title: "Fonoaudiología",
       description:
         "Diagnóstico y tratamiento de trastornos del habla y lenguaje.",
-        image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "periodoncia",
       title: "Periodoncia",
       description:
         "Tratamiento de encías y estructuras que sostienen los dientes.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "endodoncia",
       title: "Endodoncia",
       description:
         "Tratamientos de conducto para salvar dientes dañados o infectados.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
     {
       id: "sueno-y-ttm",
       title: "Sueño y TTM",
       description: "Tratamiento del sueño y disfunciones temporomandibulares.",
-      image: "/images/Prueba.jpeg",
+      image: "/LogoPrueba.png",
     },
   ];
 
@@ -159,29 +158,22 @@ export default function ServicesSection() {
             <motion.div
               key={service.id}
               variants={item}
-              whileHover={{
-                y: -10,
-                boxShadow:
-                  "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                transition: { duration: 0.3 },
-              }}
-              className="group bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 h-full flex flex-col"
+              className="group bg-white  overflow-hidden  transition-all duration-300 h-full flex flex-col justify-center items-center "
             >
-              <div className="relative md:h-32 h-20 w-full overflow-hidden">
+              <div className="relative md:h-20 aspect-square w-20 h-20 overflow-hidden  ">
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className=" aspect-square "
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/90 to-transparent"></div>
               </div>
 
               <div className="md:p-3 p-2 flex flex-col flex-grow">
-                <h3 className="md:text-lg text-md font-bold text-brand-blue ">
+                <h3 className="md:text-lg text-md font-bold text-brand-blue text-center">
                   {service.title}
                 </h3>
-                <p className="text-gray-600  text-xs md:text-xs">
+                <p className="text-gray-600  text-xs md:text-xs text-center">
                   {service.description}
                 </p>
                 <Link href={`/servicios/${service.id}`} className="mt-2">

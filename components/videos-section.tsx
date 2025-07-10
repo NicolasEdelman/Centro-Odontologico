@@ -28,17 +28,13 @@ export default function VideosSection() {
           <div className="w-20 h-1 bg-white mb-4 md:mb-12"></div>
           <p className="text-sm md:text-lg mb-6">
             En Centro Odontológico creemos que todas las personas merecen
-            sentirse cómodas y felices con su sonrisa.{" "}
-            <strong>Reír, comer, tomarse una foto con confianza</strong> son
-            experiencias que todos deberíamos disfrutar.
+            sentirse cómodas y felices con su sonrisa. Reír, comer, tomarse una
+            foto con confianza son experiencias que todos deberíamos disfrutar.
           </p>
           <p className="text-sm md:text-lg mb-6">
-            Por esto, nuestro propósito es{" "}
-            <strong>
-              brindarte un centro donde encuentres un equipo de especialistas,
-              que escuchen y entiendan lo que sentís y deseás.
-            </strong>{" "}
-            Y así idear y conducir tus tratamientos utilizando la última
+            Por esto, nuestro propósito es brindarte un centro donde encuentres
+            un equipo de especialistas, que escuchen y entiendan lo que sentís y
+            deseás. Y así idear y conducir tus tratamientos utilizando la última
             tecnología en odontología.
           </p>
 

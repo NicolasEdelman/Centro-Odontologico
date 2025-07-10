@@ -57,7 +57,7 @@ export default function OdontologiaDigital() {
           </h2>
           <div className="w-20 h-1 bg-white mb-4 md:mb-8"></div>
           <p className="text-sm md:text-lg mb-6">
-            En Centro odontologico contamos con tecnología de odontología
+            En Centro Odontológico contamos con tecnología de odontología
             digital de última generación, que nos permite ofrecer diagnósticos
             más precisos, tratamientos personalizados y resultados más
             predecibles.

@@ -10,7 +10,7 @@ import AnimatedSection from "@/components/animated-section";
 export default function Hero() {
   return (
     <AnimatedSection variant="fadeIn" fullWidth>
-      <section className="bg-[#e6d5a8] py-16 md:py-24">
+      <section className="bg-co-secondary-beige py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -36,8 +36,8 @@ export default function Hero() {
                 Dra. Nadia Pérez
               </h1>
               <p className="text-md md:text-xl text-white font-bold mb-4">
-                Especialista en Odontología Restauradora Integral. Implantología
-                y Cirugía
+                Especialista en Odontología Restauradora Integral. <br />
+                Implantología y Cirugía
               </p>
 
               <p className="text-md md:text-xl text-white/90 mb-8 italic">
@@ -62,10 +62,10 @@ export default function Hero() {
               className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/images/nadia-perez.png"
+                src="/images/nadia-perez.jpg"
                 alt="Dra. Nadia Pérez"
                 fill
-                className="object-cover bg-[#e6d5a8]/50"
+                className="object-cover object-top scale-110"
               />
             </motion.div>
           </div>

@@ -92,7 +92,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 mb-20 md:mb-10">
+      <div className="absolute bottom-0 left-0 right-0 z-10 mb-20 md:mb-14">
         <div className="container mx-auto px-4 flex justify-center">
           <div className="max-w-full md:text-center items-center flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 md:mb-2 font-avenir">

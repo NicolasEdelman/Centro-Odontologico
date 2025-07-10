@@ -39,20 +39,14 @@ export default function OurHistory() {
               </div>
               <div className="w-4/5">
                 <p className="italic text-sm md:text-base p-2 rounded-xl">
-                  <strong>
-                    "Todo surgió un año antes de recibirnos, en el año 2009.
-                    Habíamos estado toda la tarde estudiando para un examen.
-                  </strong>{" "}
+                  "Todo surgió un año antes de recibirnos, en el año 2009.
+                  Habíamos estado toda la tarde estudiando para un examen.
                   Esperábamos el ómnibus que llevaba a Fabi a su casa en El
                   Prado, nuestro barrio, cuando comenzamos a conversar sobre qué
                   cosas nos parecían importantes a la hora de atender pacientes
-                  y gestionar un consultorio.{" "}
-                  <strong>
-                    Estábamos totalmente de acuerdo en muchas cosas. Yo ese día
-                    supe, que era con ella con quien quería concretar mis
-                    proyectos.
-                  </strong>
-                  "
+                  y gestionar un consultorio. Estábamos totalmente de acuerdo en
+                  muchas cosas. Yo ese día supe, que era con ella con quien
+                  quería concretar mis proyectos. "
                 </p>
                 <div className="flex flex-row items-center justify-between">
                   <audio
@@ -81,20 +75,14 @@ export default function OurHistory() {
               </div>
               <div className="w-full md:w-4/5 ">
                 <p className="italic text-sm md:text-base p-2 rounded-xl">
-                  <strong>
-                    "Hicimos casi toda la carrera juntas. Estudiábamos con
-                    amigas... pasábamos muchas horas en la Facultad,
-                  </strong>{" "}
-                  tanto en clase como en las esperas para entrar a la
-                  siguiente... hacíamos comidas con los compañeros de
-                  generación... <strong>conocimos nuestras familias...</strong>{" "}
-                  compartimos cumpleaños... salidas... el viaje de egresados...
-                  mi casamiento... y cuando nació mi primer hijo.{" "}
-                  <strong>
-                    Nos fuimos descubriendo en muchos aspectos, así como
-                    integrando en nuestro día a día.
-                  </strong>
-                  "
+                  "Hicimos casi toda la carrera juntas. Estudiábamos con
+                  amigas... pasábamos muchas horas en la Facultad, tanto en
+                  clase como en las esperas para entrar a la siguiente...
+                  hacíamos comidas con los compañeros de generación... conocimos
+                  nuestras familias... compartimos cumpleaños... salidas... el
+                  viaje de egresados... mi casamiento... y cuando nació mi
+                  primer hijo. Nos fuimos descubriendo en muchos aspectos, así
+                  como integrando en nuestro día a día. "
                 </p>
                 <div className="flex flex-row items-center justify-between">
                   <audio

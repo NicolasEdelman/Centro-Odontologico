@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   title: "Centro Odontológico | Dra. Fabiana Zelpo y Dra. Nadia Pérez",
   description:
     "Centro Odontológico especializado en cirugía, estética facial, implantología, ortodoncia, ortopedia y rehabilitación.",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({
@@ -29,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="light" style={{ colorScheme: "light" }}>
       <head>
+        <link rel="icon" href="/images/Logo.png" type="image/png" />
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -57,4 +57,3 @@ export default function RootLayout({
   );
 }
 
-import "./globals.css";

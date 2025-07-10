@@ -10,7 +10,7 @@ import AnimatedSection from "@/components/animated-section";
 export default function Hero() {
   return (
     <AnimatedSection variant="fadeIn" fullWidth>
-      <section className="bg-[#e6d5a8] py-16 md:py-24">
+      <section className="bg-co-secondary-beige py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -36,8 +36,8 @@ export default function Hero() {
                 Dra. Fabiana Zelpo
               </h1>
               <p className="text-md md:text-xl text-white font-bold mb-4">
-                Especialista en Armonización Orofacial (c) Ortodoncia y
-                Ortopedia. <br />
+                Especialista en Armonización Orofacial (c). <br />
+                Ortodoncia y Ortopedia. <br />
               </p>
               <p className="text-md md:text-xl text-white/90 mb-8 italic">
                 "Me dedico a acompañar el desarrollo orofacial desde una mirada
@@ -61,10 +61,10 @@ export default function Hero() {
               className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
               <Image
-                src="/images/fabiana-zelpo.png"
+                src="/images/fabiana-zelpo.jpg"
                 alt="Dra. Fabiana Zelpo"
                 fill
-                className="object-cover bg-[#e6d5a8]/50"
+                className="object-cover object-top scale-110 "
               />
             </motion.div>
           </div>
