@@ -176,11 +176,11 @@ export default function ServicesSection() {
                 <p className="text-gray-600  text-xs md:text-xs text-center">
                   {service.description}
                 </p>
-                <Link href={`/servicios/${service.id}`} className="mt-2">
+                {/* <Link href={`/servicios/${service.id}`} className="mt-2">
                   <button className=" text-co-primary-blue text-sm hover:underline w-full rounded-lg">
                     Saber más
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </motion.div>
           ))}

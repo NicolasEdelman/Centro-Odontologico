@@ -37,12 +37,12 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
 
         <div className="flex flex-row gap-4 md:gap-8 justify-center items-center">
           <a
-            href="https://cal.com/nicolas-edelman"
+            href="https://cal.com/fabiana-zelpo"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 hover:scale-105 transition"
           >
-            <Image
+            <img
               src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/FabianaAzul.webp"
               alt="Fabiana"
               width={128}
@@ -52,12 +52,12 @@ export default function ModalAgenda({ open, onClose }: ModalAgendaProps) {
             <span className="text-lg font-medium text-gray-800">Fabiana</span>
           </a>
           <a
-            href="https://cal.com/nicolas-edelman"
+            href="https://cal.com/nadia-perez"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 hover:scale-105 transition"
           >
-            <Image
+            <img
               src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/NadiaAzul.webp"
               alt="Nadia"
               width={128}

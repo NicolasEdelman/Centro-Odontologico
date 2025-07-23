@@ -118,12 +118,12 @@ export default function BiographyGallery() {
           ))}
         </div>
 
-        <div className="mt-24 mb-8">
+        {/* <div className="mt-24 mb-8">
           <SubTitle title="Galería de Imágenes" underlineColor="beige" />
-        </div>
+        </div> */}
 
         {/* Mobile: AutoCarousel */}
-        <div className="block md:hidden ">
+        {/* <div className="block md:hidden ">
           <AutoCarousel>
             {[...Array(8)].map((_, index) => (
               <div key={index} className="w-60 max-w-xs">
@@ -138,10 +138,10 @@ export default function BiographyGallery() {
               </div>
             ))}
           </AutoCarousel>
-        </div>
+        </div> */}
 
         {/* Desktop: Grid */}
-        <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container mx-auto">
+        {/* <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container mx-auto">
           {[...Array(8)].map((_, index) => (
             <motion.div
               key={index}
@@ -164,7 +164,7 @@ export default function BiographyGallery() {
               />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
