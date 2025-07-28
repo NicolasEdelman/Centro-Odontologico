@@ -14,7 +14,7 @@ export default function Footer() {
   const whatsappNumber = "59892632263";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
   return (
-    <footer className="bg-brand-dark">
+    <footer>
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>

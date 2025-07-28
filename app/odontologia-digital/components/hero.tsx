@@ -32,20 +32,24 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-                Odontología Digital
+              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
+                Odontología Digital: Revolución Positiva
               </h1>
 
-              <p className="text-md md:text-xl text-white/90 mb-8">
-                En Centro odontologico contamos con tecnología de odontología
-                digital de última generación, que nos permite ofrecer
-                diagnósticos más precisos, tratamientos personalizados y
-                resultados más predecibles.
+              <p className="text-md md:text-md text-white/90 mb-8">
+                En Centro Odontológico los profesionales podemos realizar
+                diagnósticos más exactos, tratamientos más personalizados y con
+                una mayor previsibilidad de los resultados.
               </p>
-              <p className="text-md md:text-xl text-white/90 mb-8">
-                Utilizamos escáneres intraorales, planificación 3D, diseño
-                digital de sonrisa y cirugía guiada por computadora, todo para
-                brindarte una experiencia más cómoda, rápida y segura.
+              <p className="text-md md:text-md text-white/90 mb-8">
+                Le mostramos a nuestros pacientes imágenes digitales o
+                simulaciones de sus tratamientos facilitando la comunicación y
+                comprensión de los mismos.
+              </p>
+              <p className="text-md md:text-md text-white/90 mb-8">
+                Los procesos que antes tomaban días, como la confección de una
+                corona, ahora pueden resolverse en una sola cita. Esto reduce el
+                tiempo de trabajo y mejora la experiencia de nuestros pacientes.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}

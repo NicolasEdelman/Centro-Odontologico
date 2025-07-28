@@ -47,7 +47,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="lg:col-span-6 bg-white text-gray-800 rounded-xl shadow-xl p-6 "
+            className="lg:col-span-6 bg-white text-gray-800 rounded-xl shadow-xl p-6 md:p-10 "
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-8 text-co-primary-blue">
               Información de Contacto

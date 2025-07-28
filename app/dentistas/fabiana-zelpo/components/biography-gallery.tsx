@@ -36,9 +36,9 @@ export default function BiographyGallery() {
               image: "/Biografia/ArmonizacionOrofacial.png",
               text: (
                 <>
-                  Este título es otorgado por el Instituto Universitario Centro
-                  de Estudio y Diagnóstico de las Disgnacias del Uruguay
-                  (IUCEDDU). <br />
+                  Este título de especialista es otorgado por el Instituto
+                  Universitario Centro de Estudio y Diagnóstico de las
+                  Disgnacias del Uruguay (IUCEDDU). <br />
                   Esta especialidad se trata de prevenir, diagnosticar y tratar,
                   diversas alteraciones morfo-estético-funcionales orofaciales,
                   utilizando técnicas mínimamente invasivas, para promover el
@@ -69,7 +69,7 @@ export default function BiographyGallery() {
               image: "/Biografia/Acreditaciones.png",
               text: (
                 <>
-                  La Dra. Fabiana cuenta con la{" "}
+                  La Dra. Fabiana Zelpo cuenta con la{" "}
                   <strong>Acreditación de KeepSmiling</strong> lo que es
                   conocido como <strong> "Ortodoncia Invisible"</strong>
                 </>
@@ -84,6 +84,14 @@ export default function BiographyGallery() {
                   Fabiana cuenta con un{" "}
                   <strong>"Diplomado Internacional en Ortoperio"</strong> que se
                   trata de Ortodoncia enfocada en pacientes periodontales.
+                  <br />
+                  <br />
+                  La enfermedad periodontal, muy prevalente en Uruguay
+                  especialmente en adolescentes (gingivitis) y adultos mayores
+                  (periodontitis), se relaciona estrechamente con la ortodoncia.
+                  El tratamiento ortodóncico requiere consideraciones técnicas
+                  específicas para evitar agravar la pérdida ósea y asegurar la
+                  estabilidad de los resultados.
                 </>
               ),
             },

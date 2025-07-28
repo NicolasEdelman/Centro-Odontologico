@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { SubTitle } from "@/components/sub-title";
 
 const fadeIn = {
@@ -9,109 +9,67 @@ const fadeIn = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-export default function ODGallery() {
+export default function ODMosaicOverlaySimple() {
+  const blocks = [
+    {
+      image: "/OdontologiaDigital2/3.png",
+      title: "Más comodidad, menos visitas",
+      text: "Gracias a la odontología digital, reducimos el número de sesiones y eliminamos procedimientos incómodos como las pastas para moldes. Todo es más limpio, preciso y rápido. ¡Tu tiempo vale!",
+    },
+    {
+      image: "/OdontologiaDigital2/4.png",
+      title: "Visualiza tu sonrisa antes de empezar",
+      text: "Con nuestras simulaciones digitales, puedes ver el resultado estimado de tu tratamiento antes de tomar una decisión. Más información, menos dudas.",
+    },
+    {
+      image: "/OdontologiaDigital2/2.png",
+      title: "Tu salud en manos especializadas",
+      text: "Profesionales capacitados en odontología digital para brindar tratamientos de alta tecnología con máxima precisión.",
+    },
+    {
+      image: "/OdontologiaDigital2/5.png",
+      title: "Confianza y precisión en cada detalle",
+      text: "La tecnología digital permite diagnósticos más precisos, mayor calidad y resultados predecibles, optimizando cada etapa del tratamiento y minimizando errores.",
+    },
+    {
+      image: "/OdontologiaDigital2/1.png",
+      title: "Innovación que marca la diferencia",
+      text: "En nuestro consultorio, la odontología digital te abre la puerta a un mundo de posibilidades para cuidar tu salud bucal, con tecnología que hace realidad la sonrisa que deseás.",
+    },
+  ];
+
   return (
-    <section className="md:py-20 bg-white">
-      <div className="">
-        <div className="max-w-4xl mx-auto mb-12 md:mb-20">
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
           <SubTitle title="Odontología Digital" underlineColor="blue" />
         </div>
 
-        <div className="space-y-12 md:space-y-32 container mx-auto">
-          {[
-            {
-              image: "/Biografia/FacultadNadia.png",
-              title: "Doctora en Odontología",
-              text: (
-                <>
-                  La Dra. Nadia Pérez Protto es egresada de la Facultad de
-                  Odontología de la Universidad de la República (UdelaR), en
-                  Montevideo, Uruguay.
-                </>
-              ),
-            },
-            {
-              title: "Especialista en Odontología Restauradora Integral",
-              image: "/Biografia/OdontologiaRestauradora.png",
-              text: (
-                <>
-                  Título otorgado también por la Facultad de Odontología,
-                  UdelaR. <br />
-                  Esta Especialidad se trata del diagnóstico y resolución de
-                  casos complejos utilizando todas las herramientas
-                  restauradoras disponibles actualmente.
-                </>
-              ),
-              reverse: true,
-            },
-            {
-              title: "Estudios de Postgrado",
-              image: "/Biografia/PostgradoNadia.jpg",
-              text: (
-                <>
-                  Su formación de <strong>Posgrado</strong> se ha centrado
-                  principalmente en Cirugía Menor, incluyendo{" "}
-                  <strong>
-                    Implantes Dentales Oseointegrados, Regeneración Ósea,
-                    Elevación de Seno Maxilar y Prótesis Implanto Asistida
-                  </strong>{" "}
-                  en la Clínica Ibañez (Córdoba, Argentina). <br />
-                  <br />
-                  También se ha especializado en Cirugía de{" "}
-                  <strong>Terceros Molares retenidos</strong> en la Cátedra de
-                  Cirugía de la UdelaR.
-                </>
-              ),
-            },
-            {
-              title: "Título de Máster",
-              image: "/Biografia/Master.png",
-              text: (
-                <>
-                  La Dra. Nadia cuenta con un{" "}
-                  <strong>Máster en Ciencias Odontológicas</strong> de la{" "}
-                  <strong>Universidad de Valencia</strong>, España.
-                </>
-              ),
-              reverse: true,
-            },
-            {
-              title: "Experiencia Docente",
-              image: "/Biografia/ExperienciaDocent.jpg",
-              text: (
-                <>
-                  Nadia ha sido <strong>Docente Grado 2</strong> durante 14 años
-                  en la <strong>Cátedra de Técnica de Operatoria Dental</strong>{" "}
-                  desde el año 2007 al 2021 en la UdelaR.
-                </>
-              ),
-            },
-          ].map((block, index) => (
+        {/* GRID RESPONSIVA */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {blocks.map((block, index) => (
             <motion.div
               key={index}
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className={`flex flex-col lg:flex-row ${
-                block.reverse ? "lg:flex-row-reverse" : ""
-              } items-center gap-8 md:gap-12`}
+              className="relative rounded-2xl overflow-hidden shadow-lg"
             >
-              <div className="w-full lg:w-1/2 relative h-96 rounded-lg overflow-hidden shadow-xl">
+              {/* Imagen de fondo */}
+              <div className="relative w-full h-[600px]">
                 <Image
-                  src={ "/placeholder.svg"}
+                  src={block.image}
                   alt={block.title}
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="w-full lg:w-1/2 text-left">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 md:mb-4 uppercase tracking-wide">
-                  {block.title}
-                </h3>
-                <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
-                  {block.text}
-                </p>
+
+              {/* Overlay con título y descripción */}
+              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/20 to-transparent p-6 text-white">
+                <h3 className="text-xl font-bold mb-2">{block.title}</h3>
+                <p className="text-sm md:text-base opacity-90">{block.text}</p>
               </div>
             </motion.div>
           ))}

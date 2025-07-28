@@ -11,103 +11,103 @@ export default function ServicesSection() {
       title: "Diseño de Sonrisa",
       description:
         "Transformación estética, emocional y personalizada de la sonrisa.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/sonrisa.png",
     },
     {
       id: "rehabilitacion",
       title: "Rehabilitación",
       description:
         "Restauración de la función dental para una sonrisa saludable y estética.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/rehabilitacion.png",
     },
     {
       id: "implantologia",
       title: "Implantología",
       description:
         "Reemplazo de dientes perdidos con implantes dentales duraderos.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/implantes.png",
     },
     {
       id: "cirugia",
       title: "Cirugía",
       description:
         "Procedimientos quirúrgicos para resolver problemas bucales complejos.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/cirugia.png",
     },
     {
       id: "patologia-oral",
       title: "Patología Oral",
       description:
         "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/patologia-oral.png",
     },
     {
       id: "ortopedia",
       title: "Ortopedia",
       description:
         "Guía del crecimiento y desarrollo óseo y de la estructura facial en niños y adolescentes.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/ortopedia.png",
     },
     {
       id: "ortodoncia-convencional",
       title: "Ortodoncia Convencional",
       description:
         "Corrección de la posición dental y ósea con brackets metálicos o estéticos.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/ortodoncia.png",
     },
     {
       id: "ortodoncia-invisible",
       title: "Ortodoncia Invisible",
       description:
         "Corrección de la posición dental y ósea con alineadores transparentes removibles.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/ortodoncia-invisible.png",
     },
     {
       id: "estetica-facial",
       title: "Estética Facial",
       description:
         "Tratamientos mínimamente invasivos para realzar la armonía del rostro y sonrisa.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/estetica.png",
     },
     {
       id: "cosmetologia-medica",
       title: "Cosmetología Médica",
       description:
         "Cuidado avanzado de la piel para mejorar su salud y apariencia.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/cosmetologia.png",
     },
     {
       id: "odontopediatria",
       title: "Odontopediatría",
       description: "Atención dental especializada para niños y adolescentes.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/kids.png",
     },
     {
       id: "fonoaudiologia",
       title: "Fonoaudiología",
       description:
         "Diagnóstico y tratamiento de trastornos del habla y lenguaje.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/fonoaudiologia.png",
     },
     {
       id: "periodoncia",
       title: "Periodoncia",
       description:
         "Tratamiento de encías y estructuras que sostienen los dientes.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/periodoncia.png",
     },
     {
       id: "endodoncia",
       title: "Endodoncia",
       description:
         "Tratamientos de conducto para salvar dientes dañados o infectados.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/endodoncia.png",
     },
     {
       id: "sueno-y-ttm",
       title: "Sueño y TTM",
       description: "Tratamiento del sueño y disfunciones temporomandibulares.",
-      image: "/LogoPrueba.png",
+      image: "/servicios/sueño.png",
     },
   ];
 
@@ -152,7 +152,7 @@ export default function ServicesSection() {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6"
+          className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 py-6"
         >
           {services.map((service) => (
             <motion.div
@@ -160,9 +160,9 @@ export default function ServicesSection() {
               variants={item}
               className="group bg-white  overflow-hidden  transition-all duration-300 h-full flex flex-col justify-center items-center "
             >
-              <div className="relative md:h-20 aspect-square w-20 h-20 overflow-hidden  ">
+              <div className="relative md:h-24 aspect-square w-24 h-24 overflow-hidden  ">
                 <Image
-                  src={service.image || "/placeholder.svg"}
+                  src={service.image}
                   alt={service.title}
                   fill
                   className=" aspect-square "

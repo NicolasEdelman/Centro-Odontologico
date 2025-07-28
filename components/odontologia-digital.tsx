@@ -57,20 +57,22 @@ export default function OdontologiaDigital() {
           </h2>
           <div className="w-20 h-1 bg-white mb-4 md:mb-8"></div>
           <p className="text-sm md:text-lg mb-6">
-            En Centro Odontológico contamos con tecnología de odontología
-            digital de última generación, que nos permite ofrecer diagnósticos
-            más precisos, tratamientos personalizados y resultados más
-            predecibles.
+            En Centro Odontológico contamos con tecnología de última generación.
+            Utilizamos: Escáneres intraorales, Radiografías digitales (2D y 3D),
+            Diseño digital de sonrisa (DSD), Planificación 3D de tratamientos,
+            Cirugía guiada por computadora, Fotografía clínica digital,
+            Ortodoncia digital (alineadores transparentes),Sistemas de gestión
+            clínica digital,Inteligencia artificial (IA), y por último Sistemas
+            CAD/CAM (Diseño y Manufactura Asistidos por Computadora) e Impresión
+            3D gracias a nuestros Laboratorios de confianza.
           </p>
           <p className="text-sm md:text-lg mb-6">
-            Utilizamos escáneres intraorales, planificación 3D, diseño digital
-            de sonrisa y cirugía guiada por computadora, todo para brindarte una
-            experiencia más cómoda, rápida y segura.
+          Todo… para brindarte una experiencia más cómoda, rápida y eficiente.
           </p>
           <div className="flex gap-4">
             <Button
               href="/#contacto"
-              className=" text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 hover:bg-opacity-90 transition-all duration-300"
+              className=" text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3  hover:bg-white/80 transition-all duration-300"
             >
               Agendar una consulta
             </Button>

@@ -36,8 +36,8 @@ export default function BiographyGallery() {
               image: "/Biografia/OdontologiaRestauradora.png",
               text: (
                 <>
-                  Título otorgado también por la Facultad de Odontología,
-                  UdelaR. <br />
+                  Su título de Especialista lo a obtenido en la Facultad de
+                  Odontología UdelaR. <br />
                   Esta Especialidad se trata del diagnóstico y resolución de
                   casos complejos utilizando todas las herramientas
                   restauradoras disponibles actualmente.
@@ -53,12 +53,12 @@ export default function BiographyGallery() {
                   Su formación de <strong>Posgrado</strong> se ha centrado
                   principalmente en Cirugía Menor, incluyendo{" "}
                   <strong>
-                    Implantes Dentales Oseointegrados, Regeneración Ósea,
-                    Elevación de Seno Maxilar y Prótesis Implanto Asistida
+                    Implantes Dentales Oseointegrados, Regeneración Ósea y
+                    Prótesis Implanto Asistida
                   </strong>{" "}
                   en la Clínica Ibañez (Córdoba, Argentina). <br />
                   <br />
-                  También se ha especializado en Cirugía de{" "}
+                  También se ha entrenado en Cirugía de{" "}
                   <strong>Terceros Molares retenidos</strong> en la Cátedra de
                   Cirugía de la UdelaR.
                 </>
@@ -69,9 +69,9 @@ export default function BiographyGallery() {
               image: "/Biografia/Master.png",
               text: (
                 <>
-                  La Dra. Nadia cuenta con un{" "}
-                  <strong>Máster en Ciencias Odontológicas</strong> de la{" "}
-                  <strong>Universidad de Valencia</strong>, España.
+                  La Dra. Nadia Pérez cuenta con un{" "}
+                  <strong>Máster en Ciencias Odontológicas</strong> otorgado por
+                  la <strong>Universidad de Valencia</strong>, España.
                 </>
               ),
               reverse: true,
@@ -84,6 +84,13 @@ export default function BiographyGallery() {
                   Nadia ha sido <strong>Docente Grado 2</strong> durante 14 años
                   en la <strong>Cátedra de Técnica de Operatoria Dental</strong>{" "}
                   desde el año 2007 al 2021 en la UdelaR.
+                  <br />
+                  <br />
+                  Fascinada por la Cariología, los diversos recursos
+                  preventivos, materiales dentales y técnicas para resolver y
+                  restaurar las lesiones de caries, Nadia concursó en la Cátedra
+                  con el objetivo de compartir con otros jóvenes sus
+                  conocimientos y la pasión por nuestra profesión.
                 </>
               ),
             },
