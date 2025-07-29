@@ -36,17 +36,17 @@ export default function Hero() {
                 Odontología Digital: Revolución Positiva
               </h1>
 
-              <p className="text-md md:text-md text-white/90 mb-8">
+              <p className="text-sm md:text-md text-white/90 mb-4">
                 En Centro Odontológico los profesionales podemos realizar
                 diagnósticos más exactos, tratamientos más personalizados y con
                 una mayor previsibilidad de los resultados.
               </p>
-              <p className="text-md md:text-md text-white/90 mb-8">
+              <p className="text-sm md:text-md text-white/90 mb-4">
                 Le mostramos a nuestros pacientes imágenes digitales o
                 simulaciones de sus tratamientos facilitando la comunicación y
                 comprensión de los mismos.
               </p>
-              <p className="text-md md:text-md text-white/90 mb-8">
+              <p className="text-sm md:text-md text-white/90 mb-4">
                 Los procesos que antes tomaban días, como la confección de una
                 corona, ahora pueden resolverse en una sola cita. Esto reduce el
                 tiempo de trabajo y mejora la experiencia de nuestros pacientes.
