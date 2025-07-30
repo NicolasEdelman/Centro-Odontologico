@@ -14,7 +14,7 @@ export default function ODMosaicOverlaySimple() {
     {
       image: "/OdontologiaDigital2/3.png",
       title: "Más comodidad, menos visitas",
-      text: "Gracias a la odontología digital, reducimos el número de sesiones y eliminamos procedimientos incómodos como las pastas para moldes. Todo es más limpio, preciso y rápido. ¡Tu tiempo vale!",
+      text: "Gracias a la odontología digital, reducimos el número de sesiones y eliminamos procedimientos incómodos como las pastas para moldes. Limpio, preciso y rápido. ¡Tu tiempo vale!",
     },
     {
       image: "/OdontologiaDigital2/4.png",
@@ -24,17 +24,17 @@ export default function ODMosaicOverlaySimple() {
     {
       image: "/OdontologiaDigital2/2.png",
       title: "Tu salud en manos especializadas",
-      text: "Profesionales capacitados en odontología digital para brindar tratamientos de alta tecnología con máxima precisión.",
+      text: "Somos profesionales capacitados en odontología digital para brindarte diagnósticos más exactos, tratamientos más personalizados y con una mayor previsibilidad de los resultados. Comprometidos con tu bienestar.",
     },
     {
       image: "/OdontologiaDigital2/5.png",
       title: "Confianza y precisión en cada detalle",
-      text: "La tecnología digital permite diagnósticos más precisos, mayor calidad y resultados predecibles, optimizando cada etapa del tratamiento y minimizando errores.",
+      text: "Gracias al uso de herramientas avanzadas, se alcanza una exactitud técnica superior que no solo minimiza errores sino que también disminuye la necesidad de ajustes. Mereces seguridad y tranquilidad.",
     },
     {
       image: "/OdontologiaDigital2/1.png",
       title: "Innovación que marca la diferencia",
-      text: "En nuestro consultorio, la odontología digital te abre la puerta a un mundo de posibilidades para cuidar tu salud bucal, con tecnología que hace realidad la sonrisa que deseás.",
+      text: "En nuestro consultorio, la odontología digital te abre la puerta a un mundo de posibilidades para cuidar tu salud bucal, con tecnología que hace realidad la sonrisa que deseás.Centro Odontológico, es tu lugar!",
     },
   ];
 

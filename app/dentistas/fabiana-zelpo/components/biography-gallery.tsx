@@ -39,6 +39,7 @@ export default function BiographyGallery() {
                   Este título de especialista es otorgado por el Instituto
                   Universitario Centro de Estudio y Diagnóstico de las
                   Disgnacias del Uruguay (IUCEDDU). <br />
+                  <br />
                   Esta especialidad se trata de prevenir, diagnosticar y tratar,
                   diversas alteraciones morfo-estético-funcionales orofaciales,
                   utilizando técnicas mínimamente invasivas, para promover el
@@ -72,6 +73,13 @@ export default function BiographyGallery() {
                   La Dra. Fabiana Zelpo cuenta con la{" "}
                   <strong>Acreditación de KeepSmiling</strong> lo que es
                   conocido como <strong> "Ortodoncia Invisible"</strong>
+                  <br />
+                  <br />
+                  El uso de alineadores diseñados y fabricados digitalmente
+                  brinda mayor estética, comodidad y facilidad de higiene en
+                  comparación con los brackets tradicionales, y es por esto que
+                  es una opción cada vez más demandada y valorada por nuestros
+                  pacientes.
                 </>
               ),
               reverse: true,
@@ -86,12 +94,13 @@ export default function BiographyGallery() {
                   trata de Ortodoncia enfocada en pacientes periodontales.
                   <br />
                   <br />
-                  La enfermedad periodontal, muy prevalente en Uruguay
-                  especialmente en adolescentes (gingivitis) y adultos mayores
-                  (periodontitis), se relaciona estrechamente con la ortodoncia.
-                  El tratamiento ortodóncico requiere consideraciones técnicas
-                  específicas para evitar agravar la pérdida ósea y asegurar la
-                  estabilidad de los resultados.
+                  La <strong>enfermedad periodontal</strong>, muy prevalente en
+                  Uruguay especialmente en adolescentes{" "}
+                  <strong> (gingivitis)</strong> y adultos mayores
+                  <strong> (periodontitis)</strong>, se relaciona estrechamente
+                  con la ortodoncia. El tratamiento ortodóncico requiere
+                  consideraciones técnicas específicas para evitar agravar la
+                  pérdida ósea y asegurar la estabilidad de los resultados.
                 </>
               ),
             },

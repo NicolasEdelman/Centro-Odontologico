@@ -23,8 +23,10 @@ export default function ODMosaicIrregular() {
       text: (
         <>
           Gracias a la odontología digital, reducimos el número de sesiones y
-          eliminamos procedimientos incómodos como las pastas para moldes. Todo
-          es más limpio, preciso y rápido. ¡Tu tiempo vale!
+          eliminamos procedimientos incómodos como las pastas para moldes.
+          <br />
+          <br />
+          Limpio, preciso y rápido. ¡Tu tiempo vale!
         </>
       ),
     },
@@ -33,8 +35,10 @@ export default function ODMosaicIrregular() {
       text: (
         <>
           Con nuestras simulaciones digitales, puedes ver el resultado estimado
-          de tu tratamiento antes de tomar una decisión. Más información, menos
-          dudas.
+          de tu tratamiento antes de tomar una decisión.
+          <br />
+          <br />
+          Más información, menos dudas.
         </>
       ),
     },
@@ -42,8 +46,12 @@ export default function ODMosaicIrregular() {
       title: "Tu salud en manos especializadas",
       text: (
         <>
-          Profesionales capacitados en odontología digital para brindar
-          tratamientos de alta tecnología con máxima precisión.
+          Somos profesionales capacitados en odontología digital para brindarte
+          diagnósticos más exactos, tratamientos más personalizados y con una
+          mayor previsibilidad de los resultados.
+          <br />
+          <br />
+          Comprometidos con tu bienestar.
         </>
       ),
     },
@@ -51,9 +59,12 @@ export default function ODMosaicIrregular() {
       title: "Confianza y precisión en cada detalle",
       text: (
         <>
-          La tecnología digital permite diagnósticos más precisos, mayor calidad
-          y resultados predecibles, optimizando cada etapa del tratamiento y
-          minimizando errores.
+          Gracias al uso de herramientas avanzadas, se alcanza una exactitud
+          técnica superior que no solo minimiza errores sino que también
+          disminuye la necesidad de ajustes.
+          <br />
+          <br />
+          Mereces seguridad y tranquilidad.
         </>
       ),
     },
@@ -95,17 +106,20 @@ export default function ODMosaicIrregular() {
             </motion.div>
 
             <motion.div
-              className="bg-co-primary-blue/20 rounded-xl shadow-lg p-6"
+              className="bg-white p-6"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl font-bold text-gray-800 mb-3 ">
                 {texts[1].title}
               </h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {texts[1].text}
               </p>
+              <div className="flex justify-end">
+                <span className="text-2xl text-co-primary-blue">→</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -123,17 +137,20 @@ export default function ODMosaicIrregular() {
             </motion.div>
 
             <motion.div
-              className="bg-co-primary-blue/20 rounded-xl shadow-lg p-6"
+              className="bg-white p-6"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl font-bold text-gray-800 mb-3 ">
                 {texts[3].title}
               </h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {texts[3].text}
               </p>
+              <div className="flex justify-end">
+                <span className="text-2xl text-co-primary-blue">→</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -152,19 +169,22 @@ export default function ODMosaicIrregular() {
           </div>
 
           {/* Columna 2 (desplazada hacia abajo) */}
-          <div className="space-y-6 mt-40">
+          <div className="space-y-6 mt-32">
             <motion.div
-              className="bg-co-primary-blue/20 rounded-xl shadow-lg p-6"
+              className="bg-white p-6"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl font-bold text-gray-800 mb-3 ">
                 {texts[0].title}
               </h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {texts[0].text}
               </p>
+              <div className="flex justify-start mt-4">
+                <span className="text-2xl text-co-primary-blue">←</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -182,17 +202,20 @@ export default function ODMosaicIrregular() {
             </motion.div>
 
             <motion.div
-              className="bg-co-primary-blue/20 rounded-xl shadow-lg p-6"
+              className="bg-white p-6"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl font-bold text-gray-800 mb-3 ">
                 {texts[2].title}
               </h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {texts[2].text}
               </p>
+              <div className="flex justify-start mt-4">
+                <span className="text-2xl text-co-primary-blue">←</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -209,17 +232,20 @@ export default function ODMosaicIrregular() {
               />
             </motion.div>
             <motion.div
-              className="bg-co-primary-blue/20 rounded-xl shadow-lg p-6"
+              className="bg-white p-6"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl font-bold text-gray-800 mb-3 ">
                 {texts[4].title}
               </h3>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                 {texts[4].text}
               </p>
+              <div className="flex justify-start mt-4">
+                <span className="text-2xl text-co-primary-blue">←</span>
+              </div>
             </motion.div>
           </div>
         </div>

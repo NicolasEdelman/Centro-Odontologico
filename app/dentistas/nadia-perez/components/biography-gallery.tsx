@@ -38,6 +38,7 @@ export default function BiographyGallery() {
                 <>
                   Su título de Especialista lo a obtenido en la Facultad de
                   Odontología UdelaR. <br />
+                  <br />
                   Esta Especialidad se trata del diagnóstico y resolución de
                   casos complejos utilizando todas las herramientas
                   restauradoras disponibles actualmente.
@@ -72,6 +73,11 @@ export default function BiographyGallery() {
                   La Dra. Nadia Pérez cuenta con un{" "}
                   <strong>Máster en Ciencias Odontológicas</strong> otorgado por
                   la <strong>Universidad de Valencia</strong>, España.
+                  <br />
+                  <br />A través de esta formación de posgrado, ha adquirido una
+                  sólida preparación en investigación, pensamiento crítico y
+                  habilidades avanzadas para la generación y aplicación de
+                  conocimiento científico en el ámbito odontológico.
                 </>
               ),
               reverse: true,

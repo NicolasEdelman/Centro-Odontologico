@@ -52,22 +52,27 @@ export default function OdontologiaDigital() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-start text-white mb-4">
-            Odontología Digital
+          <h2 className="text-3xl md:text-4xl font-bold text-start text-white">
+            ODONTOLOGÍA DIGITAL:
           </h2>
+          <h3 className="text-1xl md:text-2xl font-bold text-start text-white/90 mb-4">
+            REVOLUCIÓN POSITIVA
+          </h3>
           <div className="w-20 h-1 bg-white mb-4 md:mb-8"></div>
-          <p className="text-sm md:text-lg mb-6">
-            En Centro Odontológico contamos con tecnología de última generación.
-            Utilizamos: Escáneres intraorales, Radiografías digitales (2D y 3D),
-            Diseño digital de sonrisa (DSD), Planificación 3D de tratamientos,
-            Cirugía guiada por computadora, Fotografía clínica digital,
-            Ortodoncia digital (alineadores transparentes),Sistemas de gestión
-            clínica digital,Inteligencia artificial (IA), y por último Sistemas
-            CAD/CAM (Diseño y Manufactura Asistidos por Computadora) e Impresión
-            3D gracias a nuestros Laboratorios de confianza.
+          <p className="text-sm md:text-lg mb-4">
+            Los procedimientos odontológicos que antes tomaban días, como por
+            ejemplo la confección de una corona dental, ahora pueden resolverse
+            en una sola cita!
           </p>
-          <p className="text-sm md:text-lg mb-6">
-          Todo… para brindarte una experiencia más cómoda, rápida y eficiente.
+          <p className="text-sm md:text-lg mb-4">
+            Gracias a los recursos de la odontología digital, como el escáner
+            intraoral, hoy los profesionales podemos ofrecer tratamientos más
+            cómodos, rápidos y eficientes.
+          </p>
+          <p className="text-sm md:text-lg mb-4">
+            La visita al dentista se ha transformado en un proceso mucho más
+            confortable, cambiando radicalmente la experiencia odontológica de
+            los pacientes.
           </p>
           <div className="flex gap-4">
             <Button

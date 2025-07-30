@@ -32,24 +32,27 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-                Odontología Digital: Revolución Positiva
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+                ODONTOLOGÍA DIGITAL
               </h1>
 
-              <p className="text-sm md:text-md text-white/90 mb-4">
-                En Centro Odontológico los profesionales podemos realizar
-                diagnósticos más exactos, tratamientos más personalizados y con
-                una mayor previsibilidad de los resultados.
+              <p className="text-sm md:text-lg text-white/90 mb-4">
+                En Centro Odontológico contamos con tecnología de última
+                generación.
               </p>
-              <p className="text-sm md:text-md text-white/90 mb-4">
-                Le mostramos a nuestros pacientes imágenes digitales o
-                simulaciones de sus tratamientos facilitando la comunicación y
-                comprensión de los mismos.
+              <p className="text-sm md:text-lg text-white/90 mb-4">
+                Utilizamos: Escáneres intraorales, Radiografías digitales (2D y
+                3D), Diseño digital de sonrisa (DSD), Planificación 3D de
+                tratamientos, Cirugía guiada por computadora, Fotografía clínica
+                digital, Ortodoncia digital (al ineadores transparentes),
+                Sistemas de gestión clínica digitales, Inteligencia artificial
+                (IA), y por último Sistemas CAD/CAM (Diseño y Manufactura
+                Asistidos por Computadora) e Impresión 3D gracias a nuestros
+                Laboratorios de confianza.
               </p>
-              <p className="text-sm md:text-md text-white/90 mb-4">
-                Los procesos que antes tomaban días, como la confección de una
-                corona, ahora pueden resolverse en una sola cita. Esto reduce el
-                tiempo de trabajo y mejora la experiencia de nuestros pacientes.
+              <p className="text-sm md:text-lg text-white/90 mb-4">
+                Todo… para brindarte una experiencia más cómoda, rápida y
+                eficiente.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}
