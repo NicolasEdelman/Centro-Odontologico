@@ -41,8 +41,8 @@ export default function HistoriaPage() {
               Nuestra Historia
             </h1>
             <p className="text-xl text-white">
-              Conocé nuestra historia y cómo surgió nuestro consultorio de más
-              de 15 años.
+              Conoce nuestros comienzos y cómo nació el consultorio que, desde
+              hace más de 15 años, sigue creciendo junto a vos.
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function HistoriaPage() {
         {/* Testimonio 1 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3">
-            <Image
+            <img
               src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/NadiaMarron.webp"
               alt="Nadia"
               width={400}
@@ -99,7 +99,7 @@ export default function HistoriaPage() {
         {/* Testimonio 2 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="w-full md:w-1/3">
-            <Image
+            <img
               src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/FabianaMarron.webp"
               alt="Fabiana"
               width={400}
@@ -115,9 +115,9 @@ export default function HistoriaPage() {
               </strong>{" "}
               tanto en clase como en las esperas para entrar a la siguiente...
               hacíamos comidas con los compañeros de generación...{" "}
-              <strong>conocimos nuestras familias...</strong>{" "}
-              compartimos cumpleaños... salidas... el viaje de egresados... mi
-              casamiento... y cuando nació mi primer hijo.{" "}
+              <strong>conocimos nuestras familias...</strong> compartimos
+              cumpleaños... salidas... el viaje de egresados... mi casamiento...
+              y cuando nació mi primer hijo.{" "}
               <strong>
                 Nos fuimos descubriendo en muchos aspectos, así como integrando
                 en nuestro día a día.
@@ -145,7 +145,7 @@ export default function HistoriaPage() {
         {/* Testimonio 3 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3">
-            <Image
+            <img
               src="/images/anillo1.png"
               alt="Anillo 1"
               width={400}
@@ -191,7 +191,7 @@ export default function HistoriaPage() {
         {/* Testimonio 4 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="w-full md:w-1/3">
-            <Image
+            <img
               src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/FabianaMarron.webp"
               alt="Mudanza"
               width={400}
@@ -203,7 +203,8 @@ export default function HistoriaPage() {
             <p className="italic text-lg bg-white/80 p-4 rounded-xl">
               "Cuando Nadia volvió en el 2014, debíamos mudar el consultorio a
               otro apartamento. En ese momento alquilábamos. Fue así que
-              <strong> {" "}
+              <strong>
+                {" "}
                 buscando el lugar para nuestro próximo consultorio surgió la
                 oportunidad de comprar en la Torre de los Profesionales. Esto
                 significó dar un paso más en nuestro crecimiento como equipo y
@@ -234,7 +235,7 @@ export default function HistoriaPage() {
         {/* Testimonio 5 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/3">
-            <Image
+            <img
               src="https://centro-odontologico.s3.us-east-2.amazonaws.com/Imagenes/Colores/NadiaMarron.webp"
               alt="Nadia"
               width={400}
@@ -273,7 +274,7 @@ export default function HistoriaPage() {
         {/* Testimonio 6 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-8">
           <div className="w-full md:w-2/5">
-            <Image
+            <img
               src="/images/anillo2.png"
               alt="Anillo 2"
               width={400}
@@ -287,7 +288,8 @@ export default function HistoriaPage() {
               una persona que te entienda y que tenga tus mismos sueños, que se
               comprometa con vos y mantenga siempre ese compromiso. Nosotras con
               tan sólo mirarnos sabíamos que podíamos transitarlo de a dos.
-              <strong> {" "}
+              <strong>
+                {" "}
                 Somos 'Socias' desde el momento en el que pensamos el nombre de
                 nuestro Centro. 'Amigas' por entendernos y apoyarnos en todo,
                 tanto en lo personal como en lo laboral. 'Hermanas' porque

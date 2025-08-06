@@ -75,6 +75,9 @@ export default function ODMosaicIrregular() {
           En nuestro consultorio, la odontología digital te abre la puerta a un
           mundo de posibilidades para cuidar tu salud bucal, con tecnología que
           hace realidad la sonrisa que deseás.
+          <br />
+          <br />
+          <strong>Viví la experiencia de una atención a otro nivel</strong>
         </>
       ),
     },
@@ -97,10 +100,11 @@ export default function ODMosaicIrregular() {
               initial="hidden"
               whileInView="visible"
             >
-              <Image
+              <img
                 src={images[0] || ""}
                 alt="Img1"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover"
               />
             </motion.div>
@@ -128,10 +132,11 @@ export default function ODMosaicIrregular() {
               initial="hidden"
               whileInView="visible"
             >
-              <Image
+              <img
                 src={images[2] || ""}
                 alt="Img2"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover"
               />
             </motion.div>
@@ -159,10 +164,11 @@ export default function ODMosaicIrregular() {
               initial="hidden"
               whileInView="visible"
             >
-              <Image
+              <img
                 src={images[4] || ""}
                 alt="Img5"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover"
               />
             </motion.div>
@@ -193,10 +199,11 @@ export default function ODMosaicIrregular() {
               initial="hidden"
               whileInView="visible"
             >
-              <Image
+              <img
                 src={images[1] || ""}
                 alt="Img3"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover"
               />
             </motion.div>
@@ -224,10 +231,11 @@ export default function ODMosaicIrregular() {
               initial="hidden"
               whileInView="visible"
             >
-              <Image
+              <img
                 src={images[3] || ""}
                 alt="Img4"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover"
               />
             </motion.div>

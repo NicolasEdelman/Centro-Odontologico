@@ -61,10 +61,11 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
-              <Image
+              <img
                 src="/images/nadia-perez.jpg"
                 alt="Dra. Nadia Pérez"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover object-top scale-110"
               />
             </motion.div>

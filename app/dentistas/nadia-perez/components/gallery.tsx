@@ -44,10 +44,11 @@ export default function Gallery() {
                 }}
                 className="relative aspect-square rounded-lg overflow-hidden shadow-md"
               >
-                <Image
+                <img
                   src="/placeholder.svg?height=300&width=300"
                   alt={`Galería ${index + 1}`}
-                  fill
+                  width={300}
+                  height={300}
                   className="object-cover"
                 />
               </motion.div>

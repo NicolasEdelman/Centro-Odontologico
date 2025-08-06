@@ -75,7 +75,7 @@ export default function PlanesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[1, 2, 3, 4].map((num) => (
               <div key={num} className="w-full  overflow-hidden shadow-lg">
-                <Image
+                <img
                   src={`/images/MaterialEmpresarial/MaterialEmpresarial${num}.jpg`}
                   alt={`Material Empresarial ${num}`}
                   width={800}

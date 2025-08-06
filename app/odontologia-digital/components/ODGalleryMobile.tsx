@@ -58,10 +58,11 @@ export default function ODMosaicOverlaySimple() {
             >
               {/* Imagen de fondo */}
               <div className="relative w-full h-[600px]">
-                <Image
+                <img
                   src={block.image}
                   alt={block.title}
-                  fill
+                  width={1000}
+                  height={1000}
                   className="object-cover"
                 />
               </div>

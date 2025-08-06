@@ -103,7 +103,7 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-row gap-4">
               <Button
-                href="#nosotras"
+                href="#servicios"
                 className="inline-flex h-9 md:h-10 items-center justify-center  bg-white px-4 sm:px-8 text-sm md:text-base font-medium text-gray-500 hover:bg-co-primary-blue/80 hover:text-white transition-colors font-montserrat whitespace-nowrap"
               >
                 Conocer Especialidades

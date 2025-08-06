@@ -12,10 +12,10 @@ const fadeIn = {
 
 const reviews = [
   {
-    name: "Ana Silva",
+    name: "Martha Methol",
     rating: 5,
     comment:
-      "Mi hijo ha estado en tratamiento con la Dra. Nadia durante un año y los resultados son increíbles. Su paciencia y profesionalismo hacen que las visitas sean muy agradables.",
+      "Estoy muy conforme con el servicio. La atención es excelente y verdaderamente personalizada. La coordinación de las consultas fue impecable, y las odontólogas, sin duda, de lo mejor.",
   },
   {
     name: "Pedro Fernández",

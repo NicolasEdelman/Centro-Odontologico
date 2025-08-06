@@ -116,10 +116,11 @@ export default function BiographyGallery() {
               } items-center gap-8 md:gap-12`}
             >
               <div className="w-full lg:w-1/2 relative h-96 rounded-lg overflow-hidden shadow-xl">
-                <Image
+                <img
                   src={block.image || "/placeholder.svg"}
                   alt={block.title}
-                  fill
+                  width={1000}
+                  height={1000}
                   className="object-cover"
                 />
               </div>
@@ -134,54 +135,6 @@ export default function BiographyGallery() {
             </motion.div>
           ))}
         </div>
-
-        {/* <div className="mt-24 mb-8">
-          <SubTitle title="Galería de Imágenes" underlineColor="beige" />
-        </div> */}
-
-        {/* Mobile: AutoCarousel */}
-        {/* <div className="block md:hidden">
-          <AutoCarousel>
-            {[...Array(8)].map((_, index) => (
-              <div key={index} className="w-60 max-w-xs">
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt={`Galería ${index + 1}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </AutoCarousel>
-        </div> */}
-
-        {/* Desktop: Grid */}
-        {/* <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container mx-auto">
-          {[...Array(8)].map((_, index) => (
-            <motion.div
-              key={index}
-              variants={fadeIn}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-                transition: { duration: 0.3 },
-              }}
-              className="relative aspect-square rounded-lg overflow-hidden shadow-md"
-            >
-              <Image
-                src="/placeholder.svg?height=300&width=300"
-                alt={`Galería ${index + 1}`}
-                fill
-                className="object-cover"
-              />
-            </motion.div>
-          ))}
-        </div> */}
       </div>
     </section>
   );

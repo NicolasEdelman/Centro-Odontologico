@@ -24,7 +24,7 @@ export default function ServicesSection() {
       id: "implantologia",
       title: "Implantología",
       description:
-        "Reemplazo de dientes perdidos con implantes dentales duraderos.",
+        "Reemplazo de dientes perdidos mediante estructuras de titanio o zirconio dental.",
       image: "/servicios/implantes.png",
     },
     {
@@ -93,7 +93,7 @@ export default function ServicesSection() {
       id: "periodoncia",
       title: "Periodoncia",
       description:
-        "Tratamiento de encías y estructuras que sostienen los dientes.",
+        "Tratamiento de encías y tejidos de sostén de dientes e implantes.",
       image: "/servicios/periodoncia.png",
     },
     {
@@ -106,7 +106,8 @@ export default function ServicesSection() {
     {
       id: "sueno-y-ttm",
       title: "Sueño y TTM",
-      description: "Tratamiento del sueño y disfunciones temporomandibulares.",
+      description:
+        "Tratamiento de trastornos del sueño y disfunciones temporomandibulares.",
       image: "/servicios/sueño.png",
     },
   ];

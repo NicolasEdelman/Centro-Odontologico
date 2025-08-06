@@ -44,7 +44,7 @@ export default function Hero() {
                 Utilizamos: Escáneres intraorales, Radiografías digitales (2D y
                 3D), Diseño digital de sonrisa (DSD), Planificación 3D de
                 tratamientos, Cirugía guiada por computadora, Fotografía clínica
-                digital, Ortodoncia digital (al ineadores transparentes),
+                digital, Ortodoncia digital (alineadores transparentes),
                 Sistemas de gestión clínica digitales, Inteligencia artificial
                 (IA), y por último Sistemas CAD/CAM (Diseño y Manufactura
                 Asistidos por Computadora) e Impresión 3D gracias a nuestros
@@ -70,10 +70,11 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="relative h-[500px] md:h-[500px]  w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
-              <Image
+              <img
                 src="/images/OdontologiaDigital.png"
                 alt="Odontología Digital"
-                fill
+                width={1000}
+                height={1000}
                 className="object-cover bg-[#e6d5a8]/50"
               />
             </motion.div>

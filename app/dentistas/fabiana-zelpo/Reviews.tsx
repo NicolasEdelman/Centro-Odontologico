@@ -12,10 +12,10 @@ const fadeIn = {
 
 const reviews = [
   {
-    name: "Ana Silva",
+    name: "Santiago Arostegui",
     rating: 5,
     comment:
-      "Mi hijo ha estado en tratamiento con la Dra. Fabiana durante un año y los resultados son increíbles. Su paciencia y profesionalismo hacen que las visitas sean muy agradables.",
+      "La Dra Fabiana es una excelente profesional, siempre dispuesta a explicarte el diagnóstico y tratamiento lo que te genera total confianza y tranquilidad. La recomiendo sin dudarlo.",
   },
   {
     name: "Pedro Fernández",

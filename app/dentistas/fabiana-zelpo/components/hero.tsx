@@ -60,10 +60,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
-              <Image
+              <img
                 src="/images/fabiana-zelpo.jpg"
                 alt="Dra. Fabiana Zelpo"
-                fill
                 className="object-cover object-top scale-110 "
               />
             </motion.div>

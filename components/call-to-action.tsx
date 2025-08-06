@@ -5,11 +5,10 @@ export const CTA = () => {
     <section className="w-full py-8 md:py-16 bg-gradient-to-r from-co-secondary-lightblue to-co-primary-blue">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-          ¿Listo para una sonrisa perfecta?
+          ¿Listo para verte como deseas?
         </h2>
-        <p className="text-white text-sm md:text-lg mb-8 max-w-2xl mx-auto">
-          Agenda tu consulta hoy y comienza tu camino hacia una salud bucal
-          óptima
+        <p className="text-white text-md md:text-lg mb-8 max-w-2xl mx-auto">
+          Agenda tu consulta hoy y comienza tu camino para hacerlo realidad.
         </p>
         <Link href="/#contacto">
           <Button
