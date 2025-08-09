@@ -86,7 +86,7 @@ export default function ServicesSection() {
       id: "fonoaudiologia",
       title: "Fonoaudiología",
       description:
-        "Diagnóstico y tratamiento de trastornos del habla y lenguaje.",
+        "Diagnóstico y tratamiento de trastornos del habla, lenguaje y motricidad orofacial.",
       image: "/servicios/fonoaudiologia.png",
     },
     {
@@ -100,7 +100,7 @@ export default function ServicesSection() {
       id: "endodoncia",
       title: "Endodoncia",
       description:
-        "Tratamientos de conducto para salvar dientes dañados o infectados.",
+        "Tratamiento de las enfermedades de la pulpa dental, tanto en cámara como en los conductos radiculares.",
       image: "/servicios/endodoncia.png",
     },
     {

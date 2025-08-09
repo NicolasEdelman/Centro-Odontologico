@@ -18,10 +18,10 @@ const reviews = [
       "La Dra Fabiana es una excelente profesional, siempre dispuesta a explicarte el diagnóstico y tratamiento lo que te genera total confianza y tranquilidad. La recomiendo sin dudarlo.",
   },
   {
-    name: "Pedro Fernández",
+    name: "Stephanie Horton",
     rating: 5,
     comment:
-      "Después de años postergando mi tratamiento de ortodoncia, la Dra. Fabiana me ofreció una solución discreta y efectiva. Estoy muy satisfecho con los resultados.",
+      "Fabi es excelente. Atiende a los niños con una paciencia y cariño que los hace sentir tranquilos y sin miedo. Siempre demuestra un gran profesionalismo, explicando todo con claridad. Sin duda, es una dentista en la que confío plenamente para el cuidado de mis niñas.",
   },
   {
     name: "Valentina Méndez",

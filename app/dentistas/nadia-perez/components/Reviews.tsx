@@ -12,17 +12,18 @@ const fadeIn = {
 
 const reviews = [
   {
+    name: "Ana Silva",
+    rating: 5,
+    comment:
+      "Mi hijo ha estado en tratamiento con la Dra. Nadia durante un año y los resultados son increibles. Su paciencia y profesionalismo hacen que las visitas sean muy agradables.",
+  },
+  {
     name: "Martha Methol",
     rating: 5,
     comment:
       "Estoy muy conforme con el servicio. La atención es excelente y verdaderamente personalizada. La coordinación de las consultas fue impecable, y las odontólogas, sin duda, de lo mejor.",
   },
-  {
-    name: "Pedro Fernández",
-    rating: 5,
-    comment:
-      "Después de años postergando mi tratamiento de ortodoncia, la Dra. Pérez me ofreció una solución discreta y efectiva. Estoy muy satisfecho con los resultados.",
-  },
+
   {
     name: "Valentina Méndez",
     rating: 5,

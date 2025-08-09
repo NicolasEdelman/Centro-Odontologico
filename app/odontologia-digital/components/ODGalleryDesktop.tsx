@@ -26,7 +26,7 @@ export default function ODMosaicIrregular() {
           eliminamos procedimientos incómodos como las pastas para moldes.
           <br />
           <br />
-          Limpio, preciso y rápido. ¡Tu tiempo vale!
+          <strong>Limpio, preciso y rápido. ¡Tu tiempo vale!</strong>
         </>
       ),
     },
@@ -38,7 +38,7 @@ export default function ODMosaicIrregular() {
           de tu tratamiento antes de tomar una decisión.
           <br />
           <br />
-          Más información, menos dudas.
+          <strong>Más información, menos dudas.</strong>
         </>
       ),
     },
@@ -51,7 +51,7 @@ export default function ODMosaicIrregular() {
           mayor previsibilidad de los resultados.
           <br />
           <br />
-          Comprometidos con tu bienestar.
+          <strong>Comprometidos con tu bienestar.</strong>
         </>
       ),
     },
@@ -64,7 +64,7 @@ export default function ODMosaicIrregular() {
           disminuye la necesidad de ajustes.
           <br />
           <br />
-          Mereces seguridad y tranquilidad.
+          <strong>Mereces seguridad y tranquilidad.</strong>
         </>
       ),
     },
