@@ -12,23 +12,23 @@ const fadeIn = {
 
 const reviews = [
   {
-    name: "Ana Silva",
+    name: "Lelio Constantin",
     rating: 5,
     comment:
-      "Mi hijo ha estado en tratamiento con la Dra. Nadia durante un año y los resultados son increibles. Su paciencia y profesionalismo hacen que las visitas sean muy agradables.",
+      "Nadia me colocó 6 implantes y todo se desarrolló de acuerdo a lo planificado, sin ningún contratiempo. Luego de una mala experiencia anterior, ella logró que recuperara la confianza perdida, gracias a una atención súper profesional. Estoy muy conforme con el resultado y recomiendo sus servicios.",
   },
+  {
+    name: "Paula López",
+    rating: 5,
+    comment:
+      "He recibido una atención excelente por Nadia a lo largo de los años. Es cercana, profesional y transmite mucha confianza desde el primer momento. Me he realizado desde tratamientos sencillos hasta  cirugía de implantes. Valoro muchísimo su capacidad para planificar los cuidados a largo plazo, anticipando lo que puede venir y ayudándome a mantener mi boca sana siempre.",
+  },
+
   {
     name: "Martha Methol",
     rating: 5,
     comment:
-      "Estoy muy conforme con el servicio. La atención es excelente y verdaderamente personalizada. La coordinación de las consultas fue impecable, y las odontólogas, sin duda, de lo mejor.",
-  },
-
-  {
-    name: "Valentina Méndez",
-    rating: 5,
-    comment:
-      "La Dra. Nadia es excelente. Su atención es muy personalizada y siempre está dispuesta a explicar cada paso del tratamiento. Recomiendo totalmente sus servicios.",
+      "Estoy muy conforme con el servicio que brinda Nadia y su equipo. La atención es excelente y verdaderamente personalizada, y la coordinación de las consultas fue impecable. He recibido tratamientos de rehabilitación e implantología de su parte, siempre con gran profesionalismo y dedicación. Las odontólogas de Centro Odontológico son, sin duda, de lo mejor.",
   },
 ];
 

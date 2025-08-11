@@ -24,10 +24,10 @@ const reviews = [
       "Fabi es excelente. Atiende a los niños con una paciencia y cariño que los hace sentir tranquilos y sin miedo. Siempre demuestra un gran profesionalismo, explicando todo con claridad. Sin duda, es una dentista en la que confío plenamente para el cuidado de mis niñas.",
   },
   {
-    name: "Valentina Méndez",
+    name: "Valentina Elena",
     rating: 5,
     comment:
-      "La Dra. Fabiana es excelente. Su atención es muy personalizada y siempre está dispuesta a explicar cada paso del tratamiento. Recomiendo totalmente sus servicios.",
+      "Muy buena atención de la Dra. Fabiana. Me hice tratamiento dental y tratamiento estético y quedé feliz con el resultado: natural, cuidadoso y hecho con mucha dedicación.",
   },
 ];
 
