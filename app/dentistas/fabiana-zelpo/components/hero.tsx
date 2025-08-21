@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/animated-section";
 
@@ -61,9 +60,9 @@ export default function Hero() {
               className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
               <img
-                src="/images/fabiana-zelpo.jpg"
+                src="/images/fabiana-zelpo.png"
                 alt="Dra. Fabiana Zelpo"
-                className="object-cover object-top scale-110 "
+                className="object-cover "
               />
             </motion.div>
           </div>

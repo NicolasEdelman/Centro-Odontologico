@@ -62,11 +62,11 @@ export default function Hero() {
               className="relative h-[500px] md:h-[500px] md:w-[80%] w-[100%] rounded-xl overflow-hidden shadow-xl"
             >
               <img
-                src="/images/nadia-perez.jpg"
+                src="/images/nadia-perez.png"
                 alt="Dra. Nadia Pérez"
                 width={1000}
                 height={1000}
-                className="object-cover object-top scale-110"
+                className="object-cover"
               />
             </motion.div>
           </div>
