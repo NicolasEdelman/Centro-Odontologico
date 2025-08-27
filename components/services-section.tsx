@@ -14,11 +14,11 @@ export default function ServicesSection() {
       image: "/servicios/sonrisa.png",
     },
     {
-      id: "rehabilitacion",
-      title: "Rehabilitación",
+      id: "estetica-facial",
+      title: "Estética Facial",
       description:
-        "Restauración de la función dental para una sonrisa saludable y estética.",
-      image: "/servicios/rehabilitacion.png",
+        "Tratamientos mínimamente invasivos para realzar la armonía del rostro y sonrisa.",
+      image: "/servicios/estetica.png",
     },
     {
       id: "implantologia",
@@ -28,18 +28,32 @@ export default function ServicesSection() {
       image: "/servicios/implantes.png",
     },
     {
-      id: "cirugia",
-      title: "Cirugía",
+      id: "ortodoncia-invisible",
+      title: "Ortodoncia Invisible",
       description:
-        "Procedimientos quirúrgicos para resolver problemas bucales complejos.",
-      image: "/servicios/cirugia.png",
+        "Corrección de la posición dental y ósea con alineadores transparentes removibles.",
+      image: "/servicios/ortodoncia-invisible.png",
     },
     {
-      id: "patologia-oral",
-      title: "Patología Oral",
+      id: "periodoncia",
+      title: "Periodoncia",
       description:
-        "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
-      image: "/servicios/patologia-oral.png",
+        "Tratamiento de encías y tejidos de sostén de dientes e implantes.",
+      image: "/servicios/periodoncia.png",
+    },
+    {
+      id: "endodoncia",
+      title: "Endodoncia",
+      description:
+        "Tratamiento de las enfermedades de la pulpa dental, tanto en cámara como en los conductos radiculares.",
+      image: "/servicios/endodoncia.png",
+    },
+    {
+      id: "rehabilitacion",
+      title: "Rehabilitación",
+      description:
+        "Restauración de la función dental para una sonrisa saludable y estética.",
+      image: "/servicios/rehabilitacion.png",
     },
     {
       id: "ortopedia",
@@ -56,25 +70,18 @@ export default function ServicesSection() {
       image: "/servicios/ortodoncia.png",
     },
     {
-      id: "ortodoncia-invisible",
-      title: "Ortodoncia Invisible",
-      description:
-        "Corrección de la posición dental y ósea con alineadores transparentes removibles.",
-      image: "/servicios/ortodoncia-invisible.png",
-    },
-    {
-      id: "estetica-facial",
-      title: "Estética Facial",
-      description:
-        "Tratamientos mínimamente invasivos para realzar la armonía del rostro y sonrisa.",
-      image: "/servicios/estetica.png",
-    },
-    {
       id: "cosmetologia-medica",
       title: "Cosmetología Médica",
       description:
         "Cuidado avanzado de la piel para mejorar su salud y apariencia.",
       image: "/servicios/cosmetologia.png",
+    },
+    {
+      id: "cirugia",
+      title: "Cirugía",
+      description:
+        "Procedimientos quirúrgicos para resolver problemas bucales complejos.",
+      image: "/servicios/cirugia.png",
     },
     {
       id: "odontopediatria",
@@ -90,18 +97,11 @@ export default function ServicesSection() {
       image: "/servicios/fonoaudiologia.png",
     },
     {
-      id: "periodoncia",
-      title: "Periodoncia",
+      id: "patologia-oral",
+      title: "Patología Oral",
       description:
-        "Tratamiento de encías y tejidos de sostén de dientes e implantes.",
-      image: "/servicios/periodoncia.png",
-    },
-    {
-      id: "endodoncia",
-      title: "Endodoncia",
-      description:
-        "Tratamiento de las enfermedades de la pulpa dental, tanto en cámara como en los conductos radiculares.",
-      image: "/servicios/endodoncia.png",
+        "Diagnóstico y tratamiento de lesiones o enfermedades bucales.",
+      image: "/servicios/patologia-oral.png",
     },
     {
       id: "sueno-y-ttm",
