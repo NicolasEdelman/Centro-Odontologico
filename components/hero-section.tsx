@@ -39,7 +39,7 @@ export default function HeroSection() {
               loop
               muted={muted}
               playsInline
-              className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 hidden md:block bg-gradient-to-br from-co-primary-blue to-co-primary-blue/20"
+              className="w-full h-full object-cover brightness-60ra en Patologia y Laserterapia transition-transform duration-700 scale-110 md:scale-100 hidden md:block bg-gradient-to-br from-co-primary-blue to-co-primary-blue/20"
               onError={handleVideoError}
             />
             <video
@@ -49,7 +49,7 @@ export default function HeroSection() {
               loop
               muted={muted}
               playsInline
-              className="w-full h-full object-cover brightness-50 transition-transform duration-700 scale-110 md:scale-100 md:hidden block bg-gradient-to-br from-co-primary-blue/60 to-co-primary-blue/20"
+              className="w-full h-full object-cover brightness-60 transition-transform duration-700 scale-110 md:scale-100 md:hidden block bg-gradient-to-br from-co-primary-blue/60 to-co-primary-blue/20"
               onError={handleVideoError}
             />
           </>
@@ -92,16 +92,16 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 mb-20 md:mb-14">
-        <div className="container mx-auto px-4 flex justify-center">
-          <div className="max-w-full md:text-center items-center flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 md:mb-2 font-avenir">
-              CENTRALIZA TU ODONTOLOGÍA
+      <div className="absolute top-1/2 mt-20 left-0 right-0 z-10 -translate-y-1/2 md:mb-14">
+        <div className="container mx-auto px-4 flex justify-start">
+          <div className="max-w-4xl md:text-left items-start flex flex-col justify-center space-y-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2  font-avenir">
+              CENTRALIZA <br /> TU ODONTOLOGÍA
             </h1>
-            <p className="text-lg md:text-2xl text-white mb-2 md:mb-4 max-w-xl font-now md:text-center">
-              Profesionalismo y dedicación en cada tratamiento
+            <p className="text-lg md:text-2xl text-white mb-2 md:mb-4 max-w-4xl font-now">
+            Profesionalismo y tecnología, en un solo lugar
             </p>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 pt-4">
               <Button
                 href="#servicios"
                 className="inline-flex h-9 md:h-10 items-center justify-center  bg-white px-4 sm:px-8 text-sm md:text-base font-medium text-gray-500 hover:bg-co-primary-blue/80 hover:text-white transition-colors font-montserrat whitespace-nowrap"
