@@ -98,8 +98,11 @@ export default function HeroSection() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2  font-avenir">
               CENTRALIZA <br /> TU ODONTOLOGÍA
             </h1>
-            <p className="text-lg md:text-2xl text-white mb-2 md:mb-4 max-w-4xl font-now">
+            <p className="hidden md:block text-lg md:text-2xl text-white mb-2 md:mb-4 max-w-4xl font-now">
             Profesionalismo y tecnología, en un solo lugar
+            </p>
+            <p className="block md:hidden text-lg md:text-2xl text-white mb-2 md:mb-4 max-w-4xl font-now">
+            Profesionalismo y tecnología,<br /> en un solo lugar
             </p>
             <div className="flex flex-row gap-4 pt-4">
               <Button
