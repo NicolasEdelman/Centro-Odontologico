@@ -34,6 +34,11 @@ export default function TeamSection() {
       image: "/images/Staff/EquipoMarron/LuciaVillaverde.png",
     },
     {
+      name: "Avril Nieves",
+      role: "Asistente",
+      image: "/images/Staff/EquipoMarron/AvrilNieves.png",
+    },
+    {
       name: "Silvia Acosta",
       role: "Asistente de limpieza",
       image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
@@ -124,7 +129,7 @@ export default function TeamSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 container mx-auto max-w-6xl"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 container mx-auto "
           >
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />
