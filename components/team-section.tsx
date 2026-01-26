@@ -38,6 +38,11 @@ export default function TeamSection() {
       role: "Asistente de limpieza",
       image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
     },
+    {
+      name: "Andrea Salerno",
+      role: "Asistente de Mantenimiento Clínico y Servicios Generales",
+      image: "/images/Staff/EquipoMarron/AndreaSalerno.png",
+    },
   ];
 
   const container = {
@@ -124,7 +129,7 @@ export default function TeamSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 container mx-auto max-w-6xl"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2"
           >
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />
