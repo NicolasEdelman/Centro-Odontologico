@@ -9,7 +9,7 @@ export default function TeamSection() {
   const [useCarousel, setUseCarousel] = useState(false);
 
   useEffect(() => {
-    setUseCarousel(teamMembers.length > 6 || window.innerWidth < 768);
+    setUseCarousel(teamMembers.length > 7 || window.innerWidth < 768);
   }, []);
 
   const teamMembers = [
@@ -134,7 +134,7 @@ export default function TeamSection() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7"
           >
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />
