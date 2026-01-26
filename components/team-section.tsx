@@ -34,6 +34,11 @@ export default function TeamSection() {
       image: "/images/Staff/EquipoMarron/LuciaVillaverde.png",
     },
     {
+      name: "Avril Nieves",
+      role: "Asistente",
+      image: "/images/Staff/EquipoMarron/AvrilNieves.png",
+    },
+    {
       name: "Silvia Acosta",
       role: "Asistente de limpieza",
       image: "/images/Staff/EquipoMarron/SilviaAcosta.png",
