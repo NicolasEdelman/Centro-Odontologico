@@ -40,7 +40,7 @@ export default function VideosSection() {
 
           <Button
             href="/#contacto"
-            className=" text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 hover:bg-opacity-90 transition-all duration-300"
+            className=" text-sm md:text-base bg-white text-co-secondary-beige px-4 md:px-8 py-1 md:py-3 hover:bg-white/70 transition-all duration-300"
           >
             Agendar una consulta
           </Button>
