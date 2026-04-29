@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import AutoCarousel from "./auto-carrousel";
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 
 export default function TeamSection() {
   const [useCarousel, setUseCarousel] = useState(false);
@@ -35,7 +35,13 @@ export default function TeamSection() {
     },
     {
       name: "Avril Nieves",
-      role: "Asistente",
+      role: (
+        <>
+          Asistente dental
+          <br />
+          Asistente comercial
+        </>
+      ),
       image: "/images/Staff/EquipoMarron/AvrilNieves.png",
     },
     {
@@ -50,7 +56,7 @@ export default function TeamSection() {
     },
   ];
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -60,7 +66,7 @@ export default function TeamSection() {
     },
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: {
       opacity: 1,
@@ -79,7 +85,7 @@ export default function TeamSection() {
     image,
   }: {
     name: string;
-    role: string;
+    role: ReactNode;
     image: string;
   }) => (
     <motion.div
