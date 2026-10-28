@@ -27,7 +27,8 @@ export default function BiographyGallery() {
                 <>
                   La Dra. Fabiana Zelpo es egresada de la Facultad de
                   Odontología de la Universidad de la República (UdelaR), en
-                  Montevideo, Uruguay.
+                  Montevideo, Uruguay, donde obtuvo su título el 17 de junio de
+                  2010.
                 </>
               ),
             },

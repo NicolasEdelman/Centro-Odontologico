@@ -17,10 +17,17 @@ export default function AgreementsSection() {
     { name: "Jacaranda", logo: "/convenios/Jacaranda.jpg" },
     { name: "Prosegur", logo: "/convenios/Prosegur.png" },
     { name: "Mi Dinero YA", logo: "/convenios/MiDineroYa.jpg" },
-    { name: "Redpagos", logo: "/convenios/Redpagos.png" },
+    { name: "Redpagos", logo: "/convenios/RedPagos.png" },
     { name: "River", logo: "/convenios/River.png" },
     { name: "Sinapsis", logo: "/convenios/Sinapsis.png" },
     { name: "Setif", logo: "/convenios/Setif.png" },
+    { name: "Branavi", logo: "/convenios/Branavi.jpeg" },
+    { name: "Cablex", logo: "/convenios/Cablex.png" },
+    { name: "Fondo Social de la Construcción", logo: "/convenios/FSC.jpg" },
+    { name: "Flokzu", logo: "/convenios/Flokzu.png" },
+    { name: "GA.MA Italy", logo: "/convenios/Gama.jpg" },
+    { name: "Kingspan", logo: "/convenios/Kingspan.png" },
+    { name: "Passcard", logo: "/convenios/passcard.jpeg" },
   ];
 
   const allCompanies = useMemo(

@@ -73,11 +73,16 @@ export default function PlanesPage() {
       <AnimatedSection variant="bounce" fullWidth>
         <section className="container mx-auto px-4 py-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {[1, 2, 3, 4].map((num) => (
-              <div key={num} className="w-full  overflow-hidden shadow-lg">
+            {[
+              "/images/MaterialEmpresarial/MaterialEmpresarial3.jpg",
+              "/images/acuerdos/pagina_01.jpg",
+              "/images/acuerdos/pagina_02.jpg",
+              "/images/acuerdos/pagina_03.jpg",
+            ].map((src, index) => (
+              <div key={src} className="w-full  overflow-hidden shadow-lg">
                 <img
-                  src={`/images/MaterialEmpresarial/MaterialEmpresarial${num}.jpg`}
-                  alt={`Material Empresarial ${num}`}
+                  src={src}
+                  alt={`Material Empresarial ${index + 1}`}
                   width={800}
                   height={600}
                   className="w-full h-auto object-cover"
